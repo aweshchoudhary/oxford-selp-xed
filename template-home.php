@@ -148,8 +148,8 @@ $program_details = get_field("program_details");
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Certificate from <br>
-                        Oxford University’s <br>
-                        Saïd Business School
+                        Saïd Business School<br>
+                        University of Oxford
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
@@ -207,7 +207,7 @@ $program_details = get_field("program_details");
 
                     <h3><strong>Leadership in a volatile world – insights from the chief executive officer report</strong></h3>
                     <p>
-                        This session will focus on findings from Saïd Business School's chief executive officer report, which interviewed over 150 global leaders. Key findings will be discussed, including how chief executive officers have had to reinvent their communication, leadership, and strategy in a world where trust is at a premium. The session will also explore how chief executive officers must find new ways to establish organisational values and culture, build teams, and align their companies.
+                        This session will focus on findings from Saïd Business School, University of Oxford chief executive officer report, which interviewed over 150 global leaders. Key findings will be discussed, including how chief executive officers have had to reinvent their communication, leadership, and strategy in a world where trust is at a premium. The session will also explore how chief executive officers must find new ways to establish organisational values and culture, build teams, and align their companies.
                     </p>
 
                     <h3><strong>Scenario planning</strong></h3>
@@ -412,7 +412,7 @@ $program_details = get_field("program_details");
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <p class="mb-5">
-                Upon completing the programme, you become eligible for lifelong membership in the Oxford Business Alumni Network, the official global business alumni network of the Oxford University's Saïd Business School.
+                Upon completing the programme, you become eligible for lifelong membership in the Oxford Business Alumni Network, the official global business alumni network of the Saïd Business School, University of Oxford.
                 <br><br>
 
                 With over 24,000 members in more than 150 countries worldwide, this network represents a truly world-class international business community.
