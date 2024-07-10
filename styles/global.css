@@ -706,6 +706,18 @@ body,
   outline-color: hsl(var(--primary));
 }
 
+input,
+  select,
+  textarea {
+  border-radius: 0px !important;
+  color: hsl(var(--primary)) !important;
+}
+
+* {
+  accent-color: hsl(var(--primary)) !important;
+  outline-color: hsl(var(--primary)) !important;
+}
+
 /* Common Styles for Text */
 
 /* Global Styles for Text Elements */
@@ -720,15 +732,15 @@ h1 {
 
 @media (min-width: 640px) {
   h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -741,8 +753,8 @@ h2 {
 
 @media (min-width: 640px) {
   h2 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -753,21 +765,9 @@ h2 {
   }
 }
 
-input,
-  select,
-  textarea {
-  border-radius: 0px !important;
-  color: hsl(var(--primary)) !important;
-}
-
-* {
-  accent-color: hsl(var(--primary)) !important;
-  outline-color: hsl(var(--primary)) !important;
-}
-
 h3 {
   margin-bottom: 0.25rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
   line-height: 1.375;
@@ -775,15 +775,15 @@ h3 {
 
 @media (min-width: 640px) {
   h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 768px) {
   h3 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -802,7 +802,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
   line-height: 1.25;
@@ -831,6 +831,7 @@ h6 {
 
 p {
   margin-bottom: 1.25rem;
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.5rem;
   line-height: 1.625;
@@ -1089,6 +1090,17 @@ sup {
   }
 }
 
+@media (hover:hover) {
+  .menu li > *:not(ul, .menu-title, details, .btn):active,
+.menu li > *:not(ul, .menu-title, details, .btn).active,
+.menu li > details > summary:active {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+  }
+}
+
 @media (hover: hover) {
   .btm-nav > *.disabled:hover,
       .btm-nav > *[disabled]:hover {
@@ -1273,6 +1285,23 @@ sup {
   scrollbar-gutter: stable;
 }
 
+.range {
+  height: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  --range-shdw: var(--fallback-bc,oklch(var(--bc)/1));
+  overflow: hidden;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+
+.range:focus {
+  outline: none;
+}
+
 .select {
   display: inline-flex;
   cursor: pointer;
@@ -1305,6 +1334,12 @@ sup {
 
 .select[multiple] {
   height: auto;
+}
+
+.btm-nav > *:where(.active) {
+  border-top-width: 2px;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
 
 .btm-nav > *.disabled,
@@ -1390,6 +1425,15 @@ sup {
   outline-offset: 2px;
 }
 
+.menu li > *:not(ul, .menu-title, details, .btn):active,
+.menu li > *:not(ul, .menu-title, details, .btn).active,
+.menu li > details > summary:active {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+}
+
 .mockup-phone .display {
   overflow: hidden;
   border-radius: 40px;
@@ -1449,6 +1493,65 @@ sup {
     box-shadow: 0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset,
       0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset;
   }
+}
+
+.range:focus-visible::-webkit-slider-thumb {
+  --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem var(--range-shdw) inset;
+}
+
+.range:focus-visible::-moz-range-thumb {
+  --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem var(--range-shdw) inset;
+}
+
+.range::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+}
+
+.range::-moz-range-track {
+  height: 0.5rem;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+}
+
+.range::-webkit-slider-thumb {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+  appearance: none;
+  -webkit-appearance: none;
+  top: 50%;
+  color: var(--range-shdw);
+  transform: translateY(-50%);
+  --filler-size: 100rem;
+  --filler-offset: 0.6rem;
+  box-shadow: 0 0 0 3px var(--range-shdw) inset,
+      var(--focus-shadow, 0 0),
+      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+}
+
+.range::-moz-range-thumb {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+  top: 50%;
+  color: var(--range-shdw);
+  --filler-size: 100rem;
+  --filler-offset: 0.5rem;
+  box-shadow: 0 0 0 3px var(--range-shdw) inset,
+      var(--focus-shadow, 0 0),
+      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
 
 @keyframes rating-pop {
@@ -1519,6 +1622,20 @@ sup {
   }
 }
 
+.table tr.active,
+  .table tr.active:nth-child(even),
+  .table-zebra tbody tr:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+}
+
+.table-zebra tr.active,
+    .table-zebra tr.active:nth-child(even),
+    .table-zebra-zebra tbody tr:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
+}
+
 @keyframes toast-pop {
   0% {
     transform: scale(0.9);
@@ -1529,6 +1646,22 @@ sup {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+.btm-nav-xs > *:where(.active) {
+  border-top-width: 1px;
+}
+
+.btm-nav-sm > *:where(.active) {
+  border-top-width: 2px;
+}
+
+.btm-nav-md > *:where(.active) {
+  border-top-width: 2px;
+}
+
+.btm-nav-lg > *:where(.active) {
+  border-top-width: 4px;
 }
 
 .join.join-vertical {
@@ -1671,6 +1804,14 @@ sup {
   right: 1.25rem;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1683,6 +1824,11 @@ sup {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-5 {
@@ -1706,8 +1852,16 @@ sup {
   margin-bottom: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mt-1 {
@@ -1740,6 +1894,11 @@ sup {
 
 .aspect-video {
   aspect-ratio: 16 / 9;
+}
+
+.size-12 {
+  width: 3rem;
+  height: 3rem;
 }
 
 .h-\[250px\] {
@@ -1790,6 +1949,10 @@ sup {
   flex-shrink: 0;
 }
 
+.basis-1\/3 {
+  flex-basis: 33.333333%;
+}
+
 .basis-\[40\%\] {
   flex-basis: 40%;
 }
@@ -1798,12 +1961,21 @@ sup {
   flex-basis: 100%;
 }
 
-.basis-\[45\%\] {
-  flex-basis: 45%;
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .list-none {
@@ -1834,6 +2006,10 @@ sup {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-20 {
   gap: 5rem;
 }
@@ -1860,6 +2036,10 @@ sup {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-none {
@@ -1947,8 +2127,25 @@ sup {
   padding-bottom: 1.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pl-\[1em\] {
+  padding-left: 1em;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
+}
+
+.-indent-\[1em\] {
+  text-indent: -1em;
 }
 
 .font-tnr {
@@ -2098,19 +2295,17 @@ sup {
   z-index: 99;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  border-width: 1px;
-  border-color: hsl(var(--primary));
   padding: 0.5rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   color: hsl(var(--primary));
 }
 
 @media (min-width: 768px) {
   .slick-btn {
     padding: 0.75rem;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -2370,13 +2565,19 @@ sup {
   text-decoration-line: underline;
 }
 
+@media (min-width: 640px) {
+  .sm\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+}
+
 @media (min-width: 768px) {
-  .md\:left-28 {
-    left: 7rem;
+  .md\:left-32 {
+    left: 8rem;
   }
 
-  .md\:right-28 {
-    right: 7rem;
+  .md\:right-32 {
+    right: 8rem;
   }
 
   .md\:my-10 {
@@ -2398,6 +2599,10 @@ sup {
 
   .md\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
   }
 
   .md\:h-auto {
@@ -2436,6 +2641,10 @@ sup {
     flex-basis: 25%;
   }
 
+  .md\:basis-1\/5 {
+    flex-basis: 20%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2450,6 +2659,14 @@ sup {
 
   .md\:gap-20 {
     gap: 5rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:object-contain {
@@ -2467,6 +2684,14 @@ sup {
 
   .md\:p-20 {
     padding: 5rem;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .md\:p-2\.5 {
+    padding: 0.625rem;
   }
 
   .md\:px-28 {
@@ -2492,11 +2717,6 @@ sup {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-5xl {

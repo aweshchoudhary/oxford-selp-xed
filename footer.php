@@ -10,9 +10,230 @@
     </form>
 </dialog>
 
-<dialog id="David-Trevaskis" class="modal">
-    <div class="modal-box rounded md:p-10 p-5 md:max-w-[60%]">
+<dialog id="David_Trevaskis" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/David-Trevaskis.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
 
+        <div>
+            <h3>
+                David Trevaskis
+            </h3>
+            <h4 class="mb-4">
+                Teaches Persuasion and influence
+            </h4>
+            <p>
+                David Trevaskis trained as an actor and his directing reflects this, he believes the director’s job is one of service; of the play and its message, of the actors and their needs and most importantly in service of the audience. He’s a facilitator with a proven track record of delivering high impact commutation skills sessions. Specialising in presentations, difficult conversations, executive presence and public speaking. David has a postgraduate certificate of professional acting from Academy of Live and Recorded Arts and a Bachelor of Divinity from the University of St Andrews.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Phyllida_Hancock" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Phyllida-Hancock.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+
+        <div>
+            <h3>
+                Phyllida Hancock
+            </h3>
+            <h4 class="mb-4">
+                Teaches Inspirational leadership
+            </h4>
+            <p>
+                Phyllida Hancock is a Senior Programme Director with Olivier Mythodrama and leads Mythodrama programmes for organisations across the private and public sectors in the UK and overseas. She also manages a leadership development programme for a large global client and has a liaison role with several other clients. Phyllida was a consultant for many years in an interdepartmental ‘futurefocus’ facility working across government on scenario planning and project working. In addition to her work with Olivier Mythodrama, she works as a freelance facilitator on leadership and organisational development programmes across sectors, focusing particularly on communication and presence skills
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Sue_Dopson" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Sue-Dopson.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+
+        <div>
+            <h3>
+                Sue Dopson
+            </h3>
+            <h4 class="mb-4">
+                Professor of Organisational Behaviour
+            </h4>
+            <p>
+                Sue Dopson has a BSc in Sociology, MSc in Sociology with special reference to medicine, MA (Oxon) and a PhD studying the introduction of general management into the NHS. She is a fellow of the academy of Social Sciences. Dopson conducts research in a range of public and private sector organisations. Her research lies in the area of innovation, change and healthcare studies. She has led a number of research projects in public and private sector organisations
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Rachel_Botsman" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Rachel-Botsman.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+
+        <div>
+            <h3>
+                Rachel Botsman
+            </h3>
+            <h4 class="mb-4">
+                Associate Fellow
+            </h4>
+            <p>
+                Named one of the world’s 50 most influential management thinkers, a Young Global Leader by the World Economic Forum and one of Fast Company’s most Creative People in Business, Rachel is a leading expert and author on trust in the digital world. Rachel has lived and worked on four different continents, giving her a global perspective on the important issues of our times. She currently lives in Oxford and is passionate about empowering the next generation to make informed decisions about trust in a rapidly changing world.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Peter_Hanke" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Peter-Hanke.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Peter Hanke
+            </h3>
+            <h4 class="mb-4">
+                Associate Fellow
+            </h4>
+            <p>
+                Peter Hanke is a conductor of classical music and an associate of the Centre for Art and Leadership at the Copenhagen Business School. An experienced classical music conductor and performer, Peter investigates the connections between leadership and music, philosophy and performance theory. Since 2003 Peter has delivered numerous experiential learning sessions on conducting leadership at Oxford University's Saïd Business School. He holds a BA in Musicology from the University of Copenhagen and an MA in Conducting from the Royal Danish Academy of Music. He received the Einar Hansens Research Award in 2005.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+
+
+
+<dialog id="Jamie_Anderson" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Jamie-Anderson.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Jamie Anderson
+            </h3>
+            <h4 class="mb-4">
+                Professor of Creative Thinking and Fine Art of Success
+            </h4>
+            <p>
+
+                Jamie has held teaching positions at some of the world’s top business schools, such as London Business School, IMD, ESMT Berlin and the University of Melbourne. Named as a “management guru” by the Financial Times, Jamie has also been listed as one of the world’s top 25 management thinkers by the journal Business Strategy Review. He is passionate about teaching strategy, innovation and creativity.
+
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Anton_Musgrave" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Anton-Musgrave.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Anton Musgrave
+            </h3>
+            <h4 class="mb-4">
+                Strategy, Innovation and Digital Transformation
+            </h4>
+            <p>
+                Anton Musgrave lectures regularly for London Business School, Duke CE, IMD and among others. He is passionate about teaching business strategy, innovation and the future. He shares an insightful understanding of the drivers of long-term business success, shifting business models, and what it takes to stay ahead of the market.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Olivier_Tabatoni" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Olivier-Tabatoni.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Olivier Tabatoni
+            </h3>
+            <h4 class="mb-4">
+                Professor of Finance and Strategy
+            </h4>
+            <p>
+                Olivier Tabatoni is Associate Fellow at the Oxford University's Saïd Business School. He was Visiting Professor at the Kellogg School of Management, Northwestern University and the Haas Business School, Berkeley.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Mike_Grandinetti" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Mike-Grandinetti.jpg" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Mike Grandinetti
+            </h3>
+            <h4 class="mb-4">
+                Professor of Innovation
+            </h4>
+            <p>
+                Mike Grandinetti is an Adjunct Professor at the School of Engineering at Brown University. Mike has been continuously active in the fields of innovation, entrepreneurship, human-centric design and digital marketing.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Edward_Rogers" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 basis-1/3">
+            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Edward-Rogers.webp" alt="" loading="lazy">
+            <figcaption></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Edward Rogers
+            </h3>
+            <h4 class="mb-4">
+                Ex Chief Knowledge Officer at Nasa
+            </h4>
+            <p>
+                Edward Rogers joined NASA in 2003 and served as the Chief Knowledge Officer at the Goddard Space Flight Center for 17 years. Dr. Rogers earned his PhD from Cornell University and has taught executives across the globe for more than a decade.
+            </p>
+        </div>
     </div>
     <form method="dialog" class="modal-backdrop">
         <button>close</button>
@@ -117,9 +338,22 @@
                 </svg>
             </div>
             <div>
-                <h3 class="text-2xl mb-1 font-semibold">New York</h3>
+                <h3 class="text-2xl mb-1 font-semibold">USA</h3>
                 <p>146 W 29th ST NEW YORK, <br>
                     NY 10001 </p>
+            </div>
+        </div>
+        <div class="flex items-start gap-5 mt-10">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-3xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
+                    <path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
+                </svg>
+            </div>
+            <div>
+                <h3 class="text-2xl mb-1 font-semibold">Saudi Arabia</h3>
+                <p>Le Cygne Commercial Center 2,
+                    6th Floor Al-Arz,
+                    Al-Olaya,Riyadh 12611 </p>
             </div>
         </div>
     </div>
@@ -132,8 +366,8 @@
             </div>
             <div>
                 <h3 class="text-2xl mb-1 font-semibold">UAE</h3>
-                <p>The Iridium Building, <br>
-                    Ground Floor, Umm Suqeim <br>
+                <p>The Iridium Building,
+                    Ground Floor, Umm Suqeim
                     Road, Dubai P.O. Box 391186 </p>
             </div>
         </div>
@@ -152,7 +386,7 @@
         </div>
     </div>
     <div class="mt-10">
-        Saïd Business School at the University of Oxford is collaborating with XED to offer a portfolio of high-impact programmes for senior leaders
+        Oxford University's Saïd Business School is collaborating with XED to offer a portfolio of high-impact programmes for senior leaders
     </div>
 </footer>
 

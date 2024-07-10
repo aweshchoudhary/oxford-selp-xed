@@ -43,7 +43,7 @@ $program_details = get_field("program_details");
                         <?php $image = $item["icon"];
                         $image_sizes = $image["sizes"]; ?>
 
-                        <img src="<?php echo $image["url"] ?>" sizes="(min-width: 600px) 50vw, 70vw" alt="<?php echo $image["alt"] ?>" loading="eagerwidth=" 50" height="50" class="w-[50px] h-full object-contain">
+                        <img src="<?php echo $image["url"] ?>" sizes="(min-width: 600px) 50vw, 70vw" alt="<?php echo $image["alt"] ?>" loading="eager" width="50" height="50" class="w-[50px] h-full object-contain">
 
                         <figcaption class="sr-only"><?php echo $image["alt"] ?></figcaption>
                     </figure>
@@ -65,8 +65,12 @@ $program_details = get_field("program_details");
     </section>
     <section class="md:px-44 md:py-10 p-5">
         <div>
-            <p>The programme fee is inclusive of all taxes. It covers teaching fees, all academic materials, programme lunch fees. The fees does not include transport expenses, accommodation expenses and any associated visa fees etc. It also does not cover any other expenses that are not expressly mentioned above.</p>
-            <p>The face to face programme will be run in adherence to university and government guidelines.</p>
+            <p>
+                The programme fee covers teaching fees, academic materials and programme lunch fees. It does not include transport expenses, accommodation expenses, associated visa fees or any other expenses not expressly mentioned.
+                <br><br>
+                The face-to-face programme will adhere to university and government guidelines.
+                <br><br>
+            </p>
             <h3 class="mb-5">
                 Paul Fisher invites you to join the Oxford Senior Executive Leadership Programme
             </h3>
@@ -74,7 +78,7 @@ $program_details = get_field("program_details");
             <div class="w-full">
                 <div class="bg-gray-200 rounded-none">
                     <figure class="cursor-pointer" onclick="lazyLoadVideo('7h9rj5BkzjM', this)">
-                        <img src="http://localhost:8000/wp-content/uploads/2024/07/Prof.-Paul-Fisher.jpg.webp" class="w-full object-contain" alt="" loading="lazy">
+                        <img src="http://localhost:8000/wp-content/uploads/2024/07/Prof.-Paul-Fisher.jpg.webp" class="w-full object-contain" alt="" loading="eager">
                         <figcaption class="sr-only"></figcaption>
                     </figure>
                 </div>
@@ -86,13 +90,13 @@ $program_details = get_field("program_details");
             <h2 class="md:mb-20 mb-5 font-tnr text-4xl">
                 Key highlights
             </h2>
-            <ul class="list-none flex flex-wrap md:gap-20 gap-5">
+            <ul class="list-none flex flex-wrap md:gap-16 gap-5">
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/1.webp" alt="" loading="lazy">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/1.webp" alt="" loading="eager">
                         <figcaption></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold">
+                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Campus immersion
                         <br>
                         at Oxford
@@ -100,49 +104,49 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/4.webp" alt="" loading="lazy">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/4.webp" alt="" loading="eager">
                         <figcaption></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold">
+                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Industry immersion <br>
                         in Dubai
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/7.webp" alt="" loading="lazy">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/7.webp" alt="" loading="eager">
                         <figcaption></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold">
+                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Oxford Business Alumni <br>
                         (OBA) Network
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/5.webp" alt="" loading="lazy">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/5.webp" alt="" loading="eager">
                         <figcaption></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold">
+                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Learn from Oxford faculty <br>
                         and global industry experts
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/6.webp" alt="" loading="lazy">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/6.webp" alt="" loading="eager">
                         <figcaption></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold">
+                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Live online <br>
                         sessions </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/2.webp" alt="" loading="lazy">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/2.webp" alt="" loading="eager">
                         <figcaption></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold">
+                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Certificate from <br>
                         Oxford University’s <br>
                         Saïd Business School
@@ -150,10 +154,10 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/3.webp" alt="" loading="lazy">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/3.webp" alt="" loading="eager">
                         <figcaption></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold">
+                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Highly personalised <br>
                         leadership development <br>
                         journey
@@ -167,7 +171,6 @@ $program_details = get_field("program_details");
             <h2 class="mb-5 font-tnr">
                 9 months immersive learning journey
             </h2>
-            <a href="/download-brochure" class="cbtn-outline">Take a Look</a>
             <hr class="mt-10 border-primary" />
         </div>
         <div>
@@ -182,9 +185,9 @@ $program_details = get_field("program_details");
                 Prior to the programme start, participants will complete a questionnaire about their personal leadership journey, reflecting on past accomplishments, future goals, leadership experiences and challenges faced. Participants will then apply the programme's teachings to their own roles and ambitions. Within the framework of self, organisation and context, we will incorporate each participant's personal leadership journey to develop a tailored leadership narrative. This process serves as a valuable self-awareness tool, helping participants gain deeper insight into their strengths, weaknesses and values. Participants will also engage in peer-to-peer learning by sharing their personal reflections.
             </p>
 
-            <h4 class="mb-3">
+            <h3 class="mb-3">
                 What will you learn?
-            </h4>
+            </h3>
 
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>
@@ -242,12 +245,12 @@ $program_details = get_field("program_details");
             </div>
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>
-                    Industry immersion in Dubai (To be finalized)
+                    Industry immersion in Dubai (06 Jan, 2024 - 10 Jan, 2024)
                 </h3>
                 <ul>
                     <li>Creative thinking</li>
                     <li>Systems thinking and managing complexity</li>
-                    <li>Disruptive innovation</li>
+                    <li>Reimagining the future</li>
                 </ul>
                 <div class="readmore-content mt-5" style="display: none;">
 
@@ -259,7 +262,7 @@ $program_details = get_field("program_details");
                     <p>
                         This immersive module offers insights into brain learning processes, methods for accelerated learning, reasons behind poor judgement, and strategies for learning from successes and failures. Through real-life examples and interactive activities, participants will learn to make more deliberate and informed decisions, potentially doubling their learning capacity. The module also teaches how to systematically reflect on experiences and extract valuable lessons.
                     </p>
-                    <h3><strong>Disruptive innovation</strong></h3>
+                    <h3><strong>Reimagining the future</strong></h3>
                     <p>
                         This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation. </p>
                 </div>
@@ -343,88 +346,14 @@ $program_details = get_field("program_details");
             <hr class="border-primary" />
         </div>
     </section>
-    <section class="md:px-44 md:py-10 p-5">
-        <h2 class="font-tnr text-center md:mb-10 mb-5">Cohorts Statistics</h2>
-        <div class="flex justify-between md:gap-10 gap-5">
-            <figure class="basis-[45%]">
-                <img src="<?php echo get_template_directory_uri() ?>/media/chart.png" class="border border-primary p-5" alt="chart graph">
-                <figcaption></figcaption>
-            </figure>
-            <div>
-                <h3>Designation</h3>
-                <ul>
-                    <li>
-                        Chief Executive Officer
-                    </li>
-                    <li>
-                        President
-                    </li>
-                    <li>
-                        Director
-                    </li>
-                    <li>
-                        Founder
-                    </li>
-                    <li>
-                        Vice President
-                    </li>
-                    <li>
-                        Managing Director
-                    </li>
-                    <li>
-                        Chief Business Officer
-                    </li>
-                    <li>
-                        Chief Marketing Officer
-                    </li>
-                    <li>
-                        General Manager
-                    </li>
-                    <li>
-                        Dean
-                    </li>
-                    <li>
-                        Division Manager
-                    </li>
-                    <li>
-                        Business Head
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Industry</h3>
-                <ul>
-                    <li>Edtech</li>
-                    <li>Banking</li>
-                    <li>Financial Services</li>
-                    <li>Manufacturing</li>
-                    <li>Healthcare</li>
-                    <li>Real Estate</li>
-                    <li>Government</li>
-                    <li>Travel</li>
-                    <li>Consulting</li>
-                    <li>Entertainment</li>
-                    <li>Information Technology</li>
-                    <li>NGO</li>
-                </ul>
-            </div>
-
-        </div>
-        <h3 class="text-center md:my-10 my-5">Companies</h3>
-        <figure class="md:mt-10 mt-5">
-            <img src="<?php echo get_template_directory_uri() ?>/media/companies.webp" class="w-full" loading="lazy" alt="">
-            <figcaption></figcaption>
-        </figure>
-        <hr class="border-primary md:mt-10 mt-5" />
-    </section>
     <section>
         <div class="md:px-44 md:py-10 p-5">
-            <h2 class="font-tnr md:text-4xl">
+            <h2 class="font-tnr">
                 Programme outcome
             </h2>
         </div>
         <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/programme-outcome.jpg" class="md:h-auto h-[250px] object-cover" alt="" loading="lazy">
+            <img src="<?php echo get_template_directory_uri() ?>/media/programme-outcome.jpg" class="md:h-auto h-[250px] object-cover" alt="" loading="eager">
             <figcaption></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
@@ -473,23 +402,24 @@ $program_details = get_field("program_details");
     </section>
     <section class="bg-primary text-white">
         <div class="md:px-44 md:py-10 p-5 space-y-5">
-            <h2 class="font-tnr md:text-4xl">
+            <h2 class="font-tnr">
                 Oxford Business Alumni Network
             </h2>
         </div>
         <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/Oxford-Business-Alumni-Network-2.jpg" alt="" class="md:h-auto h-[250px] object-cover" loading="lazy">
+            <img src="<?php echo get_template_directory_uri() ?>/media/Oxford-Business-Alumni-Network-2.jpg" alt="" class="md:h-auto h-[250px] object-cover" loading="eager">
             <figcaption></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <p class="mb-5">
-                Upon completing the programme, you become eligible for lifelong membership in the Oxford Business Alumni Network, the official global business alumni network of the University of Oxford, Saïd Business School.
+                Upon completing the programme, you become eligible for lifelong membership in the Oxford Business Alumni Network, the official global business alumni network of the Oxford University's Saïd Business School.
                 <br><br>
 
                 With over 24,000 members in more than 150 countries worldwide, this network represents a truly world-class international business community.
             </p>
             <h3>Membership benefits include:</h3>
             <ul>
+                <li>Lifelong Oxford business alumni email address</li>
                 <li>Joining your regional chapter and connecting with the ambassador in your city</li>
                 <li>Access to the LinkedIn group and online community for networking</li>
                 <li>Invitations to academic, networking and social events in Oxford and your home country</li>
@@ -501,73 +431,77 @@ $program_details = get_field("program_details");
     </section>
     <section class="md:py-10 py-5">
         <div class="md:px-44 md:mb-10 mb-5 px-5">
-            <h2 class="font-tnr md:text-4xl">
+            <h2 class="font-tnr">
                 Learn from world-class faculty
             </h2>
         </div>
         <div class="relative">
-            <button class="faculty-slick-prev md:left-28 left-5 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12H4m0 0l6-6m-6 6l6 6" />
+            <button class="faculty-slick-prev md:left-32 left-2 slick-btn"><svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+                    <g transform="translate(608 0) scale(-1 1)">
+                        <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
+                    </g>
                 </svg></button>
-            <button class="faculty-slick-next md:right-28 right-5 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" fill-rule="evenodd" d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
+            <button class="faculty-slick-next md:right-32 right-2 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+                    <g transform="translate(608 0) scale(-1 1)">
+                        <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
+                    </g>
                 </svg></button>
 
 
             <div class="slick-slider-faculty h-full md:px-44 px-5 relative z-0">
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Phyllida-Hancock.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Phyllida-Hancock.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Phyllida Hancock</h3>
-                        <p class="mb-2">Teaches Inspirational leadership</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Phyllida Hancock</h4>
+                        <p class="mb-2 text-center">Teaches Inspirational leadership</p>
+                        <button class="hover:underline" onclick="Phyllida_Hancock.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/David-Trevaskis.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/David-Trevaskis.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">David Trevaskis</h3>
-                        <p class="mb-2">Teaches Persuasion and influence</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">David Trevaskis</h4>
+                        <p class="mb-2 text-center">Teaches Persuasion and influence</p>
+                        <button class="hover:underline" onclick="David_Trevaskis.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Sue-Dopson.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Sue-Dopson.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Sue Dopson</h3>
-                        <p class="mb-2">Professor of Organisational Behaviour</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Sue Dopson</h4>
+                        <p class="mb-2 text-center">Professor of Organisational Behaviour</p>
+                        <button class="hover:underline" onclick="Sue_Dopson.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Rachel-Botsman.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Rachel-Botsman.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Rachel Botsman</h3>
-                        <p class="mb-2">Associate Fellow</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Rachel Botsman</h4>
+                        <p class="mb-2 text-center">Associate Fellow</p>
+                        <button class="hover:underline" onclick="Rachel_Botsman.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Peter-Hanke.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Peter-Hanke.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Peter Hanke</h3>
-                        <p class="mb-2">Associate Fellow</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Peter Hanke</h4>
+                        <p class="mb-2 text-center">Associate Fellow</p>
+                        <button class="hover:underline" onclick="Peter_Hanke.showModal()">Read More</button>
                     </div>
                 </div>
             </div>
@@ -575,85 +509,165 @@ $program_details = get_field("program_details");
     </section>
     <section class="md:py-10 py-5">
         <div class="md:px-44 md:mb-10 mb-5 px-5">
-            <h2 class="font-tnr md:text-4xl">
+            <h2 class="font-tnr">
                 Global industry experts
             </h2>
         </div>
         <div class="relative">
 
-            <button class="global-experts-slick-prev md:left-28 left-5 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12H4m0 0l6-6m-6 6l6 6" />
+            <button class="global-experts-slick-prev md:left-32 left-2 slick-btn"><svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+                    <g transform="translate(608 0) scale(-1 1)">
+                        <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
+                    </g>
                 </svg></button>
 
-            <button class="global-experts-slick-next md:right-28 right-5 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path fill="currentColor" fill-rule="evenodd" d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
+            <button class="global-experts-slick-next md:right-32 right-2 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+                    <g transform="translate(608 0) scale(-1 1)">
+                        <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
+                    </g>
                 </svg></button>
 
             <div class="slick-slider-global-experts h-full md:px-44 px-5 relative z-0">
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Edward-Rogers.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Edward-Rogers.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Edward Rogers</h3>
-                        <p class="mb-2">Ex Chief Knowledge Officer at Nasa</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Edward Rogers</h4>
+                        <p class="mb-2 text-center">Ex Chief Knowledge Officer at Nasa</p>
+                        <button class="hover:underline" onclick="Edward_Rogers.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Jamie-Anderson.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Jamie-Anderson.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Jamie Anderson</h3>
-                        <p class="mb-2">Professor of Creative Thinking</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Jamie Anderson</h4>
+                        <p class="mb-2 text-center">Professor of Creative Thinking and Fine Art of Success</p>
+                        <button class="hover:underline" onclick="Jamie_Anderson.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Anton-Musgrave.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Anton-Musgrave.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Anton Musgrave</h3>
-                        <p class="mb-2">Futurist and Business Strategist</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Anton Musgrave</h4>
+                        <p class="mb-2 text-center">Strategy, Innovation and Digital Transformation</p>
+                        <button class="hover:underline" onclick="Anton_Musgrave.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Olivier-Tabatoni.webp" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Olivier-Tabatoni.webp" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Olivier Tabatoni</h3>
-                        <p class="mb-2">Professor of Finance and Strategy</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Olivier Tabatoni</h4>
+                        <p class="mb-2 text-center">Professor of Finance and Strategy</p>
+                        <button class="hover:underline" onclick="Olivier_Tabatoni.showModal()">Read More</button>
                     </div>
                 </div>
-                <div class="p-2.5">
+                <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Mike-Grandinetti.jpg" alt="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Mike-Grandinetti.jpg" alt="" loading="eager">
                             <figcaption></figcaption>
                         </figure>
-                        <h3 class="mt-3">Mike Grandinetti</h3>
-                        <p class="mb-2">Professor of Innovation</p>
-                        <button class="hover:underline">Read More</button>
+                        <h4 class="md:text-2xl font-semibold mt-3">Mike Grandinetti</h4>
+                        <p class="mb-2 text-center">Professor of Innovation</p>
+                        <button class="hover:underline" onclick="Mike_Grandinetti.showModal()">Read More</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="md:px-44 md:py-10 p-5">
+        <h2 class="font-tnr text-center md:mb-10 mb-5">Cohorts statistics</h2>
+        <div class="flex md:flex-row flex-col justify-between md:gap-10 gap-5">
+            <div class="basis-[40%]">
+                <h3 class="mb-3 text-center">Work Experience</h3>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri() ?>/media/chart.jpg" class="p-5" alt="chart graph">
+                    <figcaption></figcaption>
+                </figure>
+                <h4 class="my-3 text-center">Average Work Experience: 22 years</h4>
+            </div>
+            <div>
+                <h3 class="mb-3">Designation</h3>
+                <ul>
+                    <li>
+                        Chief Executive Officer
+                    </li>
+                    <li>
+                        Managing Director
+                    </li>
+                    <li>
+                        President
+                    </li>
+                    <li>
+                        Director
+                    </li>
+                    <li>
+                        Founder
+                    </li>
+                    <li>
+                        Vice President
+                    </li>
+                    <li>
+                        Chief Business Officer
+                    </li>
+                    <li>
+                        Chief Marketing Officer
+                    </li>
+                    <li>
+                        General Manager
+                    </li>
+                    <li>
+                        Dean
+                    </li>
+                    <li>
+                        Division Manager
+                    </li>
+                    <li>
+                        Business Head
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-3">Industry</h3>
+                <ul class="list-disc">
+                    <li>Banking</li>
+                    <li>Consulting</li>
+                    <li>Edtech</li>
+                    <li>Entertainment</li>
+                    <li>Financial Services</li>
+                    <li>Government</li>
+                    <li>Healthcare</li>
+                    <li>Information Technology</li>
+                    <li>Manufacturing</li>
+                    <li>NGO</li>
+                    <li>Real Estate</li>
+                    <li>Travel</li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="text-center md:my-10 my-5">Companies</h3>
+        <figure class="md:mt-10 mt-5">
+            <img src="<?php echo get_template_directory_uri() ?>/media/companies.webp" class="w-full" loading="eager" alt="">
+            <figcaption></figcaption>
+        </figure>
+        <hr class="border-primary md:mt-10 mt-5" />
+    </section>
     <section class="md:py-10 py-5">
         <div class="md:px-44 px-5">
-            <h2 class="font-tnr md:text-4xl md:mb-10 mb-5">
+            <h2 class="font-tnr md:mb-10 mb-5">
                 The Oxford experience
             </h2>
-
             <p>
                 Oxford stands among the world's leading research universities. For over eight centuries, the University of Oxford has nurtured some of the most influential and respected leaders globally. Throughout its history, gifted leaders have both studied and taught at the university. These include 28 British prime ministers, at least 30 international leaders, 55 Nobel prize winners and 120 Olympic medal winners. <br><br>
                 Our faculty deliver programmes that blend inspirational teaching with innovative and experiential learning methods. They bring diverse backgrounds, combining academic research with practical experience. <br><br>
@@ -661,21 +675,21 @@ $program_details = get_field("program_details");
 
             </p>
             <br>
-            <h2 class="md:mb-10 mb-5">
+            <h3 class="md:mb-10 mb-5">
                 Explore the Oxford campus
-            </h2>
+            </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('qYrS3ORfPr4', this)">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/Explore-the-Oxford-Campus.webp" class="w-full object-contain" alt="" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri() ?>/media/Explore-the-Oxford-Campus.webp" class="w-full object-contain" alt="" loading="eager">
                     <figcaption class="sr-only"></figcaption>
                 </figure>
             </div>
-            <h2 class="my-10">
-                Hear from Prof. Paul Fisher, Programme Director, Oxford SELP
-            </h2>
+            <h3 class="my-10">
+                Hear from Professor Paul Fisher, Programme director
+            </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/Webinar-on-leveraging.webp" class="w-full object-contain" alt="" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri() ?>/media/watch-webinar.png" class="w-full object-contain" alt="" loading="eager">
                     <figcaption class="sr-only"></figcaption>
                 </figure>
             </div>
@@ -683,14 +697,14 @@ $program_details = get_field("program_details");
     </section>
     <section class="bg-primary text-white">
         <div class="md:px-44 px-5 md:py-10 py-5">
-            <h2 class="font-tnr md:text-4xl md:mb-10 mb-5">
+            <h2 class="font-tnr md:mb-10 mb-5">
                 Is the programme right for me?
             </h2>
             <ul>
-                <li>10+ years of relevant work experience with demonstrated success in leading high-performance teams/impactful projects</li>
-                <li>Rich domain expertise with significant responsibilities and proven career advancement in corporate, entrepreneurial, business, or public sector domains</li>
-                <li>At least a graduate degree with a strong academic record</li>
-                <li>Curious and motivated leader seeking solutions to challenges faced by yourself, your organisation, and society at large</li>
+                <li class="-indent-[1em] pl-[1em]">10+ years of relevant work experience with demonstrated success in leading high-performance teams/impactful projects</li>
+                <li class="-indent-[1em] pl-[1em]">Rich domain expertise with significant responsibilities and proven career advancement in corporate, entrepreneurial, business, <br> or public sector domains</li>
+                <li class="-indent-[1em] pl-[1em]">At least a graduate degree with a strong academic record</li>
+                <li class="-indent-[1em] pl-[1em]">Curious and motivated leader seeking solutions to challenges faced by yourself, your organisation, and society at large</li>
             </ul>
 
         </div>
@@ -701,7 +715,7 @@ $program_details = get_field("program_details");
     </section>
     <section>
         <div class="md:px-44 md:py-10 p-5">
-            <h2 class="font-tnr md:text-4xl md:mb-10 mb-5">
+            <h2 class="font-tnr md:mb-10 mb-5">
                 Application process
             </h2>
             <p>
@@ -711,34 +725,65 @@ $program_details = get_field("program_details");
             <h3>
                 The admissions committee evaluates:
             </h3>
-            <ul>
-                <li>
-                    Application responses
+            <ul class="mb-3">
+                <li>Application responses
                 </li>
-                <li>
-                    Curriculum vitae or LinkedIn profile
-                </li>
+                <li>Curriculum vitae or LinkedIn profile</li>
             </ul>
-            <p>
+            <p class="block">
                 We may conduct one-on-one discussions with candidates to assess interpersonal and communication skills, work experience, career focus and motivations for pursuing this programme.
             </p>
-            <figure>
-                <img src="<?php echo get_template_directory_uri() ?>/media/application-process.png" class="md:h-auto h-[250px] object-cover" alt="" loading="lazy">
-                <figcaption></figcaption>
-            </figure>
+            <div class="flex flex-wrap md:gap-8 gap-5 md:my-10 my-5">
+                <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
+                    <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
+                        1
+                    </div>
+                    <h4>Application submission</h4>
+                    <p class="text-left mb-0">
+                        Answer the questions and submit your CV/upload or LinkedIn Profile
+                    </p>
+                </div>
+                <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
+                    <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
+                        2
+                    </div>
+                    <h4>Application review</h4>
+                    <p class="text-left mb-0">
+                        Admission committee will verify your application and evaluate it for eligibility and fit to programme
+                    </p>
+                </div>
+                <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
+                    <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
+                        3
+                    </div>
+                    <h4>Interaction</h4>
+                    <p class="text-left mb-0">
+                        Select candidates to interact with the Admissions Director
+                    </p>
+                </div>
+                <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
+                    <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
+                        4
+                    </div>
+                    <h4>Result</h4>
+                    <p class="text-left mb-0">
+                        Receive a decision on your programme application via an email from the Admissions Committee.
+                    </p>
+                </div>
+            </div>
             <p>
                 We do not discriminate against any person based on race, colour, sex or sexual orientation, gender identity, religion, age, national or ethnic origin, political beliefs, veteran status, or disability in admission to, access to, treatment in, or employment in this programme.
             </p>
             <a href="/apply-now" class="cbtn-outline">Apply Now</a>
         </div>
         <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/inquiry.jpg" class="w-full md:object-contain md:h-auto h-[250px] object-cover" alt="" loading="lazy">
+            <img src="<?php echo get_template_directory_uri() ?>/media/inquiry.jpg" class="w-full md:h-[400px] h-[250px] object-cover" alt="" loading="eager">
             <figcaption></figcaption>
         </figure>
     </section>
     <section class="md:px-44 md:py-10 p-5">
         <div class="md:mb-10 mb-5">
-            <h2 class="md:text-4xl font-tnr md:mb-8 mb-5">
+            <h2 class="font-tnr md:mb-8 mb-5">
                 Inquire for your organisation
             </h2>
             <p>
@@ -747,7 +792,7 @@ $program_details = get_field("program_details");
             <a href="/get-in-touch" class="cbtn-outline">Get In Touch</a>
         </div>
         <div>
-            <h2 class="md:text-4xl font-tnr md:mb-8 mb-5">
+            <h2 class="font-tnr md:mb-8 mb-5">
                 Refer a colleague
             </h2>
             <p>
