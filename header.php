@@ -16,18 +16,18 @@
 
     <header>
         <div class="flex items-center justify-between md:px-28 px-5 py-4 md:gap-0 gap-20">
-            <figure>
-                <a href="/">
-                    <img width="180" class="md:w-[180px] w-[100px]" src="<?php echo get_template_directory_uri() ?>/media/oxford-logo.png" alt="">
-                </a>
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <a href="/">
-                    <img class="md:w-[120px] w-[80px]" src="<?php echo get_template_directory_uri() ?>/media/logo.jpg" alt="">
-                </a>
-                <figcaption></figcaption>
-            </figure>
+            <a href="/">
+                <figure class="md:w-[180px] w-[100px]">
+                    <?php echo wp_get_attachment_image(467, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                    <figcaption><?php echo wp_get_attachment_caption(467) ?></figcaption>
+                </figure>
+            </a>
+            <a href="/">
+                <figure class="md:w-[120px] w-[80px]">
+                    <?php echo wp_get_attachment_image(469, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                    <figcaption><?php echo wp_get_attachment_caption(469) ?></figcaption>
+                </figure>
+            </a>
         </div>
     </header>
 

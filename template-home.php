@@ -11,7 +11,7 @@ $program_details = get_field("program_details");
         <figure class="w-full md:h-full h-[400px] md:p-0 p-5">
             <?php $image = $hero_sec["hero_image"];
             $image_sizes = $image["sizes"]; ?>
-            <img src="<?php echo $image["sizes"]["large"] ?>" sizes="(min-width: 600px) 50vw, 70vw" alt="<?php echo $image["alt"] ?>" loading="eager" width="500" height="500" class="w-full h-full object-cover">
+            <?php echo wp_get_attachment_image($image["id"], "large", false, array("loading" => "eager", "class" => "image-cover")) ?>
             <figcaption class="sr-only"><?php echo $image["alt"] ?></figcaption>
         </figure>
 
@@ -20,8 +20,8 @@ $program_details = get_field("program_details");
                 <?php echo $hero_sec["program_heading"]; ?>
             </h1>
             <div class="md:flex-row flex-col flex items-center gap-3 justify-center md:mb-10 mb-5">
-                <a href="<?php echo $hero_sec["apply_now"]["url"] ?>" class="cbtn-primary"><?php echo  $hero_sec["apply_now"]["title"] ?></a>
-                <a href="<?php echo $hero_sec["review_my_application"]["url"] ?>" class="cbtn-outline"><?php echo  $hero_sec["review_my_application"]["title"] ?></a>
+                <a aria-label="goto apply now page" href="<?php echo $hero_sec["apply_now"]["url"] ?>" class="cbtn-primary"><?php echo  $hero_sec["apply_now"]["title"] ?></a>
+                <a aria-label="goto eligibility page" href="<?php echo $hero_sec["review_my_application"]["url"] ?>" class="cbtn-outline"><?php echo  $hero_sec["review_my_application"]["title"] ?></a>
             </div>
             <hr class="border-primary border" />
             <div>
@@ -39,12 +39,9 @@ $program_details = get_field("program_details");
             <?php foreach ($program_details["list"] as $item) { ?>
                 <li class="flex items-center md:basis-1/4 flex-1 basis-full gap-5">
                     <figure class="w-[60px] h-full">
-
                         <?php $image = $item["icon"];
                         $image_sizes = $image["sizes"]; ?>
-
-                        <img src="<?php echo $image["url"] ?>" sizes="(min-width: 600px) 50vw, 70vw" alt="<?php echo $image["alt"] ?>" loading="lazy" width="50" height="50" class="w-[50px] h-full object-contain">
-
+                        <?php echo wp_get_attachment_image($image["id"], "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
                         <figcaption class="sr-only"><?php echo $image["alt"] ?></figcaption>
                     </figure>
 
@@ -54,8 +51,7 @@ $program_details = get_field("program_details");
                         <p class="mb-0 md:text-2xl text-lg font-bold"><?php echo $item["title"] ?></p>
 
                         <?php if (!empty($item["modal"]["modal_name"])) { ?>
-
-                            <button class="mt-1 block underline" onclick="<?php echo $item["modal"]["modal_name"] ?>.showModal()"><?php echo $item["modal"]["title"] ?></button>
+                            <button name="show more details" aria-label="show more details" class="mt-1 block underline" onclick="<?php echo $item["modal"]["modal_name"] ?>.showModal()"><?php echo $item["modal"]["title"] ?></button>
 
                         <?php } ?>
                     </div>
@@ -78,7 +74,7 @@ $program_details = get_field("program_details");
             <div class="w-full">
                 <div class="bg-gray-200 rounded-none">
                     <figure class="cursor-pointer" onclick="lazyLoadVideo('7h9rj5BkzjM', this)">
-                        <?php echo wp_get_attachment_image("424", "full", false, array('loading' => 'lazy', "class" => "image-video")) ?>
+                        <?php echo wp_get_attachment_image("424", "large", false, array('loading' => 'lazy', "class" => "image-video")) ?>
                         <figcaption class="sr-only"></figcaption>
 
                     </figure>
@@ -86,16 +82,16 @@ $program_details = get_field("program_details");
             </div>
         </div>
     </section>
-    <section style="background: url(<?php echo get_template_directory_uri() ?>/media/key-highlights-bg.webp);background-position:center;" class="md:px-44 bg-center bg-no-repeat md:py-10 p-5 relative bg-primary text-white">
+    <section style="background: url(<?php echo wp_get_attachment_image_url(459, "large") ?>);background-position:center;background-repeat: no-repeat;background-size: cover;" class="md:px-44 bg-center bg-no-repeat md:py-10 p-5 relative bg-primary text-white">
         <div>
             <h2 class="md:mb-20 mb-5 font-tnr text-4xl">
                 Key highlights
             </h2>
             <ul class="list-none flex flex-wrap md:gap-16 gap-5">
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/1.webp" alt="" loading="lazy">
-                        <figcaption></figcaption>
+                    <figure class="shrink-0 w-[80px]">
+                        <?php echo wp_get_attachment_image(470, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                        <figcaption><?php echo wp_get_attachment_caption(470) ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Campus immersion
@@ -104,9 +100,9 @@ $program_details = get_field("program_details");
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/4.webp" alt="" loading="lazy">
-                        <figcaption></figcaption>
+                    <figure class="shrink-0 w-[80px]">
+                        <?php echo wp_get_attachment_image(471, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                        <figcaption><?php echo wp_get_attachment_caption(471) ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Industry immersion <br>
@@ -114,9 +110,9 @@ $program_details = get_field("program_details");
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/7.webp" alt="" loading="lazy">
-                        <figcaption></figcaption>
+                    <figure class="shrink-0 w-[80px]">
+                        <?php echo wp_get_attachment_image(472, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                        <figcaption><?php echo wp_get_attachment_caption(472) ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Oxford Business Alumni <br>
@@ -124,9 +120,9 @@ $program_details = get_field("program_details");
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/5.webp" alt="" loading="lazy">
-                        <figcaption></figcaption>
+                    <figure class="shrink-0 w-[80px]">
+                        <?php echo wp_get_attachment_image(473, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                        <figcaption><?php echo wp_get_attachment_caption(473) ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Learn from Oxford faculty <br>
@@ -134,18 +130,20 @@ $program_details = get_field("program_details");
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/6.webp" alt="" loading="lazy">
-                        <figcaption></figcaption>
+                    <figure class="shrink-0 w-[80px]">
+                        <?php echo wp_get_attachment_image(474, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                        <figcaption><?php echo wp_get_attachment_caption(474) ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Live online <br>
                         sessions </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/2.webp" alt="" loading="lazy">
-                        <figcaption></figcaption>
+                    <figure class="shrink-0 w-[80px]">
+                        <figure class="shrink-0 w-[80px]">
+                            <?php echo wp_get_attachment_image(475, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(475) ?></figcaption>
+                        </figure>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Certificate from <br>
@@ -154,9 +152,11 @@ $program_details = get_field("program_details");
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/3.webp" alt="" loading="lazy">
-                        <figcaption></figcaption>
+                    <figure class="shrink-0 w-[80px]">
+                        <figure class="shrink-0 w-[80px]">
+                            <?php echo wp_get_attachment_image(476, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(476) ?></figcaption>
+                        </figure>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
                         Highly personalised <br>
@@ -242,7 +242,7 @@ $program_details = get_field("program_details");
                     </p>
                 </div>
 
-                <button class="cbtn-outline mt-5" data-target="0" onclick="toggleReadMore(this)">Read More</button>
+                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="0" onclick="toggleReadMore(this)">Read More</button>
             </div>
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>
@@ -268,7 +268,7 @@ $program_details = get_field("program_details");
                         This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation. </p>
                 </div>
 
-                <button class="cbtn-outline mt-5" data-target="1" onclick="toggleReadMore(this)">Read More</button>
+                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="1" onclick="toggleReadMore(this)">Read More</button>
             </div>
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>
@@ -342,7 +342,7 @@ $program_details = get_field("program_details");
                     </p>
                 </div>
 
-                <button class="cbtn-outline mt-5" data-target="2" onclick="toggleReadMore(this)">Read More</button>
+                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="2" onclick="toggleReadMore(this)">Read More</button>
             </div>
             <hr class="border-primary" />
         </div>
@@ -353,9 +353,9 @@ $program_details = get_field("program_details");
                 Programme outcome
             </h2>
         </div>
-        <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/programme-outcome.jpg" class="md:h-auto h-[250px] object-cover" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="md:h-auto h-[250px] object-cover">
+            <?php echo wp_get_attachment_image(466, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(466) ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <div>
@@ -407,9 +407,9 @@ $program_details = get_field("program_details");
                 Oxford Business Alumni Network
             </h2>
         </div>
-        <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/Oxford-Business-Alumni-Network-2.jpg" alt="" class="md:h-auto h-[250px] object-cover" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="md:h-auto h-[250px]">
+            <?php echo wp_get_attachment_image(465, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(465) ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <p class="mb-5">
@@ -437,12 +437,12 @@ $program_details = get_field("program_details");
             </h2>
         </div>
         <div class="relative">
-            <button class="faculty-slick-prev md:left-32 left-2 slick-btn"><svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+            <button name="slide previous" aria-label="slide previous" class="faculty-slick-prev md:left-32 left-2 slick-btn"><svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
                     <g transform="translate(608 0) scale(-1 1)">
                         <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
                     </g>
                 </svg></button>
-            <button class="faculty-slick-next md:right-32 right-2 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+            <button name="slide next" aria-label="slide next" class="faculty-slick-next md:right-32 right-2 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
                     <g transform="translate(608 0) scale(-1 1)">
                         <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
                     </g>
@@ -451,58 +451,58 @@ $program_details = get_field("program_details");
 
             <div class="slick-slider-faculty h-full md:px-44 px-5 relative z-0">
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Phyllida-Hancock.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(477, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(477) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Phyllida Hancock</h4>
                         <p class="mb-2 text-center">Teaches Inspirational leadership</p>
-                        <button class="hover:underline" onclick="Phyllida_Hancock.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Phyllida_Hancock.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/David-Trevaskis.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(478, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(478) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">David Trevaskis</h4>
                         <p class="mb-2 text-center">Teaches Persuasion and influence</p>
-                        <button class="hover:underline" onclick="David_Trevaskis.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="David_Trevaskis.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Sue-Dopson.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(479, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(479) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Sue Dopson</h4>
                         <p class="mb-2 text-center">Professor of Organisational Behaviour</p>
-                        <button class="hover:underline" onclick="Sue_Dopson.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Sue_Dopson.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Rachel-Botsman.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(480, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(480) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Rachel Botsman</h4>
                         <p class="mb-2 text-center">Associate Fellow</p>
-                        <button class="hover:underline" onclick="Rachel_Botsman.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Rachel_Botsman.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Peter-Hanke.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(481, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(481) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Peter Hanke</h4>
                         <p class="mb-2 text-center">Associate Fellow</p>
-                        <button class="hover:underline" onclick="Peter_Hanke.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Peter_Hanke.showModal()">Read More</button>
                     </div>
                 </div>
             </div>
@@ -516,13 +516,13 @@ $program_details = get_field("program_details");
         </div>
         <div class="relative">
 
-            <button class="global-experts-slick-prev md:left-32 left-2 slick-btn"><svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+            <button name="slide previous" aria-label="slide previous" class="global-experts-slick-prev md:left-32 left-2 slick-btn"><svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
                     <g transform="translate(608 0) scale(-1 1)">
                         <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
                     </g>
                 </svg></button>
 
-            <button class="global-experts-slick-next md:right-32 right-2 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
+            <button name="slide next" aria-label="slide next" class="global-experts-slick-next md:right-32 right-2 slick-btn"><svg xmlns="http://www.w3.org/2000/svg" width="0.48em" height="1em" viewBox="0 0 608 1280">
                     <g transform="translate(608 0) scale(-1 1)">
                         <path fill="currentColor" d="M595 288q0 13-10 23L192 704l393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10L23 727q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23" />
                     </g>
@@ -530,58 +530,58 @@ $program_details = get_field("program_details");
 
             <div class="slick-slider-global-experts h-full md:px-44 px-5 relative z-0">
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Edward-Rogers.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(495, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(495) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Edward Rogers</h4>
                         <p class="mb-2 text-center">Ex Chief Knowledge Officer at Nasa</p>
-                        <button class="hover:underline" onclick="Edward_Rogers.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Edward_Rogers.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Jamie-Anderson.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(491, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(491) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Jamie Anderson</h4>
                         <p class="mb-2 text-center">Professor of Creative Thinking and Fine Art of Success</p>
-                        <button class="hover:underline" onclick="Jamie_Anderson.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Jamie_Anderson.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Anton-Musgrave.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(492, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(492) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Anton Musgrave</h4>
                         <p class="mb-2 text-center">Strategy, Innovation and Digital Transformation</p>
-                        <button class="hover:underline" onclick="Anton_Musgrave.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Anton_Musgrave.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Olivier-Tabatoni.webp" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(493, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(493) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Olivier Tabatoni</h4>
                         <p class="mb-2 text-center">Professor of Finance and Strategy</p>
-                        <button class="hover:underline" onclick="Olivier_Tabatoni.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Olivier_Tabatoni.showModal()">Read More</button>
                     </div>
                 </div>
                 <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Mike-Grandinetti.jpg" alt="" loading="lazy">
-                            <figcaption></figcaption>
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(494, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+                            <figcaption><?php echo wp_get_attachment_caption(494) ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Mike Grandinetti</h4>
                         <p class="mb-2 text-center">Professor of Innovation</p>
-                        <button class="hover:underline" onclick="Mike_Grandinetti.showModal()">Read More</button>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Mike_Grandinetti.showModal()">Read More</button>
                     </div>
                 </div>
             </div>
@@ -593,8 +593,8 @@ $program_details = get_field("program_details");
             <div class="basis-[40%]">
                 <h3 class="mb-3 text-center">Work Experience</h3>
                 <figure>
-                    <img src="<?php echo get_template_directory_uri() ?>/media/chart.jpg" class="p-5" alt="chart graph">
-                    <figcaption></figcaption>
+                    <?php echo wp_get_attachment_image(456, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+                    <figcaption><?php echo wp_get_attachment_caption(456) ?></figcaption>
                 </figure>
                 <h4 class="my-3 text-center">Average Work Experience: 22 years</h4>
             </div>
@@ -659,8 +659,8 @@ $program_details = get_field("program_details");
         </div>
         <h3 class="text-center md:my-10 my-5">Companies</h3>
         <figure class="md:mt-10 mt-5">
-            <img src="<?php echo get_template_directory_uri() ?>/media/companies.webp" class="w-full" loading="lazy" alt="">
-            <figcaption></figcaption>
+            <?php echo wp_get_attachment_image(458, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(458) ?></figcaption>
         </figure>
         <hr class="border-primary md:mt-10 mt-5" />
     </section>
@@ -681,8 +681,8 @@ $program_details = get_field("program_details");
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('qYrS3ORfPr4', this)">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/Explore-the-Oxford-Campus.webp" class="w-full object-contain" alt="" loading="lazy">
-                    <figcaption class="sr-only"></figcaption>
+                    <?php echo wp_get_attachment_image(464, "large", false, array("loading" => "lazy", "class" => "image-video")) ?>
+                    <figcaption><?php echo wp_get_attachment_caption(464) ?></figcaption>
                 </figure>
             </div>
             <h3 class="my-10">
@@ -690,8 +690,8 @@ $program_details = get_field("program_details");
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/watch-webinar.png" class="w-full object-contain" alt="" loading="lazy">
-                    <figcaption class="sr-only"></figcaption>
+                    <?php echo wp_get_attachment_image(457, "large", false, array("loading" => "lazy", "class" => "image-video")) ?>
+                    <figcaption><?php echo wp_get_attachment_caption(457) ?></figcaption>
                 </figure>
             </div>
         </div>
@@ -709,9 +709,9 @@ $program_details = get_field("program_details");
             </ul>
 
         </div>
-        <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/oxford-team-2-1.jpg" alt="" loading="eagerclass=" md:h-auto h-[250px] object-cover w-full md:object-contain">
-            <figcaption></figcaption>
+        <figure class="class=" md:h-auto h-[250px] object-cover w-full md:object-contain"">
+            <?php echo wp_get_attachment_image(462, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(462) ?></figcaption>
         </figure>
     </section>
     <section>
@@ -775,11 +775,11 @@ $program_details = get_field("program_details");
             <p>
                 We do not discriminate against any person based on race, colour, sex or sexual orientation, gender identity, religion, age, national or ethnic origin, political beliefs, veteran status, or disability in admission to, access to, treatment in, or employment in this programme.
             </p>
-            <a href="/apply-now" class="cbtn-outline">Apply Now</a>
+            <a aria-label="goto apply now page" href="/apply-now" class="cbtn-outline">Apply Now</a>
         </div>
-        <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/inquiry.jpg" class="w-full md:h-[400px] h-[250px] object-cover" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="w-full md:h-[400px] h-[250px] object-cover">
+            <?php echo wp_get_attachment_image(460, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(460) ?></figcaption>
         </figure>
     </section>
     <section class="md:px-44 md:py-10 p-5">
@@ -790,7 +790,7 @@ $program_details = get_field("program_details");
             <p>
                 Taking this programme with colleagues can enhance communication and accelerate impact within your organisation. It also fosters meaningful discussions among participants.
             </p>
-            <a href="/get-in-touch" class="cbtn-outline">Get In Touch</a>
+            <a aria-label="goto get in touch" href="/get-in-touch" class="cbtn-outline">Get In Touch</a>
         </div>
         <div>
             <h2 class="font-tnr md:mb-8 mb-5">
@@ -799,7 +799,7 @@ $program_details = get_field("program_details");
             <p>
                 Recommend suitable candidates who you believe will benefit from Oxford's Senior Executive Leadership Programme. You will earn USD 750 if they enrol. Additionally, they will receive a USD 750 waiver on the programme fee.
             </p>
-            <a href="https://referrals.xedinstitute.org/hgKaSP/join" class="cbtn-outline">Refer and Earn</a>
+            <a aria-label="goto refer and earn page" href="https://referrals.xedinstitute.org/hgKaSP/join" class="cbtn-outline">Refer and Earn</a>
         </div>
     </section>
 </article>

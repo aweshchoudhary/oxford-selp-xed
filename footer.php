@@ -12,9 +12,9 @@
 
 <dialog id="David_Trevaskis" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/David-Trevaskis.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(478, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(478) ?></figcaption>
         </figure>
 
         <div>
@@ -35,9 +35,9 @@
 </dialog>
 <dialog id="Phyllida_Hancock" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Phyllida-Hancock.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(477, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(477) ?></figcaption>
         </figure>
 
         <div>
@@ -58,9 +58,9 @@
 </dialog>
 <dialog id="Sue_Dopson" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Sue-Dopson.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(479, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(479) ?></figcaption>
         </figure>
 
         <div>
@@ -81,9 +81,9 @@
 </dialog>
 <dialog id="Rachel_Botsman" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Rachel-Botsman.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(480, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(480) ?></figcaption>
         </figure>
 
         <div>
@@ -104,9 +104,9 @@
 </dialog>
 <dialog id="Peter_Hanke" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Peter-Hanke.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(481, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(481) ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -129,9 +129,9 @@
 
 <dialog id="Jamie_Anderson" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Jamie-Anderson.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(491, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(491) ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -153,9 +153,9 @@
 </dialog>
 <dialog id="Anton_Musgrave" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Anton-Musgrave.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(492, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(492) ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -175,9 +175,9 @@
 </dialog>
 <dialog id="Olivier_Tabatoni" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Olivier-Tabatoni.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(493, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(493) ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -197,9 +197,9 @@
 </dialog>
 <dialog id="Mike_Grandinetti" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Mike-Grandinetti.jpg" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(494, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(494) ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -219,9 +219,9 @@
 </dialog>
 <dialog id="Edward_Rogers" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-        <figure class="shrink-0 basis-1/3">
-            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Edward-Rogers.webp" alt="" loading="lazy">
-            <figcaption></figcaption>
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(495, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(495) ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -242,8 +242,9 @@
 
 <footer class="md:p-20 px-5 md:py-20 py-10 bg-primary text-white flex flex-wrap gap-5">
     <div class="md:basis-1/4 basis-full flex-1 gap-5">
-        <figure>
-            <img sizes="(min-width: 768px) 40vw, 70vw" loading="lazy" class="md:w-auto w-20" src="<?php echo get_template_directory_uri() ?>/media/footer-logo.png" alt="xed footer logo white">
+        <figure class="md:w-1/2 w-20">
+            <?php echo wp_get_attachment_image(468, "medium", false, array("loading" => "lazy", "class" => "image-contain")) ?>
+            <figcaption><?php echo wp_get_attachment_caption(468) ?></figcaption>
             <figcaption class="sr-only">xed footer logo white</figcaption>
         </figure>
 
@@ -371,10 +372,8 @@
                 </svg>
             </div>
             <div>
-                <h3 class="text-2xl mb-1 font-semibold">UAE</h3>
-                <p>The Iridium Building,
-                    Ground Floor, Umm Suqeim
-                    Road, Dubai P.O. Box 391186 </p>
+                <h3 class="text-2xl mb-1 font-semibold">Abu Dhabi</h3>
+                <p>Al Sawari Tower - B, National Theatre Airport Road, Al Khalidiya, Abu Dhabi City, Abu Dhabi</p>
             </div>
         </div>
         <div class="flex items-start gap-5 mt-10">
