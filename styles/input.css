@@ -218,6 +218,15 @@
     @apply align-baseline text-sm;
   }
 }
+.image-video {
+  @apply w-full h-full object-cover aspect-video;
+}
+.image-cover {
+  @apply w-full h-full object-cover;
+}
+.image-contain {
+  @apply w-full h-full object-contain;
+}
 
 /* Button Sytles */
 .cbtn-primary {

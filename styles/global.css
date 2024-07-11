@@ -1796,14 +1796,6 @@ sup {
   position: relative;
 }
 
-.left-5 {
-  left: 1.25rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
 .left-2 {
   left: 0.5rem;
 }
@@ -2086,20 +2078,17 @@ sup {
      object-fit: cover;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-2\.5 {
-  padding: 0.625rem;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5 {
@@ -2125,11 +2114,6 @@ sup {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pl-\[1em\] {
@@ -2192,6 +2176,28 @@ sup {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.image-video {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-cover {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-contain {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* Button Sytles */
@@ -2657,10 +2663,6 @@ sup {
     gap: 2.5rem;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
-  }
-
   .md\:gap-16 {
     gap: 4rem;
   }
@@ -2682,16 +2684,16 @@ sup {
     padding: 2.5rem;
   }
 
-  .md\:p-20 {
-    padding: 5rem;
-  }
-
   .md\:p-2 {
     padding: 0.5rem;
   }
 
   .md\:p-2\.5 {
     padding: 0.625rem;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
   }
 
   .md\:px-28 {

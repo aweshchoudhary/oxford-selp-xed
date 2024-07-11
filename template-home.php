@@ -78,8 +78,9 @@ $program_details = get_field("program_details");
             <div class="w-full">
                 <div class="bg-gray-200 rounded-none">
                     <figure class="cursor-pointer" onclick="lazyLoadVideo('7h9rj5BkzjM', this)">
-                        <img src="http://localhost:8000/wp-content/uploads/2024/07/Prof.-Paul-Fisher.jpg.webp" class="w-full object-contain" alt="" loading="eager">
+                        <?php echo wp_get_attachment_image("424", "full", false, array('loading' => 'lazy', "class" => "image-video")) ?>
                         <figcaption class="sr-only"></figcaption>
+
                     </figure>
                 </div>
             </div>
@@ -685,7 +686,7 @@ $program_details = get_field("program_details");
                 </figure>
             </div>
             <h3 class="my-10">
-                Hear from Professor Paul Fisher, Programme director
+                Hear from Professor Paul Fisher, Programme Director
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
@@ -719,11 +720,11 @@ $program_details = get_field("program_details");
                 Application process
             </h2>
             <p>
-                When reviewing applications, the admissions committee aims for a balance of organisational and industry representation, while considering candidates' professional experience and current responsibilities.
+                When reviewing applications, the Admission's Committee aims for a balance of organisational and industry representation, while considering candidates' professional experience and current responsibilities.
             </p>
 
             <h3>
-                The admissions committee evaluates:
+                The Admission's Committee evaluates:
             </h3>
             <ul class="mb-3">
                 <li>Application responses
@@ -749,7 +750,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Application review</h4>
                     <p class="text-left mb-0">
-                        Admission committee will verify your application and evaluate it for eligibility and fit to programme
+                        Admission Committee will verify your application and evaluate it for eligibility and fit to programme
                     </p>
                 </div>
                 <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
