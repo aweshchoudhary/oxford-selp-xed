@@ -43,7 +43,7 @@ $program_details = get_field("program_details");
                         <?php $image = $item["icon"];
                         $image_sizes = $image["sizes"]; ?>
 
-                        <img src="<?php echo $image["url"] ?>" sizes="(min-width: 600px) 50vw, 70vw" alt="<?php echo $image["alt"] ?>" loading="eager" width="50" height="50" class="w-[50px] h-full object-contain">
+                        <img src="<?php echo $image["url"] ?>" sizes="(min-width: 600px) 50vw, 70vw" alt="<?php echo $image["alt"] ?>" loading="lazy" width="50" height="50" class="w-[50px] h-full object-contain">
 
                         <figcaption class="sr-only"><?php echo $image["alt"] ?></figcaption>
                     </figure>
@@ -94,7 +94,7 @@ $program_details = get_field("program_details");
             <ul class="list-none flex flex-wrap md:gap-16 gap-5">
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/1.webp" alt="" loading="eager">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/1.webp" alt="" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
@@ -105,7 +105,7 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/4.webp" alt="" loading="eager">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/4.webp" alt="" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
@@ -115,7 +115,7 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/7.webp" alt="" loading="eager">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/7.webp" alt="" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
@@ -125,7 +125,7 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/5.webp" alt="" loading="eager">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/5.webp" alt="" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
@@ -135,7 +135,7 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/6.webp" alt="" loading="eager">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/6.webp" alt="" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
@@ -144,7 +144,7 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/2.webp" alt="" loading="eager">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/2.webp" alt="" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
@@ -155,7 +155,7 @@ $program_details = get_field("program_details");
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
                     <figure class="shrink-0">
-                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/3.webp" alt="" loading="eager">
+                        <img width="80" src="<?php echo get_template_directory_uri() ?>/media/key-highlights/3.webp" alt="" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
@@ -354,7 +354,7 @@ $program_details = get_field("program_details");
             </h2>
         </div>
         <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/programme-outcome.jpg" class="md:h-auto h-[250px] object-cover" alt="" loading="eager">
+            <img src="<?php echo get_template_directory_uri() ?>/media/programme-outcome.jpg" class="md:h-auto h-[250px] object-cover" alt="" loading="lazy">
             <figcaption></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
@@ -408,7 +408,7 @@ $program_details = get_field("program_details");
             </h2>
         </div>
         <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/Oxford-Business-Alumni-Network-2.jpg" alt="" class="md:h-auto h-[250px] object-cover" loading="eager">
+            <img src="<?php echo get_template_directory_uri() ?>/media/Oxford-Business-Alumni-Network-2.jpg" alt="" class="md:h-auto h-[250px] object-cover" loading="lazy">
             <figcaption></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
@@ -453,7 +453,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Phyllida-Hancock.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Phyllida-Hancock.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Phyllida Hancock</h4>
@@ -464,7 +464,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/David-Trevaskis.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/David-Trevaskis.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">David Trevaskis</h4>
@@ -475,7 +475,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Sue-Dopson.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Sue-Dopson.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Sue Dopson</h4>
@@ -486,7 +486,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Rachel-Botsman.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Rachel-Botsman.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Rachel Botsman</h4>
@@ -497,7 +497,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Peter-Hanke.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/faculty/Peter-Hanke.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Peter Hanke</h4>
@@ -532,7 +532,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Edward-Rogers.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Edward-Rogers.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Edward Rogers</h4>
@@ -543,7 +543,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Jamie-Anderson.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Jamie-Anderson.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Jamie Anderson</h4>
@@ -554,7 +554,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Anton-Musgrave.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Anton-Musgrave.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Anton Musgrave</h4>
@@ -565,7 +565,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Olivier-Tabatoni.webp" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Olivier-Tabatoni.webp" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Olivier Tabatoni</h4>
@@ -576,7 +576,7 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[470px] h-full">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Mike-Grandinetti.jpg" alt="" loading="eager">
+                            <img src="<?php echo get_template_directory_uri() ?>/media/experts/Mike-Grandinetti.jpg" alt="" loading="lazy">
                             <figcaption></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Mike Grandinetti</h4>
@@ -659,7 +659,7 @@ $program_details = get_field("program_details");
         </div>
         <h3 class="text-center md:my-10 my-5">Companies</h3>
         <figure class="md:mt-10 mt-5">
-            <img src="<?php echo get_template_directory_uri() ?>/media/companies.webp" class="w-full" loading="eager" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/media/companies.webp" class="w-full" loading="lazy" alt="">
             <figcaption></figcaption>
         </figure>
         <hr class="border-primary md:mt-10 mt-5" />
@@ -681,7 +681,7 @@ $program_details = get_field("program_details");
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('qYrS3ORfPr4', this)">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/Explore-the-Oxford-Campus.webp" class="w-full object-contain" alt="" loading="eager">
+                    <img src="<?php echo get_template_directory_uri() ?>/media/Explore-the-Oxford-Campus.webp" class="w-full object-contain" alt="" loading="lazy">
                     <figcaption class="sr-only"></figcaption>
                 </figure>
             </div>
@@ -690,7 +690,7 @@ $program_details = get_field("program_details");
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/watch-webinar.png" class="w-full object-contain" alt="" loading="eager">
+                    <img src="<?php echo get_template_directory_uri() ?>/media/watch-webinar.png" class="w-full object-contain" alt="" loading="lazy">
                     <figcaption class="sr-only"></figcaption>
                 </figure>
             </div>
@@ -778,7 +778,7 @@ $program_details = get_field("program_details");
             <a href="/apply-now" class="cbtn-outline">Apply Now</a>
         </div>
         <figure>
-            <img src="<?php echo get_template_directory_uri() ?>/media/inquiry.jpg" class="w-full md:h-[400px] h-[250px] object-cover" alt="" loading="eager">
+            <img src="<?php echo get_template_directory_uri() ?>/media/inquiry.jpg" class="w-full md:h-[400px] h-[250px] object-cover" alt="" loading="lazy">
             <figcaption></figcaption>
         </figure>
     </section>
