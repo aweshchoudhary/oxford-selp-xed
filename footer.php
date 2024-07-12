@@ -2,8 +2,7 @@
 
 <dialog id="emi_form_modal" class="modal">
     <div class="modal-box rounded md:p-10 p-5 md:max-w-[60%]">
-        <?php echo do_shortcode('[wpforms id="235" title="true"]');
-        ?>
+        <?php echo do_shortcode('[wpforms id="235" title="true"]'); ?>
     </div>
     <form method="dialog" class="modal-backdrop">
         <button>close</button>
@@ -13,8 +12,13 @@
 <dialog id="David_Trevaskis" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(478, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(478) ?></figcaption>
+            <?php echo wp_get_attachment_image(478, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                478
+            ); ?></figcaption>
         </figure>
 
         <div>
@@ -36,8 +40,13 @@
 <dialog id="Phyllida_Hancock" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(477, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(477) ?></figcaption>
+            <?php echo wp_get_attachment_image(477, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                477
+            ); ?></figcaption>
         </figure>
 
         <div>
@@ -59,8 +68,13 @@
 <dialog id="Sue_Dopson" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(479, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(479) ?></figcaption>
+            <?php echo wp_get_attachment_image(479, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                479
+            ); ?></figcaption>
         </figure>
 
         <div>
@@ -82,8 +96,13 @@
 <dialog id="Rachel_Botsman" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(480, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(480) ?></figcaption>
+            <?php echo wp_get_attachment_image(480, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                480
+            ); ?></figcaption>
         </figure>
 
         <div>
@@ -105,8 +124,13 @@
 <dialog id="Peter_Hanke" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(481, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(481) ?></figcaption>
+            <?php echo wp_get_attachment_image(481, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                481
+            ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -130,8 +154,13 @@
 <dialog id="Jamie_Anderson" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(491, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(491) ?></figcaption>
+            <?php echo wp_get_attachment_image(491, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                491
+            ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -154,8 +183,13 @@
 <dialog id="Anton_Musgrave" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(492, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(492) ?></figcaption>
+            <?php echo wp_get_attachment_image(492, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                492
+            ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -176,8 +210,13 @@
 <dialog id="Olivier_Tabatoni" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(493, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(493) ?></figcaption>
+            <?php echo wp_get_attachment_image(493, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                493
+            ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -198,8 +237,13 @@
 <dialog id="Mike_Grandinetti" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(494, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(494) ?></figcaption>
+            <?php echo wp_get_attachment_image(494, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                494
+            ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -220,8 +264,13 @@
 <dialog id="Edward_Rogers" class="modal">
     <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
         <figure class="shrink-0 w-1/3 h-full aspect-square">
-            <?php echo wp_get_attachment_image(495, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(495) ?></figcaption>
+            <?php echo wp_get_attachment_image(495, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                495
+            ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -243,12 +292,17 @@
 <footer class="md:p-20 px-5 md:py-20 py-10 bg-primary text-white flex flex-wrap gap-5">
     <div class="md:basis-1/4 basis-full flex-1 gap-5">
         <figure class="md:w-1/2 w-20">
-            <?php echo wp_get_attachment_image(468, "medium", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(468) ?></figcaption>
+            <?php echo wp_get_attachment_image(468, "medium", false, [
+                "loading" => "lazy",
+                "class" => "image-contain",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                468
+            ); ?></figcaption>
             <figcaption class="sr-only">xed footer logo white</figcaption>
         </figure>
 
-        <ul class="list-none mt-10 space-y-3 text-lg">
+        <ul class="list-none pl-0 mt-10 space-y-3 text-lg">
             <li class="flex items-center gap-5">
                 <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 md:text-2xl text-xl" width="1em" height="1em" class="text-3xl" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3" />
@@ -326,9 +380,9 @@
         </ul> -->
     </div>
     <div class="md:basis-1/4 basis-full flex-1 gap-5">
-        <div class="flex items-start gap-5 mt-10">
+        <div class="flex items-start md:gap-5 gap-3 md:mt-10 mt-5">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="text-3xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:text-3xl text-2xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
                     <path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
                 </svg>
             </div>
@@ -338,9 +392,9 @@
                     Singapore, 068898 </p>
             </div>
         </div>
-        <div class="flex items-start gap-5 mt-10">
+        <div class="flex items-start md:gap-5 gap-3 md:mt-10 mt-5">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="text-3xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:text-3xl text-2xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
                     <path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
                 </svg>
             </div>
@@ -350,9 +404,9 @@
                     NY 10001 </p>
             </div>
         </div>
-        <div class="flex items-start gap-5 mt-10">
+        <div class="flex items-start md:gap-5 gap-3 md:mt-10 mt-5">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="text-3xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:text-3xl text-2xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
                     <path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
                 </svg>
             </div>
@@ -365,20 +419,20 @@
         </div>
     </div>
     <div class="md:basis-1/4 basis-full flex-1 gap-5">
-        <div class="flex items-start gap-5 mt-10">
+        <div class="flex items-start md:gap-5 gap-3 md:mt-10 mt-5">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="text-3xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:text-3xl text-2xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
                     <path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
                 </svg>
             </div>
             <div>
-                <h3 class="text-2xl mb-1 font-semibold">Abu Dhabi</h3>
+                <h3 class="text-2xl mb-1 font-semibold">UAE</h3>
                 <p>Al Sawari Tower - B, National Theatre Airport Road, Al Khalidiya, Abu Dhabi City, Abu Dhabi</p>
             </div>
         </div>
-        <div class="flex items-start gap-5 mt-10">
+        <div class="flex items-start md:gap-5 gap-3 md:mt-10 mt-5">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="text-3xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:text-3xl text-2xl shrink-0" width="1.13em" height="1em" viewBox="0 0 576 512">
                     <path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
                 </svg>
             </div>
@@ -390,7 +444,7 @@
             </div>
         </div>
     </div>
-    <div class="mt-10">
+    <div class="md:mt-10 mt-5">
         Saïd Business School, University of Oxford is collaborating with XED to offer a portfolio of high-impact programmes for senior leaders
     </div>
 </footer>
@@ -489,7 +543,7 @@
     });
 </script>
 
-<?php wp_footer() ?>
+<?php wp_footer(); ?>
 
 </body>
 

@@ -1,7 +1,6 @@
 <?php
 // Template Name: Apply Now
-get_header();
-?>
+get_header(); ?>
 
 <article class="md:px-44 md:py-10 px-5 py-10">
     <div>
@@ -20,12 +19,10 @@ get_header();
             </p>
         </header>
         <div class="container mx-auto">
-            <?php echo do_shortcode('[wpforms id="439" title="false"]');
-            ?>
+            <?php echo do_shortcode('[wpforms id="439" title="false"]'); ?>
         </div>
     </div>
 </article>
 
-<?php
-get_footer();
+<?php get_footer();
 ?>

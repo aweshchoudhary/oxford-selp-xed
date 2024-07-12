@@ -2,14 +2,14 @@
 
 function cornell_chro_enqueue_styles()
 {
-    wp_enqueue_style('cornell-chro', get_stylesheet_uri(), array(), '1.0.0', 'all');
+    wp_enqueue_style("cornell-chro", get_stylesheet_uri(), [], "1.0.0", "all");
 }
 
-add_action('wp_enqueue_scripts', 'cornell_chro_enqueue_styles');
+add_action("wp_enqueue_scripts", "cornell_chro_enqueue_styles");
 
 function my_custom_funcs()
 {
-?>
+    ?>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             const country_select = document.querySelector('.country-select');
@@ -57,6 +57,6 @@ function my_custom_funcs()
         }
     </script>
 <?php
-};
+}
 
 add_action("wp_footer", "my_custom_funcs");

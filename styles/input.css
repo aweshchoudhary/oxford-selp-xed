@@ -16,13 +16,13 @@
     src: local("Arial"), url("../fonts/ARIAL.woff2") format("woff2");
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Arial";
     font-display: swap;
     font-style: italic;
     font-weight: normal;
     src: local("Arial Italic"), url("../fonts/ARIALI.woff2") format("woff2");
-  }
+  } */
 
   @font-face {
     font-family: "Arial";
@@ -32,14 +32,14 @@
     src: local("Arial Medium"), url("../fonts/ArialMdm.woff2") format("woff2");
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Arial";
     font-display: swap;
     font-style: italic;
     font-weight: 500;
     src: local("Arial Medium Italic"),
       url("../fonts/ArialMdmItl.woff2") format("woff2");
-  }
+  } */
 
   @font-face {
     font-family: "Arial";
@@ -49,14 +49,14 @@
     src: local("Arial Bold"), url("../fonts/ARIALBD.woff2") format("woff2");
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Arial";
     font-display: swap;
     font-style: italic;
     font-weight: bold;
     src: local("Arial Bold Italic"),
       url("../fonts/ARIALBI.woff2") format("woff2");
-  }
+  } */
 
   @font-face {
     font-family: "Arial";
@@ -66,14 +66,14 @@
     src: local("Arial Black"), url("../fonts/ARIBLK.woff2") format("woff2");
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Arial";
     font-display: swap;
     font-style: italic;
     font-weight: 900;
     src: local("Arial Black Italic"),
       url("../fonts/ARIALBLACKITALIC.woff2") format("woff2");
-  }
+  } */
 
   @font-face {
     font-family: "Times New Roman";
@@ -171,15 +171,15 @@
   }
 
   ul {
-    @apply list-disc list-inside text-base leading-relaxed;
+    @apply list-disc pl-5 text-base leading-relaxed;
   }
 
   ol {
-    @apply list-decimal list-inside text-base leading-relaxed;
+    @apply list-decimal pl-5 text-base leading-relaxed;
   }
 
   li {
-    @apply text-base list-inside leading-relaxed;
+    @apply text-base;
   }
 
   code {
@@ -218,6 +218,9 @@
     @apply align-baseline text-sm;
   }
 }
+
+/* ====== */
+
 .image-video {
   @apply w-full h-full object-cover aspect-video;
 }
@@ -230,17 +233,17 @@
 
 /* Button Sytles */
 .cbtn-primary {
-  @apply block md:w-fit text-center hover:text-white/90 hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white capitalize;
+  @apply block w-fit text-center hover:text-white/90 hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white capitalize;
 }
 
 .wpforms-submit,
 .wpforms-page-button,
 .wpforms-page-next {
-  @apply block md:w-fit text-center hover:text-white/90 rounded-none font-normal hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white capitalize mt-5 !important;
+  @apply block w-fit text-center hover:text-white/90 rounded-none font-normal hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white capitalize mt-5 !important;
 }
 
 .cbtn-outline {
-  @apply block md:w-fit text-center px-6 py-3 border border-primary hover:bg-primary hover:text-white transition capitalize;
+  @apply block w-fit text-center px-6 py-3 border border-primary hover:bg-primary hover:text-white transition capitalize;
 }
 
 .slick-btn {

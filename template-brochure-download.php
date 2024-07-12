@@ -14,7 +14,9 @@ $download_brochure_file = get_field("download_brochure_file");
     <script>
         window.onload = function() {
             const fileName = 'program-brochure.pdf';
-            const fileUrl = "<?php echo $download_brochure_file["brochure_file"] ?>";
+            const fileUrl = "<?php echo $download_brochure_file[
+                "brochure_file"
+            ]; ?>";
 
             if (fileUrl) {
                 // Create a hidden anchor element

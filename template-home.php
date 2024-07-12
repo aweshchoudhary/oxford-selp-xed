@@ -9,10 +9,17 @@ $program_details = get_field("program_details");
 <article>
     <section>
         <figure class="w-full md:h-full h-[400px] md:p-0 p-5">
-            <?php $image = $hero_sec["hero_image"];
-            $image_sizes = $image["sizes"]; ?>
-            <?php echo wp_get_attachment_image($image["id"], "large", false, array("loading" => "eager", "class" => "image-cover")) ?>
-            <figcaption class="sr-only"><?php echo $image["alt"] ?></figcaption>
+            <?php
+            $image = $hero_sec["hero_image"];
+            $image_sizes = $image["sizes"];
+            ?>
+            <?php echo wp_get_attachment_image($image["id"], "large", false, [
+                "loading" => "eager",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption class="sr-only"><?php echo $image[
+                "alt"
+            ]; ?></figcaption>
         </figure>
 
         <div class="md:px-44 md:py-10 p-5">
@@ -20,8 +27,16 @@ $program_details = get_field("program_details");
                 <?php echo $hero_sec["program_heading"]; ?>
             </h1>
             <div class="md:flex-row flex-col flex items-center gap-3 justify-center md:mb-10 mb-5">
-                <a aria-label="goto apply now page" href="<?php echo $hero_sec["apply_now"]["url"] ?>" class="cbtn-primary"><?php echo  $hero_sec["apply_now"]["title"] ?></a>
-                <a aria-label="goto eligibility page" href="<?php echo $hero_sec["review_my_application"]["url"] ?>" class="cbtn-outline"><?php echo  $hero_sec["review_my_application"]["title"] ?></a>
+                <a aria-label="goto apply now page" href="<?php echo $hero_sec[
+                    "apply_now"
+                ]["url"]; ?>" class="cbtn-primary"><?php echo $hero_sec[
+    "apply_now"
+]["title"]; ?></a>
+                <a aria-label="goto eligibility page" href="<?php echo $hero_sec[
+                    "review_my_application"
+                ]["url"]; ?>" class="cbtn-outline"><?php echo $hero_sec[
+    "review_my_application"
+]["title"]; ?></a>
             </div>
             <hr class="border-primary border" />
             <div>
@@ -35,23 +50,40 @@ $program_details = get_field("program_details");
         </div>
     </section>
     <section class="md:px-44 md:py-10 py-5 px-8 bg-[#D6D3CE]">
-        <ul class="list-none flex flex-wrap gap-5 items-center justify-between">
+        <ul class="list-none pl-0 flex flex-wrap gap-5 items-center justify-between">
             <?php foreach ($program_details["list"] as $item) { ?>
                 <li class="flex items-center md:basis-1/4 flex-1 basis-full gap-5">
                     <figure class="w-[60px] h-full">
-                        <?php $image = $item["icon"];
-                        $image_sizes = $image["sizes"]; ?>
-                        <?php echo wp_get_attachment_image($image["id"], "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                        <figcaption class="sr-only"><?php echo $image["alt"] ?></figcaption>
+                        <?php
+                        $image = $item["icon"];
+                        $image_sizes = $image["sizes"];
+                        ?>
+                        <?php echo wp_get_attachment_image(
+                            $image["id"],
+                            "large",
+                            false,
+                            ["loading" => "lazy", "class" => "image-cover"]
+                        ); ?>
+                        <figcaption class="sr-only"><?php echo $image[
+                            "alt"
+                        ]; ?></figcaption>
                     </figure>
 
                     <div>
-                        <h3 class="md:text-2xl text-xl"><?php echo $item["subtitle"] ?></h3>
+                        <h3 class="md:text-2xl text-xl"><?php echo $item[
+                            "subtitle"
+                        ]; ?></h3>
 
-                        <p class="mb-0 md:text-2xl text-lg font-bold"><?php echo $item["title"] ?></p>
+                        <p class="mb-0 md:text-2xl text-lg font-bold"><?php echo $item[
+                            "title"
+                        ]; ?></p>
 
                         <?php if (!empty($item["modal"]["modal_name"])) { ?>
-                            <button name="show more details" aria-label="show more details" class="mt-1 block underline" onclick="<?php echo $item["modal"]["modal_name"] ?>.showModal()"><?php echo $item["modal"]["title"] ?></button>
+                            <button name="show more details" aria-label="show more details" class="mt-1 block underline" onclick="<?php echo $item[
+                                "modal"
+                            ]["modal_name"]; ?>.showModal()"><?php echo $item[
+    "modal"
+]["title"]; ?></button>
 
                         <?php } ?>
                     </div>
@@ -74,7 +106,12 @@ $program_details = get_field("program_details");
             <div class="w-full">
                 <div class="bg-gray-200 rounded-none">
                     <figure class="cursor-pointer" onclick="lazyLoadVideo('7h9rj5BkzjM', this)">
-                        <?php echo wp_get_attachment_image("424", "large", false, array('loading' => 'lazy', "class" => "image-video")) ?>
+                        <?php echo wp_get_attachment_image(
+                            "424",
+                            "large",
+                            false,
+                            ["loading" => "lazy", "class" => "image-video"]
+                        ); ?>
                         <figcaption class="sr-only"></figcaption>
 
                     </figure>
@@ -82,87 +119,140 @@ $program_details = get_field("program_details");
             </div>
         </div>
     </section>
-    <section style="background: url(<?php echo wp_get_attachment_image_url(459, "large") ?>);background-position:center;background-repeat: no-repeat;background-size: cover;" class="md:px-44 bg-center bg-no-repeat md:py-10 p-5 relative bg-primary text-white">
+    <section style="background: url(<?php echo wp_get_attachment_image_url(
+        459,
+        "large"
+    ); ?>);background-position:center;background-repeat: no-repeat;background-size: cover;" class="md:px-44 bg-center bg-no-repeat md:py-10 p-5 relative bg-primary text-white">
         <div>
             <h2 class="md:mb-20 mb-5 font-tnr text-4xl">
                 Key highlights
             </h2>
-            <ul class="list-none flex flex-wrap md:gap-16 gap-5">
+            <ul class="list-none pl-0 flex flex-wrap md:gap-16 gap-5">
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0 w-[80px]">
-                        <?php echo wp_get_attachment_image(470, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                        <figcaption><?php echo wp_get_attachment_caption(470) ?></figcaption>
+                    <figure class="shrink-0 md:w-[80px] w-[60px]">
+                        <?php echo wp_get_attachment_image(
+                            470,
+                            "large",
+                            false,
+                            ["loading" => "lazy", "class" => "image-contain"]
+                        ); ?>
+                        <figcaption><?php echo wp_get_attachment_caption(
+                            470
+                        ); ?></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
+                    <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Campus immersion
                         <br>
                         at Oxford
                     </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0 w-[80px]">
-                        <?php echo wp_get_attachment_image(471, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                        <figcaption><?php echo wp_get_attachment_caption(471) ?></figcaption>
+                    <figure class="shrink-0 md:w-[80px] w-[60px]">
+                        <?php echo wp_get_attachment_image(
+                            471,
+                            "large",
+                            false,
+                            ["loading" => "lazy", "class" => "image-contain"]
+                        ); ?>
+                        <figcaption><?php echo wp_get_attachment_caption(
+                            471
+                        ); ?></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
+                    <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Industry immersion <br>
-                        in Dubai
-                    </p>
+                        in Dubai</p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0 w-[80px]">
-                        <?php echo wp_get_attachment_image(472, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                        <figcaption><?php echo wp_get_attachment_caption(472) ?></figcaption>
+                    <figure class="shrink-0 md:w-[80px] w-[60px]">
+                        <?php echo wp_get_attachment_image(
+                            472,
+                            "large",
+                            false,
+                            ["loading" => "lazy", "class" => "image-contain"]
+                        ); ?>
+                        <figcaption><?php echo wp_get_attachment_caption(
+                            472
+                        ); ?></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
+                    <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Oxford Business Alumni <br>
-                        (OBA) Network
-                    </p>
+                        (OBA) Network</p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0 w-[80px]">
-                        <?php echo wp_get_attachment_image(473, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                        <figcaption><?php echo wp_get_attachment_caption(473) ?></figcaption>
+                    <figure class="shrink-0 md:w-[80px] w-[60px]">
+                        <?php echo wp_get_attachment_image(
+                            473,
+                            "large",
+                            false,
+                            ["loading" => "lazy", "class" => "image-contain"]
+                        ); ?>
+                        <figcaption><?php echo wp_get_attachment_caption(
+                            473
+                        ); ?></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
+                    <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Learn from Oxford faculty <br>
-                        and global industry experts
-                    </p>
+                        and global industry experts</p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0 w-[80px]">
-                        <?php echo wp_get_attachment_image(474, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                        <figcaption><?php echo wp_get_attachment_caption(474) ?></figcaption>
+                    <figure class="shrink-0 md:w-[80px] w-[60px]">
+                        <?php echo wp_get_attachment_image(
+                            474,
+                            "large",
+                            false,
+                            ["loading" => "lazy", "class" => "image-contain"]
+                        ); ?>
+                        <figcaption><?php echo wp_get_attachment_caption(
+                            474
+                        ); ?></figcaption>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
+                    <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Live online <br>
                         sessions </p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0 w-[80px]">
-                        <figure class="shrink-0 w-[80px]">
-                            <?php echo wp_get_attachment_image(475, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(475) ?></figcaption>
+                    <figure class="shrink-0 md:w-[80px] w-[60px]">
+                        <figure class="shrink-0 md:w-[80px] w-[60px]">
+                            <?php echo wp_get_attachment_image(
+                                475,
+                                "large",
+                                false,
+                                [
+                                    "loading" => "lazy",
+                                    "class" => "image-contain",
+                                ]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                475
+                            ); ?></figcaption>
                         </figure>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
+                    <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Certificate from <br>
                         Saïd Business School<br>
-                        University of Oxford
-                    </p>
+                        University of Oxford</p>
                 </li>
                 <li class="flex items-center md:basis-1/3 flex-1 basis-full md:gap-10 gap-5">
-                    <figure class="shrink-0 w-[80px]">
-                        <figure class="shrink-0 w-[80px]">
-                            <?php echo wp_get_attachment_image(476, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(476) ?></figcaption>
+                    <figure class="shrink-0 md:w-[80px] w-[60px]">
+                        <figure class="shrink-0 md:w-[80px] w-[60px]">
+                            <?php echo wp_get_attachment_image(
+                                476,
+                                "large",
+                                false,
+                                [
+                                    "loading" => "lazy",
+                                    "class" => "image-contain",
+                                ]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                476
+                            ); ?></figcaption>
                         </figure>
                     </figure>
-                    <p class="md:text-2xl mb-0 text-xl font-semibold text-left">
+                    <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Highly personalised <br>
                         leadership development <br>
-                        journey
-                    </p>
+                        journey</p>
                 </li>
             </ul>
         </div>
@@ -192,7 +282,7 @@ $program_details = get_field("program_details");
 
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>
-                    Campus immersion at Oxford (To be finalized)
+                    Campus immersion at Oxford <!-- (To be finalized) -->
                 </h3>
                 <ul>
                     <li>Leadership in a volatile world – insights from the chief executive officer report</li>
@@ -207,46 +297,32 @@ $program_details = get_field("program_details");
                 <div class="readmore-content mt-5" style="display: none;">
 
                     <h3><strong>Leadership in a volatile world – insights from the chief executive officer report</strong></h3>
-                    <p>
-                        This session will focus on findings from Saïd Business School, University of Oxford chief executive officer report, which interviewed over 150 global leaders. Key findings will be discussed, including how chief executive officers have had to reinvent their communication, leadership, and strategy in a world where trust is at a premium. The session will also explore how chief executive officers must find new ways to establish organisational values and culture, build teams, and align their companies.
-                    </p>
+                    <p>This session will focus on findings from Saïd Business School, University of Oxford chief executive officer report, which interviewed over 150 global leaders. Key findings will be discussed, including how chief executive officers have had to reinvent their communication, leadership, and strategy in a world where trust is at a premium. The session will also explore how chief executive officers must find new ways to establish organisational values and culture, build teams, and align their companies.</p>
 
                     <h3><strong>Scenario planning</strong></h3>
-                    <p>
-                        This session will equip participants with skills and tools to effectively deal with potential opportunities, threats, and challenges in an uncertain world. An overview of the Oxford scenario planning approach principles will be provided, followed by a discussion on how participants can adapt and adopt these principles for their own purposes.
-                    </p>
+                    <p>This session will equip participants with skills and tools to effectively deal with potential opportunities, threats, and challenges in an uncertain world. An overview of the Oxford scenario planning approach principles will be provided, followed by a discussion on how participants can adapt and adopt these principles for their own purposes.</p>
 
                     <h3><strong>Inspirational leadership – how to take others with you. Lessons from Shakespeare</strong></h3>
-                    <p>
-                        Participants will be introduced to Shakespeare's most inspired and inspiring leader, Henry V, and explore the various leadership challenges Henry faced.
-                    </p>
+                    <p>Participants will be introduced to Shakespeare's most inspired and inspiring leader, Henry V, and explore the various leadership challenges Henry faced.</p>
 
                     <h3><strong>Persuasion and influence</strong></h3>
-                    <p>
-                        This session will examine the seven universal principles of persuasion that have been scientifically proven effective, based on Dr Robert Cialdini's work. These principles are central to building trust and relationships. Other key areas covered will include the power of storytelling, personal narrative, and potential narrative frameworks, drawing on the work of Joseph Campbell, the McKinsey method developed by Barbara Minto, and language of the senses.
-                    </p>
+                    <p>This session will examine the seven universal principles of persuasion that have been scientifically proven effective, based on Dr Robert Cialdini's work. These principles are central to building trust and relationships. Other key areas covered will include the power of storytelling, personal narrative, and potential narrative frameworks, drawing on the work of Joseph Campbell, the McKinsey method developed by Barbara Minto, and language of the senses.</p>
 
                     <h3><strong>Leading through organisational culture</strong></h3>
-                    <p>
-                        This session explores the concept of organisational culture and how successful leaders seek to change organisational practices. A critical assessment of various leadership models will be conducted, discussing what leaders can learn from them.
-                    </p>
+                    <p>This session explores the concept of organisational culture and how successful leaders seek to change organisational practices. A critical assessment of various leadership models will be conducted, discussing what leaders can learn from them.</p>
 
                     <h3><strong>The importance of humility in leadership</strong></h3>
-                    <p>
-                        This session will examine how humility can lead to greater sincerity, fairness, truthfulness, and modesty in a world of deep divisions. Participants will learn how to improve their humility by acknowledging mistakes, learning from them, and being open to understanding where they might be wrong.
-                    </p>
+                    <p>This session will examine how humility can lead to greater sincerity, fairness, truthfulness, and modesty in a world of deep divisions. Participants will learn how to improve their humility by acknowledging mistakes, learning from them, and being open to understanding where they might be wrong.</p>
 
                     <h3><strong>Leading as a performing art</strong></h3>
-                    <p>
-                        Participants will investigate similarities and connections between music performance and leadership innovation. The session will focus on transforming knowledge and experience from the performing arts into core leadership principles that can be understood and applied across any industry.
-                    </p>
+                    <p>Participants will investigate similarities and connections between music performance and leadership innovation. The session will focus on transforming knowledge and experience from the performing arts into core leadership principles that can be understood and applied across any industry.</p>
                 </div>
 
                 <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="0" onclick="toggleReadMore(this)">Read More</button>
             </div>
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>
-                    Industry immersion in Dubai (06 Jan, 2024 - 10 Jan, 2024)
+                    Industry immersion in Dubai <!-- (06 Jan, 2024 - 10 Jan, 2024) -->
                 </h3>
                 <ul>
                     <li>Creative thinking</li>
@@ -256,26 +332,17 @@ $program_details = get_field("program_details");
                 <div class="readmore-content mt-5" style="display: none;">
 
                     <h3><strong>Creative thinking</strong></h3>
-                    <p>
-                        This intensive module helps participants understand how to enhance individual and collective creativity. Learn why many organisations view creativity as a crucial strategic capability. Discover techniques for fostering creativity to achieve higher levels of organisational innovation. Unlock your personal and organisational creative potential through interactive lectures, case study discussions and experiential exercises.
-                    </p>
+                    <p>This intensive module helps participants understand how to enhance individual and collective creativity. Learn why many organisations view creativity as a crucial strategic capability. Discover techniques for fostering creativity to achieve higher levels of organisational innovation. Unlock your personal and organisational creative potential through interactive lectures, case study discussions and experiential exercises.</p>
                     <h3><strong>Systems thinking and managing complexity</strong></h3>
-                    <p>
-                        This immersive module offers insights into brain learning processes, methods for accelerated learning, reasons behind poor judgement, and strategies for learning from successes and failures. Through real-life examples and interactive activities, participants will learn to make more deliberate and informed decisions, potentially doubling their learning capacity. The module also teaches how to systematically reflect on experiences and extract valuable lessons.
-                    </p>
+                    <p>This immersive module offers insights into brain learning processes, methods for accelerated learning, reasons behind poor judgement, and strategies for learning from successes and failures. Through real-life examples and interactive activities, participants will learn to make more deliberate and informed decisions, potentially doubling their learning capacity. The module also teaches how to systematically reflect on experiences and extract valuable lessons.</p>
                     <h3><strong>Reimagining the future</strong></h3>
-                    <p>
-                        This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation. </p>
+                    <p>This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation. </p>
                 </div>
 
                 <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="1" onclick="toggleReadMore(this)">Read More</button>
             </div>
             <div class="readmore-section md:mb-10 mb-5">
-                <h3>
-
-                    Live online modules
-
-                </h3>
+                <h3>Live online modules</h3>
                 <ul>
                     <li>My leadership journey</li>
                     <li>Relational resilience and neuroscience</li>
@@ -293,53 +360,29 @@ $program_details = get_field("program_details");
 
                 <div class="readmore-content mt-5" style="display: none;">
                     <h3><strong>My leadership journey</strong></h3>
-                    <p>
-                        The live virtual modules begin with the real-life leadership journey of an outstanding global leader. We will learn about the challenges this leader faced and overcame, as well as advice on reaching and maintaining top leadership positions.
-                    </p>
+                    <p>The live virtual modules begin with the real-life leadership journey of an outstanding global leader. We will learn about the challenges this leader faced and overcame, as well as advice on reaching and maintaining top leadership positions.</p>
                     <h3><strong>Relational resilience and neuroscience</strong></h3>
-                    <p>
-                        Explore the science of leadership, teams and resilience from a neuroscience perspective. This framework helps leaders understand human behaviour and develop strategies for team collaboration and relational resilience in volatile times. Learn how senior leaders create an environment of trust and open communication to strengthen teams, foster collaboration and drive organisational success.
-                    </p>
+                    <p>Explore the science of leadership, teams and resilience from a neuroscience perspective. This framework helps leaders understand human behaviour and develop strategies for team collaboration and relational resilience in volatile times. Learn how senior leaders create an environment of trust and open communication to strengthen teams, foster collaboration and drive organisational success.</p>
                     <h3><strong>Innovation drivers and landscape</strong></h3>
-                    <p>
-                        This module explores innovation models beyond technology and disruption. Understand innovation drivers, key enablers and success factors in today's innovation economy. Identify emerging trends, relevant technologies and competitive approaches. Learn to adapt your organisation to changing market environments and promote a culture of innovation and continuous improvement to accelerate innovation agility.
-                    </p>
+                    <p>This module explores innovation models beyond technology and disruption. Understand innovation drivers, key enablers and success factors in today's innovation economy. Identify emerging trends, relevant technologies and competitive approaches. Learn to adapt your organisation to changing market environments and promote a culture of innovation and continuous improvement to accelerate innovation agility.</p>
                     <h3><strong>Revisiting your leadership narrative</strong></h3>
-                    <p>
-                        Return to your learning narratives in this session. Trace your journey since the programme began, evaluate your growth and applied learnings. Consider whether you have started developing your career roadmap.
-                    </p>
+                    <p>Return to your learning narratives in this session. Trace your journey since the programme began, evaluate your growth and applied learnings. Consider whether you have started developing your career roadmap.</p>
                     <h3><strong>Operational excellence</strong></h3>
-                    <p>
-                        Learn from real-world case studies about key principles of excellence, the importance of ongoing scepticism, setting precise objectives and goals, and establishing clear values that govern team culture.
-                    </p>
+                    <p>Learn from real-world case studies about key principles of excellence, the importance of ongoing scepticism, setting precise objectives and goals, and establishing clear values that govern team culture.</p>
                     <h3><strong>Understanding the global supply chain</strong></h3>
-                    <p>
-                        Explore supply chain partnerships in today's business landscape. Examine how ethical and environmental concerns impact the supply chain and why developing partnerships aligned with organisational values and goals is essential. Unravel supply chain complexities and the impact of decisions on the broader ecosystem. Learn to balance stakeholder interests in creating partnerships.
-                    </p>
+                    <p>Explore supply chain partnerships in today's business landscape. Examine how ethical and environmental concerns impact the supply chain and why developing partnerships aligned with organisational values and goals is essential. Unravel supply chain complexities and the impact of decisions on the broader ecosystem. Learn to balance stakeholder interests in creating partnerships.</p>
                     <h3><strong>Marketing in the digital age</strong></h3>
-                    <p>
-                        Learn how businesses can use digital channels to reach and engage customers. Develop effective digital marketing strategies aligned with business goals and customer needs. Understand how to measure and optimise campaigns for maximum impact.
-                    </p>
+                    <p>Learn how businesses can use digital channels to reach and engage customers. Develop effective digital marketing strategies aligned with business goals and customer needs. Understand how to measure and optimise campaigns for maximum impact.</p>
                     <h3><strong>Environmental, social, and governance – future directions and trends</strong></h3>
-                    <p>
-                        Gain insight into future developments in environmental, social, and governance investing and sustainable finance. Learn to leverage environmental, social, and governance practices for long-term value creation and enhanced stakeholder reputation. Explore latest trends and best practices, including sustainable investing, social responsibility and governance's role in creating accountability.
-                    </p>
+                    <p>Gain insight into future developments in environmental, social, and governance investing and sustainable finance. Learn to leverage environmental, social, and governance practices for long-term value creation and enhanced stakeholder reputation. Explore latest trends and best practices, including sustainable investing, social responsibility and governance's role in creating accountability.</p>
                     <h3><strong>Global perspectives and challenges – the world at a crossroads</strong></h3>
-                    <p>
-                        Gain a comprehensive overview of global challenges facing companies and organisations. Learn about shifting economic blocs, china's continued rise, the future of jobs, finance, income inequality, geopolitics and climate crisis. Explore key trends shaping the global economy and society, and discuss how businesses can navigate these challenges to thrive long-term.
-                    </p>
+                    <p>Gain a comprehensive overview of global challenges facing companies and organisations. Learn about shifting economic blocs, china's continued rise, the future of jobs, finance, income inequality, geopolitics and climate crisis. Explore key trends shaping the global economy and society, and discuss how businesses can navigate these challenges to thrive long-term.</p>
                     <h3><strong>Digital transformation</strong></h3>
-                    <p>
-                        Explore how new technologies, global connectivity and changing business dynamics have altered work and life. Learn new approaches to strategic thinking, leadership and management. In this connected world, we must learn from the future, not just the past. Examine digital transformation from a futuristic perspective, debating forces, technologies and market dynamics driving future business success.
-                    </p>
+                    <p>Explore how new technologies, global connectivity and changing business dynamics have altered work and life. Learn new approaches to strategic thinking, leadership and management. In this connected world, we must learn from the future, not just the past. Examine digital transformation from a futuristic perspective, debating forces, technologies and market dynamics driving future business success.</p>
                     <h3><strong>Commercial acumen (simulation – 5 sessions)</strong></h3>
-                    <p>
-                        Address the challenge many senior managers face in judging the financial strength of their decisions. This session provides an overview of financial management for creating higher market values and its impact on managers' daily lives. Through a business simulation, learn to understand financial statements, make financial decisions, analyse financials, build cost-pricing strategies, forecast cash flows, identify opportunities, select investment projects, analyse new markets, revisit strategy, and understand profitable growth drivers.
-                    </p>
+                    <p>Address the challenge many senior managers face in judging the financial strength of their decisions. This session provides an overview of financial management for creating higher market values and its impact on managers' daily lives. Through a business simulation, learn to understand financial statements, make financial decisions, analyse financials, build cost-pricing strategies, forecast cash flows, identify opportunities, select investment projects, analyse new markets, revisit strategy, and understand profitable growth drivers.</p>
                     <h3><strong>Designing collaborative strategies and building new social capital</strong></h3>
-                    <p>
-                        Learn how collaborative strategies and social capital are essential for successful leadership. Discover how to foster teamwork, communication and trust within organisations, leading to improved problem-solving, decision-making and productivity. Learn to build a collaborative culture and social capital to enhance organisational reputation, access new opportunities and valuable resources.
-                    </p>
+                    <p>Learn how collaborative strategies and social capital are essential for successful leadership. Discover how to foster teamwork, communication and trust within organisations, leading to improved problem-solving, decision-making and productivity. Learn to build a collaborative culture and social capital to enhance organisational reputation, access new opportunities and valuable resources.</p>
                 </div>
 
                 <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="2" onclick="toggleReadMore(this)">Read More</button>
@@ -354,50 +397,44 @@ $program_details = get_field("program_details");
             </h2>
         </div>
         <figure class="md:h-auto h-[250px] object-cover">
-            <?php echo wp_get_attachment_image(466, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(466) ?></figcaption>
+            <?php echo wp_get_attachment_image(466, "large", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                466
+            ); ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <div>
                 <h3>
                     A personalised leadership playbook
                 </h3>
-                <p>
-                    Participants will create a tangible take-away that consolidates their learnings and reflections from the programme, including a specific action plan for themselves and their organisation to implement immediately.
-                </p>
+                <p>Participants will create a tangible take-away that consolidates their learnings and reflections from the programme, including a specific action plan for themselves and their organisation to implement immediately.</p>
             </div>
             <div>
                 <h3>
                     Immerse
                 </h3>
-                <p>
-                    Gain insights into major business and leadership challenges of the 21st century and learn how scenarios can be used to examine potential future contexts and their implications for leadership initiatives.
-
-                </p>
+                <p>Gain insights into major business and leadership challenges of the 21st century and learn how scenarios can be used to examine potential future contexts and their implications for leadership initiatives.</p>
             </div>
             <div>
                 <h3>
                     Explore
                 </h3>
-                <p>
-                    Develop expertise and explore resources, models and frameworks to excel in addressing contemporary issues.
-                </p>
+                <p>Develop expertise and explore resources, models and frameworks to excel in addressing contemporary issues.</p>
             </div>
             <div>
                 <h3>
                     Build
                 </h3>
-                <p>
-                    Interact and build a network of high-achieving peers from diverse organisations and industries worldwide.
-                </p>
+                <p>Interact and build a network of high-achieving peers from diverse organisations and industries worldwide.</p>
             </div>
             <div>
                 <h3>
                     Lead
                 </h3>
-                <p>
-                    Become a purposeful leader, equipped to tackle today's greatest challenges with a clear vision that fuels important strategic decisions and positively impacts society.
-                </p>
+                <p>Become a purposeful leader, equipped to tackle today's greatest challenges with a clear vision that fuels important strategic decisions and positively impacts society.</p>
             </div>
         </div>
     </section>
@@ -408,8 +445,13 @@ $program_details = get_field("program_details");
             </h2>
         </div>
         <figure class="md:h-auto h-[250px]">
-            <?php echo wp_get_attachment_image(465, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(465) ?></figcaption>
+            <?php echo wp_get_attachment_image(465, "large", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                465
+            ); ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <p class="mb-5">
@@ -453,8 +495,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(477, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(477) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                477,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                477
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Phyllida Hancock</h4>
                         <p class="mb-2 text-center">Teaches Inspirational leadership</p>
@@ -464,8 +513,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(478, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(478) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                478,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                478
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">David Trevaskis</h4>
                         <p class="mb-2 text-center">Teaches Persuasion and influence</p>
@@ -475,8 +531,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(479, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(479) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                479,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                479
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Sue Dopson</h4>
                         <p class="mb-2 text-center">Professor of Organisational Behaviour</p>
@@ -486,8 +549,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(480, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(480) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                480,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                480
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Rachel Botsman</h4>
                         <p class="mb-2 text-center">Associate Fellow</p>
@@ -497,8 +567,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(481, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(481) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                481,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                481
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Peter Hanke</h4>
                         <p class="mb-2 text-center">Associate Fellow</p>
@@ -532,8 +609,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(495, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(495) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                495,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                495
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Edward Rogers</h4>
                         <p class="mb-2 text-center">Ex Chief Knowledge Officer at Nasa</p>
@@ -543,8 +627,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(491, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(491) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                491,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                491
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Jamie Anderson</h4>
                         <p class="mb-2 text-center">Professor of Creative Thinking and Fine Art of Success</p>
@@ -554,8 +645,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(492, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(492) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                492,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                492
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Anton Musgrave</h4>
                         <p class="mb-2 text-center">Strategy, Innovation and Digital Transformation</p>
@@ -565,8 +663,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(493, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(493) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                493,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                493
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Olivier Tabatoni</h4>
                         <p class="mb-2 text-center">Professor of Finance and Strategy</p>
@@ -576,8 +681,15 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(494, "medium", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-                            <figcaption><?php echo wp_get_attachment_caption(494) ?></figcaption>
+                            <?php echo wp_get_attachment_image(
+                                494,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                494
+                            ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Mike Grandinetti</h4>
                         <p class="mb-2 text-center">Professor of Innovation</p>
@@ -593,8 +705,13 @@ $program_details = get_field("program_details");
             <div class="basis-[40%]">
                 <h3 class="mb-3 text-center">Work Experience</h3>
                 <figure>
-                    <?php echo wp_get_attachment_image(456, "large", false, array("loading" => "lazy", "class" => "image-contain")) ?>
-                    <figcaption><?php echo wp_get_attachment_caption(456) ?></figcaption>
+                    <?php echo wp_get_attachment_image(456, "large", false, [
+                        "loading" => "lazy",
+                        "class" => "image-contain",
+                    ]); ?>
+                    <figcaption><?php echo wp_get_attachment_caption(
+                        456
+                    ); ?></figcaption>
                 </figure>
                 <h4 class="my-3 text-center">Average Work Experience: 22 years</h4>
             </div>
@@ -659,8 +776,13 @@ $program_details = get_field("program_details");
         </div>
         <h3 class="text-center md:my-10 my-5">Companies</h3>
         <figure class="md:mt-10 mt-5">
-            <?php echo wp_get_attachment_image(458, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(458) ?></figcaption>
+            <?php echo wp_get_attachment_image(458, "large", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                458
+            ); ?></figcaption>
         </figure>
         <hr class="border-primary md:mt-10 mt-5" />
     </section>
@@ -681,8 +803,13 @@ $program_details = get_field("program_details");
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('qYrS3ORfPr4', this)">
-                    <?php echo wp_get_attachment_image(464, "large", false, array("loading" => "lazy", "class" => "image-video")) ?>
-                    <figcaption><?php echo wp_get_attachment_caption(464) ?></figcaption>
+                    <?php echo wp_get_attachment_image(464, "large", false, [
+                        "loading" => "lazy",
+                        "class" => "image-video",
+                    ]); ?>
+                    <figcaption><?php echo wp_get_attachment_caption(
+                        464
+                    ); ?></figcaption>
                 </figure>
             </div>
             <h3 class="my-10">
@@ -690,8 +817,13 @@ $program_details = get_field("program_details");
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
-                    <?php echo wp_get_attachment_image(457, "large", false, array("loading" => "lazy", "class" => "image-video")) ?>
-                    <figcaption><?php echo wp_get_attachment_caption(457) ?></figcaption>
+                    <?php echo wp_get_attachment_image(457, "large", false, [
+                        "loading" => "lazy",
+                        "class" => "image-video",
+                    ]); ?>
+                    <figcaption><?php echo wp_get_attachment_caption(
+                        457
+                    ); ?></figcaption>
                 </figure>
             </div>
         </div>
@@ -702,16 +834,21 @@ $program_details = get_field("program_details");
                 Is the programme right for me?
             </h2>
             <ul>
-                <li class="-indent-[1em] pl-[1em]">10+ years of relevant work experience with demonstrated success in leading high-performance teams/impactful projects</li>
-                <li class="-indent-[1em] pl-[1em]">Rich domain expertise with significant responsibilities and proven career advancement in corporate, entrepreneurial, business, <br> or public sector domains</li>
-                <li class="-indent-[1em] pl-[1em]">At least a graduate degree with a strong academic record</li>
-                <li class="-indent-[1em] pl-[1em]">Curious and motivated leader seeking solutions to challenges faced by yourself, your organisation, and society at large</li>
+                <li>10+ years of relevant work experience with demonstrated success in leading high-performance teams/impactful projects</li>
+                <li>Rich domain expertise with significant responsibilities and proven career advancement in corporate, entrepreneurial, <br class="md:block hidden"> business, or public sector domains</li>
+                <li>At least a graduate degree with a strong academic record</li>
+                <li>Curious and motivated leader seeking solutions to challenges faced by yourself, your organisation, and society at large</li>
             </ul>
 
         </div>
         <figure class="class=" md:h-auto h-[250px] object-cover w-full md:object-contain"">
-            <?php echo wp_get_attachment_image(462, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(462) ?></figcaption>
+            <?php echo wp_get_attachment_image(462, "large", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                462
+            ); ?></figcaption>
         </figure>
     </section>
     <section>
@@ -741,8 +878,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Application submission</h4>
                     <p class="text-left mb-0">
-                        Answer the questions and submit your CV/upload or LinkedIn Profile
-                    </p>
+                        Answer the questions and submit your CV/upload or LinkedIn Profile</p>
                 </div>
                 <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
                     <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
@@ -750,8 +886,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Application review</h4>
                     <p class="text-left mb-0">
-                        Admission Committee will verify your application and evaluate it for eligibility and fit to programme
-                    </p>
+                        Admission Committee will verify your application and evaluate it for eligibility and fit to programme</p>
                 </div>
                 <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
                     <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
@@ -759,8 +894,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Interaction</h4>
                     <p class="text-left mb-0">
-                        Select candidates to interact with the Admissions Director
-                    </p>
+                        Select candidates to interact with the Admissions Director</p>
                 </div>
                 <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
                     <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
@@ -768,8 +902,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Result</h4>
                     <p class="text-left mb-0">
-                        Receive a decision on your programme application via an email from the Admissions Committee.
-                    </p>
+                        Receive a decision on your programme application via an email from the Admissions Committee.</p>
                 </div>
             </div>
             <p>
@@ -778,8 +911,13 @@ $program_details = get_field("program_details");
             <a aria-label="goto apply now page" href="/apply-now" class="cbtn-outline">Apply Now</a>
         </div>
         <figure class="w-full md:h-[400px] h-[250px] object-cover">
-            <?php echo wp_get_attachment_image(460, "large", false, array("loading" => "lazy", "class" => "image-cover")) ?>
-            <figcaption><?php echo wp_get_attachment_caption(460) ?></figcaption>
+            <?php echo wp_get_attachment_image(460, "large", false, [
+                "loading" => "lazy",
+                "class" => "image-cover",
+            ]); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                460
+            ); ?></figcaption>
         </figure>
     </section>
     <section class="md:px-44 md:py-10 p-5">
@@ -803,4 +941,4 @@ $program_details = get_field("program_details");
         </div>
     </section>
 </article>
-<?php get_footer() ?>
+<?php get_footer(); ?>
