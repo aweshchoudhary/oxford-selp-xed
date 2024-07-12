@@ -484,7 +484,7 @@ $program_details = get_field("program_details");
                                             477
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Phyllida Hancock</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Phyllida Hancock</p>
                         <p class="mb-2 text-center">Teaches Inspirational leadership</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Phyllida_Hancock.showModal()">Read More</button>
                     </div>
@@ -502,7 +502,7 @@ $program_details = get_field("program_details");
                                             478
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">David Trevaskis</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">David Trevaskis</p>
                         <p class="mb-2 text-center">Teaches Persuasion and influence</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="David_Trevaskis.showModal()">Read More</button>
                     </div>
@@ -520,7 +520,7 @@ $program_details = get_field("program_details");
                                             479
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Sue Dopson</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Sue Dopson</p>
                         <p class="mb-2 text-center">Professor of Organisational Behaviour</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Sue_Dopson.showModal()">Read More</button>
                     </div>
@@ -538,7 +538,7 @@ $program_details = get_field("program_details");
                                             480
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Rachel Botsman</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Rachel Botsman</p>
                         <p class="mb-2 text-center">Associate Fellow</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Rachel_Botsman.showModal()">Read More</button>
                     </div>
@@ -556,7 +556,7 @@ $program_details = get_field("program_details");
                                             481
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Peter Hanke</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Peter Hanke</p>
                         <p class="mb-2 text-center">Associate Fellow</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Peter_Hanke.showModal()">Read More</button>
                     </div>
@@ -574,7 +574,7 @@ $program_details = get_field("program_details");
                                             482
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Trudi Lang</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Trudi Lang</p>
                         <p class="mb-2 text-center">Senior Fellow in Management Practice</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Trudi_Lang.showModal()">Read More</button>
                     </div>
@@ -592,7 +592,7 @@ $program_details = get_field("program_details");
                                             483
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Ian Goldin</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Ian Goldin</p>
                         <p class="mb-2 text-center">Professor of Globalisation and Development</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Ian_Goldin.showModal()">Read More</button>
                     </div>
@@ -610,7 +610,7 @@ $program_details = get_field("program_details");
                                             484
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Joel Shapiro</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Joel Shapiro</p>
                         <p class="mb-2 text-center">Professor of Financial Economics</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Joel_Shapiro.showModal()">Read More</button>
                     </div>
@@ -628,7 +628,7 @@ $program_details = get_field("program_details");
                                             485
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Andrew Stephen</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Andrew Stephen</p>
                         <p class="mb-2 text-center">Professor of Marketing</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Andrew_Stephen.showModal()">Read More</button>
                     </div>
@@ -646,7 +646,7 @@ $program_details = get_field("program_details");
                                             486
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Steve New</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Steve New</p>
                         <p class="mb-2 text-center">Associate Professor in Operations Management</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Steve_New.showModal()">Read More</button>
                     </div>
@@ -664,7 +664,7 @@ $program_details = get_field("program_details");
                                             487
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Pinar Ozcan</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Pinar Ozcan</p>
                         <p class="mb-2 text-center">Professor of Entrepreneurship and Innovation</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Pinar_Ozcan.showModal()">Read More</button>
                     </div>
@@ -682,7 +682,7 @@ $program_details = get_field("program_details");
                                             488
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Nelisha Wickremasinghe</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Nelisha Wickremasinghe</p>
                         <p class="mb-2 text-center">Leadership and change consultant</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Nelisha_Wickremasinghe.showModal()">Read More</button>
                     </div>
@@ -700,7 +700,7 @@ $program_details = get_field("program_details");
                                             489
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Paul Fisher</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Paul Fisher</p>
                         <p class="mb-2 text-center">Programme Director</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Paul_Fisher.showModal()">Read More</button>
                     </div>
@@ -718,7 +718,7 @@ $program_details = get_field("program_details");
                                             490
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Michael Smets</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Michael Smets</p>
                         <p class="mb-2 text-center">Professor of Management</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Michael_Smets.showModal()">Read More</button>
                     </div>
@@ -760,7 +760,7 @@ $program_details = get_field("program_details");
                                             495
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Edward Rogers</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Edward Rogers</p>
                         <p class="mb-2 text-center">Ex Chief Knowledge Officer at Nasa</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Edward_Rogers.showModal()">Read More</button>
                     </div>
@@ -778,7 +778,7 @@ $program_details = get_field("program_details");
                                             491
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Jamie Anderson</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Jamie Anderson</p>
                         <p class="mb-2 text-center">Professor of Creative Thinking and Fine Art of Success</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Jamie_Anderson.showModal()">Read More</button>
                     </div>
@@ -796,7 +796,7 @@ $program_details = get_field("program_details");
                                             492
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Anton Musgrave</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Anton Musgrave</p>
                         <p class="mb-2 text-center">Strategy, Innovation and Digital Transformation</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Anton_Musgrave.showModal()">Read More</button>
                     </div>
@@ -814,7 +814,7 @@ $program_details = get_field("program_details");
                                             493
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Olivier Tabatoni</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Olivier Tabatoni</p>
                         <p class="mb-2 text-center">Professor of Finance and Strategy</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Olivier_Tabatoni.showModal()">Read More</button>
                     </div>
@@ -832,7 +832,7 @@ $program_details = get_field("program_details");
                                             494
                                         ); ?></figcaption>
                         </figure>
-                        <h4 class="md:text-2xl font-semibold mt-3">Mike Grandinetti</h4>
+                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Mike Grandinetti</p>
                         <p class="mb-2 text-center">Professor of Innovation</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Mike_Grandinetti.showModal()">Read More</button>
                     </div>

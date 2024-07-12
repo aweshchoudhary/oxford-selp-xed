@@ -9,25 +9,8 @@ add_action("wp_enqueue_scripts", "cornell_chro_enqueue_styles");
 
 function my_custom_funcs()
 {
-    ?>
+?>
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            const country_select = document.querySelector('.country-select');
-            const msg_container = document.querySelector('.countries-dissallowed-msg');
-            const download_btn = document.querySelector(".wpforms-submit");
-
-            country_select.addEventListener("change", () => {
-                setTimeout(() => {
-                    if (msg_container.style.display !== "none") {
-                        download_btn.disabled = true;
-                    } else {
-                        download_btn.disabled = false;
-                    }
-                }, 200);
-
-            })
-        });
-
         function toggleReadMore(button) {
             // Get the data-target attribute value from the button
             const target = button.getAttribute('data-target');
