@@ -17,9 +17,7 @@ $program_details = get_field("program_details");
                 "loading" => "eager",
                 "class" => "image-cover",
             ]); ?>
-            <figcaption class="sr-only"><?php echo $image[
-                "alt"
-            ]; ?></figcaption>
+            <figcaption class="sr-only"><?php echo $image["alt"]; ?></figcaption>
         </figure>
 
         <div class="md:px-44 md:py-10 p-5">
@@ -27,16 +25,8 @@ $program_details = get_field("program_details");
                 <?php echo $hero_sec["program_heading"]; ?>
             </h1>
             <div class="md:flex-row flex-col flex items-center gap-3 justify-center md:mb-10 mb-5">
-                <a aria-label="goto apply now page" href="<?php echo $hero_sec[
-                    "apply_now"
-                ]["url"]; ?>" class="cbtn-primary"><?php echo $hero_sec[
-    "apply_now"
-]["title"]; ?></a>
-                <a aria-label="goto eligibility page" href="<?php echo $hero_sec[
-                    "review_my_application"
-                ]["url"]; ?>" class="cbtn-outline"><?php echo $hero_sec[
-    "review_my_application"
-]["title"]; ?></a>
+                <a aria-label="goto apply now page" href="<?php echo $hero_sec["apply_now"]["url"]; ?>" class="cbtn-primary"><?php echo $hero_sec["apply_now"]["title"]; ?></a>
+                <a aria-label="goto eligibility page" href="<?php echo $hero_sec["review_my_application"]["url"]; ?>" class="cbtn-outline"><?php echo $hero_sec["review_my_application"]["title"]; ?></a>
             </div>
             <hr class="border-primary border" />
             <div>
@@ -64,26 +54,16 @@ $program_details = get_field("program_details");
                             false,
                             ["loading" => "lazy", "class" => "image-cover"]
                         ); ?>
-                        <figcaption class="sr-only"><?php echo $image[
-                            "alt"
-                        ]; ?></figcaption>
+                        <figcaption class="sr-only"><?php echo $image["alt"]; ?></figcaption>
                     </figure>
 
                     <div>
-                        <h3 class="md:text-2xl text-xl"><?php echo $item[
-                            "subtitle"
-                        ]; ?></h3>
+                        <h3 class="md:text-2xl text-xl"><?php echo $item["subtitle"]; ?></h3>
 
-                        <p class="mb-0 md:text-2xl text-lg font-bold"><?php echo $item[
-                            "title"
-                        ]; ?></p>
+                        <p class="mb-0 md:text-2xl text-lg font-bold"><?php echo $item["title"]; ?></p>
 
                         <?php if (!empty($item["modal"]["modal_name"])) { ?>
-                            <button name="show more details" aria-label="show more details" class="mt-1 block underline" onclick="<?php echo $item[
-                                "modal"
-                            ]["modal_name"]; ?>.showModal()"><?php echo $item[
-    "modal"
-]["title"]; ?></button>
+                            <button name="show more details" aria-label="show more details" class="mt-1 block underline" onclick="<?php echo $item["modal"]["modal_name"]; ?>.showModal()"><?php echo $item["modal"]["title"]; ?></button>
 
                         <?php } ?>
                     </div>
@@ -113,16 +93,15 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-video"]
                         ); ?>
                         <figcaption class="sr-only"></figcaption>
-
                     </figure>
                 </div>
             </div>
         </div>
     </section>
     <section style="background: url(<?php echo wp_get_attachment_image_url(
-        459,
-        "large"
-    ); ?>);background-position:center;background-repeat: no-repeat;background-size: cover;" class="md:px-44 bg-center bg-no-repeat md:py-10 p-5 relative bg-primary text-white">
+                                        459,
+                                        "large"
+                                    ); ?>);background-position:center;background-repeat: no-repeat;background-size: cover;" class="md:px-44 bg-center bg-no-repeat md:py-10 p-5 relative bg-primary text-white">
         <div>
             <h2 class="md:mb-20 mb-5 font-tnr">
                 Key highlights
@@ -137,8 +116,8 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
                         <figcaption><?php echo wp_get_attachment_caption(
-                            470
-                        ); ?></figcaption>
+                                        470
+                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Campus immersion
@@ -155,8 +134,8 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
                         <figcaption><?php echo wp_get_attachment_caption(
-                            471
-                        ); ?></figcaption>
+                                        471
+                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Industry immersion <br>
@@ -171,8 +150,8 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
                         <figcaption><?php echo wp_get_attachment_caption(
-                            472
-                        ); ?></figcaption>
+                                        472
+                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Oxford Business Alumni <br>
@@ -187,8 +166,8 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
                         <figcaption><?php echo wp_get_attachment_caption(
-                            473
-                        ); ?></figcaption>
+                                        473
+                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Learn from Oxford faculty <br>
@@ -203,8 +182,8 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
                         <figcaption><?php echo wp_get_attachment_caption(
-                            474
-                        ); ?></figcaption>
+                                        474
+                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Live online <br>
@@ -223,8 +202,8 @@ $program_details = get_field("program_details");
                                 ]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                475
-                            ); ?></figcaption>
+                                            475
+                                        ); ?></figcaption>
                         </figure>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
@@ -245,8 +224,8 @@ $program_details = get_field("program_details");
                                 ]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                476
-                            ); ?></figcaption>
+                                            476
+                                        ); ?></figcaption>
                         </figure>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
@@ -402,8 +381,8 @@ $program_details = get_field("program_details");
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                466
-            ); ?></figcaption>
+                            466
+                        ); ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <div>
@@ -450,8 +429,8 @@ $program_details = get_field("program_details");
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                465
-            ); ?></figcaption>
+                            465
+                        ); ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <p class="mb-5">
@@ -502,8 +481,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                477
-                            ); ?></figcaption>
+                                            477
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Phyllida Hancock</h4>
                         <p class="mb-2 text-center">Teaches Inspirational leadership</p>
@@ -520,8 +499,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                478
-                            ); ?></figcaption>
+                                            478
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">David Trevaskis</h4>
                         <p class="mb-2 text-center">Teaches Persuasion and influence</p>
@@ -538,8 +517,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                479
-                            ); ?></figcaption>
+                                            479
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Sue Dopson</h4>
                         <p class="mb-2 text-center">Professor of Organisational Behaviour</p>
@@ -556,8 +535,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                480
-                            ); ?></figcaption>
+                                            480
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Rachel Botsman</h4>
                         <p class="mb-2 text-center">Associate Fellow</p>
@@ -574,12 +553,174 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                481
-                            ); ?></figcaption>
+                                            481
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Peter Hanke</h4>
                         <p class="mb-2 text-center">Associate Fellow</p>
                         <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Peter_Hanke.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                482,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            482
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Trudi Lang</h4>
+                        <p class="mb-2 text-center">Senior Fellow in Management Practice</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Trudi_Lang.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                483,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            483
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Ian Goldin</h4>
+                        <p class="mb-2 text-center">Professor of Globalisation and Development</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Ian_Goldin.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                484,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            484
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Joel Shapiro</h4>
+                        <p class="mb-2 text-center">Professor of Financial Economics</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Joel_Shapiro.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                485,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            485
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Andrew Stephen</h4>
+                        <p class="mb-2 text-center">Professor of Marketing</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Andrew_Stephen.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                486,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            486
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Steve New</h4>
+                        <p class="mb-2 text-center">Associate Professor in Operations Management</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Steve_New.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                487,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            487
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Pinar Ozcan</h4>
+                        <p class="mb-2 text-center">Professor of Entrepreneurship and Innovation</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Pinar_Ozcan.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                488,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            488
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Nelisha Wickremasinghe</h4>
+                        <p class="mb-2 text-center">Leadership and change consultant</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Nelisha_Wickremasinghe.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                489,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            489
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Paul Fisher</h4>
+                        <p class="mb-2 text-center">Programme Director</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Paul_Fisher.showModal()">Read More</button>
+                    </div>
+                </div>
+                <div class="md:p-2.5 px-4">
+                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
+                        <figure class="aspect-square w-full">
+                            <?php echo wp_get_attachment_image(
+                                490,
+                                "medium",
+                                false,
+                                ["loading" => "lazy", "class" => "image-cover"]
+                            ); ?>
+                            <figcaption><?php echo wp_get_attachment_caption(
+                                            490
+                                        ); ?></figcaption>
+                        </figure>
+                        <h4 class="md:text-2xl font-semibold mt-3">Michael Smets</h4>
+                        <p class="mb-2 text-center">Professor of Management</p>
+                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Michael_Smets.showModal()">Read More</button>
                     </div>
                 </div>
             </div>
@@ -616,8 +757,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                495
-                            ); ?></figcaption>
+                                            495
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Edward Rogers</h4>
                         <p class="mb-2 text-center">Ex Chief Knowledge Officer at Nasa</p>
@@ -634,8 +775,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                491
-                            ); ?></figcaption>
+                                            491
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Jamie Anderson</h4>
                         <p class="mb-2 text-center">Professor of Creative Thinking and Fine Art of Success</p>
@@ -652,8 +793,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                492
-                            ); ?></figcaption>
+                                            492
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Anton Musgrave</h4>
                         <p class="mb-2 text-center">Strategy, Innovation and Digital Transformation</p>
@@ -670,8 +811,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                493
-                            ); ?></figcaption>
+                                            493
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Olivier Tabatoni</h4>
                         <p class="mb-2 text-center">Professor of Finance and Strategy</p>
@@ -688,8 +829,8 @@ $program_details = get_field("program_details");
                                 ["loading" => "lazy", "class" => "image-cover"]
                             ); ?>
                             <figcaption><?php echo wp_get_attachment_caption(
-                                494
-                            ); ?></figcaption>
+                                            494
+                                        ); ?></figcaption>
                         </figure>
                         <h4 class="md:text-2xl font-semibold mt-3">Mike Grandinetti</h4>
                         <p class="mb-2 text-center">Professor of Innovation</p>
@@ -710,8 +851,8 @@ $program_details = get_field("program_details");
                         "class" => "image-contain",
                     ]); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
-                        456
-                    ); ?></figcaption>
+                                    456
+                                ); ?></figcaption>
                 </figure>
                 <h4 class="my-3 text-center">Average Work Experience: 22 years</h4>
             </div>
@@ -781,8 +922,8 @@ $program_details = get_field("program_details");
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                458
-            ); ?></figcaption>
+                            458
+                        ); ?></figcaption>
         </figure>
         <hr class="border-primary md:mt-10 mt-5" />
     </section>
@@ -808,8 +949,8 @@ $program_details = get_field("program_details");
                         "class" => "image-video",
                     ]); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
-                        464
-                    ); ?></figcaption>
+                                    464
+                                ); ?></figcaption>
                 </figure>
             </div>
             <h3 class="my-10">
@@ -822,8 +963,8 @@ $program_details = get_field("program_details");
                         "class" => "image-video",
                     ]); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
-                        457
-                    ); ?></figcaption>
+                                    457
+                                ); ?></figcaption>
                 </figure>
             </div>
         </div>
@@ -847,8 +988,8 @@ $program_details = get_field("program_details");
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                462
-            ); ?></figcaption>
+                            462
+                        ); ?></figcaption>
         </figure>
     </section>
     <section>
@@ -916,8 +1057,8 @@ $program_details = get_field("program_details");
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                460
-            ); ?></figcaption>
+                            460
+                        ); ?></figcaption>
         </figure>
     </section>
     <section class="md:px-44 md:py-10 p-5">

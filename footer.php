@@ -17,8 +17,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                478
-            ); ?></figcaption>
+                            478
+                        ); ?></figcaption>
         </figure>
 
         <div>
@@ -45,8 +45,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                477
-            ); ?></figcaption>
+                            477
+                        ); ?></figcaption>
         </figure>
 
         <div>
@@ -73,8 +73,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                479
-            ); ?></figcaption>
+                            479
+                        ); ?></figcaption>
         </figure>
 
         <div>
@@ -101,8 +101,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                480
-            ); ?></figcaption>
+                            480
+                        ); ?></figcaption>
         </figure>
 
         <div>
@@ -129,8 +129,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                481
-            ); ?></figcaption>
+                            481
+                        ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -141,6 +141,250 @@
             </h4>
             <p>
                 Peter Hanke is a conductor of classical music and an associate of the Centre for Art and Leadership at the Copenhagen Business School. An experienced classical music conductor and performer, Peter investigates the connections between leadership and music, philosophy and performance theory. Since 2003 Peter has delivered numerous experiential learning sessions on conducting leadership at Saïd Business School, University of Oxford. He holds a BA in Musicology from the University of Copenhagen and an MA in Conducting from the Royal Danish Academy of Music. He received the Einar Hansens Research Award in 2005.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Trudi_Lang" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                482,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            482
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Trudi Lang
+            </h3>
+            <h4 class="mb-4">
+                Senior Fellow in Management Practice
+            </h4>
+            <p>
+                As a practice faculty, Trudi Lang works with executives to support them in the achievement of their strategic objectives. Her research, executive education and consulting focuses on strategising in dynamic environments. In addition to holding a PhD (DPhil, Management Studies) from the University of Oxford, Trudi has an MSc degree in Management Research from Oxford, graduating with Distinction and winning the Templeton College Nautilus Award for Outstanding Academic Achievement. She also holds an MBA (Executive) (Distinction) from Curtin University, Australia, and an MA (Political Science) from the University of Hawaii, USA. She is a member of the Strategic Management Society and the Academy of Management.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Ian_Goldin" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                483,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            483
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Ian Goldin
+            </h3>
+            <h4 class="mb-4">
+                Professor of Globalisation and Development
+            </h4>
+            <p>Ian Goldin was the founding Director of the Oxford Martin School from September 2006 to September 2016. He is currently Oxford University Professor of Globalisation and Development, Senior Fellow at the Oxford Martin School, a Professorial Fellow at the University’s Balliol College and responsible for the Oxford Martin School Programmes on the Future of Work, Technological and Economic Change and Future of Development. During his decade as Director, the School established 45 programmes of research, bringing together more than 500 academics from across Oxford, from over 100 disciplines and becoming the world’s leading centre for interdisciplinary research into critical global challenges.
+            </p>
+
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Joel_Shapiro" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                484,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            484
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Joel Shapiro
+            </h3>
+            <h4 class="mb-4">
+                Professor of Financial Economics
+            </h4>
+            <p>
+                Joel Shapiro’s main area of expertise is the regulation and governance of financial institutions. Joel has conducted research on credit ratings, banking regulation, corporate governance, executive compensation, LIBOR, ESG and conflicts of interest in retail finance. He is published in top international journals such as the Journal of Finance, Journal of Financial Economics and the Review of Financial Studies. Prior to joining Saïd Business School, Joel was a tenured associate professor at Universitat Pompeu Fabra in Barcelona. He received his PhD in Economics in 2000 from Princeton University. He has been a visiting lecturer for the University of Wisconsin-Madison and the New York University Stern School of Business as well as visiting researcher for the Federal Reserve Bank of New York. Joel is also an Associate Editor at the Journal of Corporate Finance.
+            </p>
+
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Andrew_Stephen" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                485,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            485
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>
+                Andrew Stephen
+            </h3>
+            <h4 class="mb-4">
+                Professor of Marketing
+            </h4>
+            <p>
+
+                Andrew Stephen is one of the world’s leading academic marketing experts. At Oxford Saïd, Andrew is Associate Dean of Research, responsible for all academic matters at the School. As L’Oréal Professor of Marketing, he is the University’s most-senior marketing academic and leads the School’s group of marketing faculty members and research staff, as well as serving as the director of the Oxford Future of Marketing Initiative. Andrew is one of the world’s top marketing academics and is a leading voice on the future of the marketing, media and advertising industries. His research and industry engagement work focuses predominantly on issues related to new technologies in marketing (such as AI) and how both customers and businesses can benefit from new technologies.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Steve_New" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                486,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            486
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>Steve New</h3>
+            <h4 class="mb-4">Associate Professor in Operations Management</h4>
+            <p>
+                Steve New’s main areas of expertise are supply chain management and process improvement. A leading authority on supply chain management, Steve’s interests lie in developing a more rigorous appreciation of how individuals and organizations construct and interpret their environment and the systems in which they operate. Steve began his career as an engineer, working for Rolls Royce plc while completing a degree in physics at Southampton University. After working in management consultancy for Collinson Grant, he went to Manchester Business School (MBS) where he completed his doctorate on the use of visual interactive modelling for decision support in manufacturing
+            </p>
+
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Pinar_Ozcan" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                487,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            487
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>Pinar Ozcan</h3>
+            <h4 class="mb-4">Professor of Entrepreneurship and Innovation</h4>
+            <p>
+                Pinar Ozcan is Professor of Entrepreneurship and Innovation. She also serves as the Director of the Oxford Future of Finance and Technology (Fintech) Initiative. Pinar specialises in entrepreneurship and strategy in technology markets. Her current research includes the open banking project, where she examines the industry disruption in banking through regulation and entry of fintechs, and the development of the sharing economy. Pinar completed her PhD at the Oxford SELP Technology Ventures Program (STVP) at the Oxford SELP University Management Science and Engineering Department and also holds a Master of Science and dual Bachelor’s degrees from Oxford SELP.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Nelisha_Wickremasinghe" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                488,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            488
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>Nelisha Wickremasinghe</h3>
+            <h4 class="mb-4">Leadership and change consultant</h4>
+            <p>
+                Nelisha Wickremasinghe is a chartered psychologist, author, educator and international leadership/organisational change consultant. She has worked in the field of human development for over 30 years. Nelisha has postgraduate degrees in psychology and family therapy, a master’s in public sector management and a doctorate in organisational change. Nelisha works internationally with large corporates, teaching and consulting on healthy growth. In addition to her role at Saïd Business School, she is also an associate at the Ashridge Hult Business School and founding director/lead practitioner at The Dialogue Space, which provides therapeutic depth development for individuals, families and employees within organisations.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Paul_Fisher" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                489,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            489
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>Paul Fisher</h3>
+            <h4 class="mb-4">Programme Director</h4>
+            <p>
+                Paul Fisher is Programme Director of the Oxford Programme on Negotiation (OPN) which he has helped to design and develop since its inception in 2004. Paul also teaches on OPN and other programmes with topics including preparation in negotiations, decision-making, persuasion, stakeholder management, managing emotions, multi-party & multi-issue negotiations and virtual negotiations. Paul has co-written a number of negotiation simulations, including one on the building of a football stadium and the other designed specifically for virtual negotiations. Paul has over 20 years’ experience in the field of communications, education and capacity building, helping private and public sector organisations to achieve their full potential.
+            </p>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+<dialog id="Michael_Smets" class="modal">
+    <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
+        <figure class="shrink-0 w-1/3 h-full aspect-square">
+            <?php echo wp_get_attachment_image(
+                490,
+                "medium",
+                false,
+                ["loading" => "lazy", "class" => "image-cover"]
+            ); ?>
+            <figcaption><?php echo wp_get_attachment_caption(
+                            490
+                        ); ?></figcaption>
+        </figure>
+        <div>
+            <h3>Michael Smets</h3>
+            <h4 class="mb-4">Professor of Management</h4>
+            <p>
+                Michael Smets regularly speaks at academic and practitioner conferences and delivers executive education programmes for leading companies in the legal, consulting, reinsurance and healthcare sectors. His research is published in leading academic journals, academic and professional handbooks and has been featured in the national and professional press. Michael obtained the equivalent of a BA in Business and Economics from Cologne University in Germany before joining Saïd Business School for his postgraduate education. There he obtained an MSc in Management Research and a DPhil in Management before accepting a post-doc position jointly held by Saïd Business School and the School of Management at the University of Alberta, Canada.
             </p>
         </div>
     </div>
@@ -159,8 +403,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                491
-            ); ?></figcaption>
+                            491
+                        ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -188,8 +432,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                492
-            ); ?></figcaption>
+                            492
+                        ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -215,8 +459,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                493
-            ); ?></figcaption>
+                            493
+                        ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -242,8 +486,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                494
-            ); ?></figcaption>
+                            494
+                        ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -269,8 +513,8 @@
                 "class" => "image-cover",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                495
-            ); ?></figcaption>
+                            495
+                        ); ?></figcaption>
         </figure>
         <div>
             <h3>
@@ -297,8 +541,8 @@
                 "class" => "image-contain",
             ]); ?>
             <figcaption><?php echo wp_get_attachment_caption(
-                468
-            ); ?></figcaption>
+                            468
+                        ); ?></figcaption>
             <figcaption class="sr-only">xed footer logo white</figcaption>
         </figure>
 
@@ -497,7 +741,6 @@
         $('.slick-slider-faculty').slick('slickNext');
     });
 </script>
-
 <script>
     $('.slick-slider-global-experts').slick({
         dots: false,
@@ -544,7 +787,6 @@
 </script>
 
 <?php wp_footer(); ?>
-
 </body>
 
 </html>

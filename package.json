@@ -3,7 +3,7 @@
     "styles:watch": "npx tailwindcss -i ./styles/input.css -o ./styles/global.css --watch"
   },
   "devDependencies": {
-    "@prettier/plugin-php": "^0.22.2",
+    "daisyui": "^4.12.10",
     "tailwindcss": "^3.4.4"
   }
 }
