@@ -309,7 +309,7 @@
             <h3>Pinar Ozcan</h3>
             <h4 class="mb-4">Professor of Entrepreneurship and Innovation</h4>
             <p>
-                Pinar Ozcan is Professor of Entrepreneurship and Innovation. She also serves as the Director of the Oxford Future of Finance and Technology (Fintech) Initiative. Pinar specialises in entrepreneurship and strategy in technology markets. Her current research includes the open banking project, where she examines the industry disruption in banking through regulation and entry of fintechs, and the development of the sharing economy. Pinar completed her PhD at the Oxford SELP Technology Ventures Program (STVP) at the Oxford SELP University Management Science and Engineering Department and also holds a Master of Science and dual Bachelor’s degrees from Oxford SELP.
+                Pinar Ozcan is Professor of Entrepreneurship and Innovation. She also serves as the Director of the Oxford Future of Finance and Technology (Fintech) Initiative. Pinar specialises in entrepreneurship and strategy in technology markets. Her current research includes the open banking project, where she examines the industry disruption in banking through regulation and entry of fintechs, and the development of the sharing economy. Pinar completed her PhD at the Oxford Senior Executive Leadership Programme Technology Ventures Program (STVP) at the Oxford Senior Executive Leadership Programme University Management Science and Engineering Department and also holds a Master of Science and dual Bachelor’s degrees from Oxford Senior Executive Leadership Programme.
             </p>
         </div>
     </div>
