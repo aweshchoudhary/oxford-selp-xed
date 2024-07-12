@@ -13,10 +13,10 @@ $program_details = get_field("program_details");
             $image = $hero_sec["hero_image"];
             $image_sizes = $image["sizes"];
             ?>
-            <?php echo wp_get_attachment_image($image["id"], "large", false, [
+            <?php echo wp_get_attachment_image($image["id"], "large", false, array(
                 "loading" => "eager",
                 "class" => "image-cover",
-            ]); ?>
+            )); ?>
             <figcaption class="sr-only"><?php echo $image["alt"]; ?></figcaption>
         </figure>
 
@@ -52,7 +52,7 @@ $program_details = get_field("program_details");
                             $image["id"],
                             "large",
                             false,
-                            ["loading" => "lazy", "class" => "image-cover"]
+                            array("loading" => "lazy", "class" => "image-cover")
                         ); ?>
                         <figcaption class="sr-only"><?php echo $image["alt"]; ?></figcaption>
                     </figure>
@@ -796,10 +796,10 @@ $program_details = get_field("program_details");
         <dialog id="David_Trevaskis" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(478, "medium", false, [
+                    <?php echo wp_get_attachment_image(478, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     478
                                 ); ?></figcaption>
@@ -824,10 +824,10 @@ $program_details = get_field("program_details");
         <dialog id="Phyllida_Hancock" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(477, "medium", false, [
+                    <?php echo wp_get_attachment_image(477, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     477
                                 ); ?></figcaption>
@@ -852,10 +852,10 @@ $program_details = get_field("program_details");
         <dialog id="Sue_Dopson" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(479, "medium", false, [
+                    <?php echo wp_get_attachment_image(479, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     479
                                 ); ?></figcaption>
@@ -880,10 +880,10 @@ $program_details = get_field("program_details");
         <dialog id="Rachel_Botsman" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(480, "medium", false, [
+                    <?php echo wp_get_attachment_image(480, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     480
                                 ); ?></figcaption>
@@ -908,10 +908,10 @@ $program_details = get_field("program_details");
         <dialog id="Peter_Hanke" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(481, "medium", false, [
+                    <?php echo wp_get_attachment_image(481, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     481
                                 ); ?></figcaption>
@@ -939,7 +939,7 @@ $program_details = get_field("program_details");
                         482,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     482
@@ -968,7 +968,7 @@ $program_details = get_field("program_details");
                         483,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     483
@@ -997,7 +997,7 @@ $program_details = get_field("program_details");
                         484,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     484
@@ -1027,7 +1027,7 @@ $program_details = get_field("program_details");
                         485,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     485
@@ -1057,7 +1057,7 @@ $program_details = get_field("program_details");
                         486,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     486
@@ -1083,7 +1083,7 @@ $program_details = get_field("program_details");
                         487,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     487
@@ -1108,7 +1108,7 @@ $program_details = get_field("program_details");
                         488,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     488
@@ -1133,7 +1133,7 @@ $program_details = get_field("program_details");
                         489,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     489
@@ -1158,7 +1158,7 @@ $program_details = get_field("program_details");
                         490,
                         "medium",
                         false,
-                        ["loading" => "lazy", "class" => "image-cover"]
+                        array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     490
@@ -1182,10 +1182,10 @@ $program_details = get_field("program_details");
         <dialog id="Jamie_Anderson" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(491, "medium", false, [
+                    <?php echo wp_get_attachment_image(491, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     491
                                 ); ?></figcaption>
@@ -1211,10 +1211,10 @@ $program_details = get_field("program_details");
         <dialog id="Anton_Musgrave" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(492, "medium", false, [
+                    <?php echo wp_get_attachment_image(492, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     492
                                 ); ?></figcaption>
@@ -1238,10 +1238,10 @@ $program_details = get_field("program_details");
         <dialog id="Olivier_Tabatoni" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(493, "medium", false, [
+                    <?php echo wp_get_attachment_image(493, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     493
                                 ); ?></figcaption>
@@ -1265,10 +1265,10 @@ $program_details = get_field("program_details");
         <dialog id="Mike_Grandinetti" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(494, "medium", false, [
+                    <?php echo wp_get_attachment_image(494, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     494
                                 ); ?></figcaption>
@@ -1292,10 +1292,10 @@ $program_details = get_field("program_details");
         <dialog id="Edward_Rogers" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
                 <figure class="shrink-0 w-1/3 h-full aspect-square">
-                    <?php echo wp_get_attachment_image(495, "medium", false, [
+                    <?php echo wp_get_attachment_image(495, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     495
                                 ); ?></figcaption>
@@ -1320,6 +1320,7 @@ $program_details = get_field("program_details");
     <!-- Close Modals For Each person -->
 
     <!-- start slick slider -->
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
     <script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>

@@ -17,10 +17,10 @@
         <div class="flex items-center justify-between md:px-28 px-5 py-4 md:gap-0 gap-20">
             <a aria-label="goto home page" href="/">
                 <figure class="md:w-[180px] w-[100px]">
-                    <?php echo wp_get_attachment_image(467, "medium", false, [
-                        "loading" => "lazy",
+                    <?php echo wp_get_attachment_image(467, "medium", false, array(
+                        "loading" => "eager",
                         "class" => "image-contain",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     467
                                 ); ?></figcaption>
@@ -28,10 +28,10 @@
             </a>
             <a aria-label="goto home page" href="/">
                 <figure class="md:w-[120px] w-[80px]">
-                    <?php echo wp_get_attachment_image(469, "medium", false, [
-                        "loading" => "lazy",
+                    <?php echo wp_get_attachment_image(469, "medium", false, array(
+                        "loading" => "eager",
                         "class" => "image-contain",
-                    ]); ?>
+                    )); ?>
                     <figcaption><?php echo wp_get_attachment_caption(
                                     469
                                 ); ?></figcaption>
