@@ -27,6 +27,7 @@ $program_details = get_field("program_details");
             <div class="md:flex-row flex-col flex items-center gap-3 justify-center md:mb-10 mb-5">
                 <a aria-label="goto apply now page" href="<?php echo $hero_sec["apply_now"]["url"]; ?>" class="cbtn-primary"><?php echo $hero_sec["apply_now"]["title"]; ?></a>
                 <a aria-label="goto eligibility page" href="<?php echo $hero_sec["review_my_application"]["url"]; ?>" class="cbtn-outline"><?php echo $hero_sec["review_my_application"]["title"]; ?></a>
+                <button name="open download brochure form" aria-label="open download brochure form" onclick="download_brochure.showModal();" class="cbtn-outline">Download Brochure</button>
             </div>
             <hr class="border-primary border" />
             <div>
@@ -39,6 +40,15 @@ $program_details = get_field("program_details");
             </div>
         </div>
     </section>
+    <dialog id="download_brochure" class="modal">
+        <div class="modal-box rounded md:p-10 p-5 md:max-w-[60%]">
+            <h2>Get Your Brochure</h2>
+            <?php echo do_shortcode('[wpforms id="512"]'); ?>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
     <section class="md:px-44 md:py-10 py-5 px-8 bg-[#D6D3CE]">
         <ul class="list-none pl-0 flex flex-wrap gap-5 items-center justify-between">
             <?php foreach ($program_details["list"] as $item) { ?>
@@ -459,7 +469,7 @@ $program_details = get_field("program_details");
 
         </div>
     </section>
-    <section class="md:py-10 py-5">
+    <section class="md:py-10 py-5 md:pb-0 pb-0">
         <div class="md:px-44 md:mb-10 mb-5 px-5">
             <h2 class="font-tnr">
                 Learn from world-class faculty
@@ -478,215 +488,174 @@ $program_details = get_field("program_details");
                 </svg></button>
 
 
-            <div class="slick-slider-faculty h-full md:px-44 px-5 relative z-0">
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+            <div class="slick-slider-faculty md:px-44 px-5 relative z-0">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Phyllida_Hancock.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 477; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Phyllida Hancock</p>
-                        <p class="mb-2 text-center">Teaches Inspirational leadership</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Phyllida_Hancock.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Phyllida Hancock</p>
+                        <p class="mb-2 text-left">Teaches Inspirational leadership</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="David_Trevaskis.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 478; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">David Trevaskis</p>
-                        <p class="mb-2 text-center">Teaches Persuasion and influence</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="David_Trevaskis.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">David Trevaskis</p>
+                        <p class="mb-2 text-left">Teaches Persuasion and influence</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Sue_Dopson.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 479; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Sue Dopson</p>
-                        <p class="mb-2 text-center">Professor of Organisational Behaviour</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Sue_Dopson.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Sue Dopson</p>
+                        <p class="mb-2 text-left">Professor of Organisational Behaviour</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Rachel_Botsman.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 480; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Rachel Botsman</p>
-                        <p class="mb-2 text-center">Associate Fellow</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Rachel_Botsman.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Rachel Botsman</p>
+                        <p class="mb-2 text-left">Associate Fellow</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Peter_Hanke.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 481; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Peter Hanke</p>
-                        <p class="mb-2 text-center">Associate Fellow</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Peter_Hanke.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Peter Hanke</p>
+                        <p class="mb-2 text-left">Associate Fellow</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Trudi_Lang.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 482; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Trudi Lang</p>
-                        <p class="mb-2 text-center">Senior Fellow in Management Practice</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Trudi_Lang.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Trudi Lang</p>
+                        <p class="mb-2 text-left">Senior Fellow in Management Practice</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Ian_Goldin.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 483; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Ian Goldin</p>
-                        <p class="mb-2 text-center">Professor of Globalisation and Development</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Ian_Goldin.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Ian Goldin</p>
+                        <p class="mb-2 text-left">Professor of Globalisation and Development</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Joel_Shapiro.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 484; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Joel Shapiro</p>
-                        <p class="mb-2 text-center">Professor of Financial Economics</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Joel_Shapiro.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Joel Shapiro</p>
+                        <p class="mb-2 text-left">Professor of Financial Economics</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Andrew_Stephen.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 485; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Andrew Stephen</p>
-                        <p class="mb-2 text-center">Professor of Marketing</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Andrew_Stephen.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Andrew Stephen</p>
+                        <p class="mb-2 text-left">Professor of Marketing</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Steve_New.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 486; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Steve New</p>
-                        <p class="mb-2 text-center">Associate Professor in Operations Management</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Steve_New.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Steve New</p>
+                        <p class="mb-2 text-left">Associate Professor in Operations Management</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Pinar_Ozcan.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 487; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Pinar Ozcan</p>
-                        <p class="mb-2 text-center">Professor of Entrepreneurship and Innovation</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Pinar_Ozcan.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Pinar Ozcan</p>
+                        <p class="mb-2 text-left">Professor of Entrepreneurship and Innovation</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Nelisha_Wickremasinghe.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 488; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Nelisha Wickremasinghe</p>
-                        <p class="mb-2 text-center">Leadership and change consultant</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Nelisha_Wickremasinghe.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Nelisha Wickremasinghe</p>
+                        <p class="mb-2 text-left">Leadership and change consultant</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Paul_Fisher.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 489; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Paul Fisher</p>
-                        <p class="mb-2 text-center">Programme Director</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Paul_Fisher.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Paul Fisher</p>
+                        <p class="mb-2 text-left">Program Director, Oxford Senior Executive Leadership Programme
+                            Associate fellow, Saïd Business School, University of Oxford</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Michael_Smets.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 490; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Michael Smets</p>
-                        <p class="mb-2 text-center">Professor of Management</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Michael_Smets.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Michael Smets</p>
+                        <p class="mb-2 text-left">Professor of Management</p>
                     </div>
                 </div>
             </div>
@@ -713,79 +682,64 @@ $program_details = get_field("program_details");
                 </svg></button>
 
             <div class="slick-slider-global-experts h-full md:px-44 px-5 relative z-0">
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Edward_Rogers.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 495; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Edward Rogers</p>
-                        <p class="mb-2 text-center">Ex Chief Knowledge Officer at Nasa</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Edward_Rogers.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Edward Rogers</p>
+                        <p class="mb-2 text-left">Ex Chief Knowledge Officer at Nasa</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Jamie_Anderson.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 491; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Jamie Anderson</p>
-                        <p class="mb-2 text-center">Professor of Creative Thinking and Fine Art of Success</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Jamie_Anderson.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Jamie Anderson</p>
+                        <p class="mb-2 text-left">Professor of Creative Thinking and Fine Art of Success</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Anton_Musgrave.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 492; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Anton Musgrave</p>
-                        <p class="mb-2 text-center">Strategy, Innovation and Digital Transformation</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Anton_Musgrave.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Anton Musgrave</p>
+                        <p class="mb-2 text-left">Strategy, Innovation and Digital Transformation</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Olivier_Tabatoni.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 493; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Olivier Tabatoni</p>
-                        <p class="mb-2 text-center">Professor of Finance and Strategy</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Olivier_Tabatoni.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Olivier Tabatoni</p>
+                        <p class="mb-2 text-left">Professor of Finance and Strategy</p>
                     </div>
                 </div>
-                <div class="md:p-2.5 px-4">
-                    <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
-                        <figure class="aspect-square w-full">
+                <div>
+                    <div class="p-6 text-center h-full">
+                        <figure onclick="Mike_Grandinetti.showModal()" class="aspect-square w-full overflow-hidden group cursor-pointer">
                             <?php $image_id = 494; ?>
-                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            $image_id
-                                        ); ?></figcaption>
+                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
-                        <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Mike Grandinetti</p>
-                        <p class="mb-2 text-center">Professor of Innovation</p>
-                        <button name="show more details" aria-label="show more details" class="hover:underline" onclick="Mike_Grandinetti.showModal()">Read More</button>
+                        <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Mike Grandinetti</p>
+                        <p class="mb-2 text-left">Professor of Innovation</p>
                     </div>
                 </div>
             </div>
@@ -1335,7 +1289,7 @@ $program_details = get_field("program_details");
                 speed: 500,
                 autoplay: false,
                 autoplaySpeed: 2500,
-                adaptiveHeight: false,
+                adaptiveHeight: true,
                 lazyLoad: 'ondemand',
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -1379,7 +1333,7 @@ $program_details = get_field("program_details");
                 speed: 500,
                 autoplay: false,
                 autoplaySpeed: 2500,
-                adaptiveHeight: false,
+                adaptiveHeight: true,
                 lazyLoad: 'ondemand',
                 slidesToShow: 3,
                 slidesToScroll: 1,

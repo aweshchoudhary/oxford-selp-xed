@@ -202,7 +202,7 @@
 }
 
 .wpforms-field {
-  @apply py-2 !important;
+  @apply py-4 !important;
 }
 
 .main-form .form-link {
