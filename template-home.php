@@ -124,7 +124,7 @@ $program_details = get_field("program_details");
         "large"
     ); ?>);background-position:center;background-repeat: no-repeat;background-size: cover;" class="md:px-44 bg-center bg-no-repeat md:py-10 p-5 relative bg-primary text-white">
         <div>
-            <h2 class="md:mb-20 mb-5 font-tnr text-4xl">
+            <h2 class="md:mb-20 mb-5 font-tnr">
                 Key highlights
             </h2>
             <ul class="list-none pl-0 flex flex-wrap md:gap-16 gap-5">
