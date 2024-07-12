@@ -474,14 +474,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                477,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 477; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            477
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Phyllida Hancock</p>
@@ -492,14 +489,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                478,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 478; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            478
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">David Trevaskis</p>
@@ -510,14 +504,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                479,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 479; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            479
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Sue Dopson</p>
@@ -528,14 +519,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                480,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 480; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            480
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Rachel Botsman</p>
@@ -546,14 +534,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                481,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 481; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            481
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Peter Hanke</p>
@@ -564,14 +549,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                482,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 482; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            482
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Trudi Lang</p>
@@ -582,14 +564,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                483,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 483; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            483
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Ian Goldin</p>
@@ -600,14 +579,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                484,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 484; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            484
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Joel Shapiro</p>
@@ -618,14 +594,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                485,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 485; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            485
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Andrew Stephen</p>
@@ -636,14 +609,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                486,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 486; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            486
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Steve New</p>
@@ -654,14 +624,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                487,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 487; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            487
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Pinar Ozcan</p>
@@ -672,14 +639,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                488,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 488; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            488
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Nelisha Wickremasinghe</p>
@@ -690,14 +654,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                489,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 489; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            489
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Paul Fisher</p>
@@ -708,14 +669,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                490,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 490; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            490
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Michael Smets</p>
@@ -750,14 +708,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                495,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 495; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            495
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Edward Rogers</p>
@@ -768,14 +723,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                491,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 491; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            491
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Jamie Anderson</p>
@@ -786,14 +738,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                492,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 492; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            492
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Anton Musgrave</p>
@@ -804,14 +753,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                493,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 493; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            493
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Olivier Tabatoni</p>
@@ -822,14 +768,11 @@ $program_details = get_field("program_details");
                 <div class="md:p-2.5 px-4">
                     <div class="p-6 text-center border border-primary md:min-h-[450px] h-full">
                         <figure class="aspect-square w-full">
-                            <?php echo wp_get_attachment_image(
-                                494,
-                                "medium",
-                                false,
-                                ["loading" => "lazy", "class" => "image-cover"]
-                            ); ?>
+                            <?php $image_id = 494; ?>
+                            <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover">
+
                             <figcaption><?php echo wp_get_attachment_caption(
-                                            494
+                                            $image_id
                                         ); ?></figcaption>
                         </figure>
                         <p class="md:text-2xl text-lg font-semibold mt-3 mb-0 text-center">Mike Grandinetti</p>

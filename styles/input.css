@@ -7,75 +7,7 @@
     --primary: 212 100% 14%;
     --wpforms-label-error-color: #ff5555 !important;
   }
-
-  @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: normal;
-    font-weight: normal;
-    src: local("Arial"), url("../fonts/ARIAL.woff2") format("woff2");
-  }
-
   /* @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: italic;
-    font-weight: normal;
-    src: local("Arial Italic"), url("../fonts/ARIALI.woff2") format("woff2");
-  } */
-
-  @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: normal;
-    font-weight: 500;
-    src: local("Arial Medium"), url("../fonts/ArialMdm.woff2") format("woff2");
-  }
-
-  /* @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: italic;
-    font-weight: 500;
-    src: local("Arial Medium Italic"),
-      url("../fonts/ArialMdmItl.woff2") format("woff2");
-  } */
-
-  @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: normal;
-    font-weight: bold;
-    src: local("Arial Bold"), url("../fonts/ARIALBD.woff2") format("woff2");
-  }
-
-  /* @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: italic;
-    font-weight: bold;
-    src: local("Arial Bold Italic"),
-      url("../fonts/ARIALBI.woff2") format("woff2");
-  } */
-
-  @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: normal;
-    font-weight: 900;
-    src: local("Arial Black"), url("../fonts/ARIBLK.woff2") format("woff2");
-  }
-
-  /* @font-face {
-    font-family: "Arial";
-    font-display: swap;
-    font-style: italic;
-    font-weight: 900;
-    src: local("Arial Black Italic"),
-      url("../fonts/ARIALBLACKITALIC.woff2") format("woff2");
-  } */
-
-  @font-face {
     font-family: "Times New Roman";
     font-style: normal;
     font-weight: 400;
@@ -105,11 +37,11 @@
     font-weight: 700;
     font-display: swap;
     src: url(../fonts/tnr-italic.woff2) format("woff2");
-  }
+  } */
 
   body,
   html {
-    font-family: "Arial", sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
     @apply outline-primary text-primary scroll-smooth;
   }
 
@@ -126,7 +58,8 @@
   /* Common Styles for Text */
   /* Global Styles for Text Elements */
   h1 {
-    @apply md:text-4xl sm:text-3xl text-3xl font-bold font-tnr leading-tight;
+    font-family: 'Times New Roman', Times, serif;
+    @apply md:text-4xl sm:text-3xl text-3xl font-bold leading-tight;
   }
 
   h2 {
