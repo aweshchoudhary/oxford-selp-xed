@@ -338,11 +338,13 @@ $program_details = get_field("program_details");
                 <div class="readmore-content mt-5" style="display: none;">
 
                     <h3><strong>Reimagining the future</strong></h3>
-                    <p>This intensive module helps participants understand how to enhance individual and collective creativity. Learn why many organisations view creativity as a crucial strategic capability. Discover techniques for fostering creativity to achieve higher levels of organisational innovation. Unlock your personal and organisational creative potential through interactive lectures, case study discussions and experiential exercises.</p>
+                    <p>This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation.</p>
+
                     <h3><strong>Execution excellence </strong></h3>
                     <p>This immersive module offers insights into brain learning processes, methods for accelerated learning, reasons behind poor judgement, and strategies for learning from successes and failures. Through real-life examples and interactive activities, participants will learn to make more deliberate and informed decisions, potentially doubling their learning capacity. The module also teaches how to systematically reflect on experiences and extract valuable lessons.</p>
+
                     <h3><strong>Creative thinking and the fine art of success</strong></h3>
-                    <p>This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation. </p>
+                    <p>This intensive module helps participants understand how to enhance individual and collective creativity. Learn why many organisations view creativity as a crucial strategic capability. Discover techniques for fostering creativity to achieve higher levels of organisational innovation. Unlock your personal and organisational creative potential through interactive lectures, case study discussions and experiential exercises.</p>
                 </div>
 
                 <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="1" onclick="toggleReadMore(this)">Read more</button>
@@ -760,11 +762,11 @@ $program_details = get_field("program_details");
             <p>Upon successful completion of the programme, participants receive a verified certificate from Saïd Business School, University of Oxford at the graduation ceremony held on the Oxford campus.</p>
 
             <figure class="border border-primary">
-                <?php echo wp_get_attachment_image(544, "large", false, [
+                <?php echo wp_get_attachment_image(548, "large", false, [
                     "loading" => "lazy",
                     "class" => "image-contain",
                 ]); ?>
-                <figcaption class="sr-only"><?php echo wp_get_attachment_caption(544); ?></figcaption>
+                <figcaption class="sr-only"><?php echo wp_get_attachment_caption(548); ?></figcaption>
             </figure>
         </div>
         <p class="mt-5">
