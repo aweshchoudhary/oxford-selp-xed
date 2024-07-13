@@ -103,7 +103,7 @@ $program_details = get_field("program_details");
 
             <div class="w-full">
                 <div class="bg-gray-200 rounded-none">
-                    <figure class="cursor-pointer relative" onclick="lazyLoadVideo('7h9rj5BkzjM', this)">
+                    <figure class="cursor-pointer relative group" onclick="lazyLoadVideo('7h9rj5BkzjM', this)">
                         <?php echo wp_get_attachment_image(
                             "541",
                             "large",
@@ -111,7 +111,7 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-video"]
                         ); ?>
                         <figcaption class="sr-only"></figcaption>
-                        <button class="play-btn group">
+                        <button class="play-btn">
                             <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                                 <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
                             </svg>
@@ -1485,7 +1485,7 @@ $program_details = get_field("program_details");
                 Explore the Oxford campus
             </h3>
             <div class="bg-gray-200 rounded-none">
-                <figure class="cursor-pointer relative" onclick="lazyLoadVideo('qYrS3ORfPr4', this)">
+                <figure class="cursor-pointer relative group" onclick="lazyLoadVideo('qYrS3ORfPr4', this)">
                     <?php echo wp_get_attachment_image(539, "large", false, [
                         "loading" => "lazy",
                         "class" => "image-video",
@@ -1493,7 +1493,7 @@ $program_details = get_field("program_details");
                     <figcaption><?php echo wp_get_attachment_caption(
                                     539
                                 ); ?></figcaption>
-                    <button class="play-btn group">
+                    <button class="play-btn">
                         <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
                         </svg>
@@ -1508,7 +1508,7 @@ $program_details = get_field("program_details");
                 Hear from Paul Fisher, Programme Director
             </h3>
             <div class="bg-gray-200 rounded-none">
-                <figure class="cursor-pointer relative" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
+                <figure class="cursor-pointer relative group" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
                     <?php echo wp_get_attachment_image(540, "large", false, [
                         "loading" => "lazy",
                         "class" => "image-video",
@@ -1516,7 +1516,7 @@ $program_details = get_field("program_details");
                     <figcaption><?php echo wp_get_attachment_caption(
                                     540
                                 ); ?></figcaption>
-                    <button class="play-btn group">
+                    <button class="play-btn">
                         <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
                         </svg>
