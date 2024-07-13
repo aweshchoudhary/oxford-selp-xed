@@ -111,7 +111,7 @@ $program_details = get_field("program_details");
                             ["loading" => "lazy", "class" => "image-video"]
                         ); ?>
                         <figcaption class="sr-only"></figcaption>
-                        <button class="play-btn">
+                        <button name="play video button" aria-label="play video button" class="play-btn">
                             <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                                 <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
                             </svg>
@@ -335,16 +335,52 @@ $program_details = get_field("program_details");
                     <li>Execution excellence </li>
                     <li>Creative thinking and the fine art of success</li>
                 </ul>
-                <div class="readmore-content mt-5" style="display: none;">
+                <div class="readmore-content mt-5 space-y-5" style="display: none;">
 
-                    <h3><strong>Reimagining the future</strong></h3>
-                    <p>This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation.</p>
+                    <div>
+                        <h3><strong>Reimagining the future</strong></h3>
 
-                    <h3><strong>Execution excellence </strong></h3>
-                    <p>This immersive module offers insights into brain learning processes, methods for accelerated learning, reasons behind poor judgement, and strategies for learning from successes and failures. Through real-life examples and interactive activities, participants will learn to make more deliberate and informed decisions, potentially doubling their learning capacity. The module also teaches how to systematically reflect on experiences and extract valuable lessons.</p>
+                        <p>This module challenges participants to think differently about future operating environments, markets, customer segments, and stakeholder engagement models. It focuses on strategic thinking, growth imperatives, innovation, and leadership demands.</p>
 
-                    <h3><strong>Creative thinking and the fine art of success</strong></h3>
-                    <p>This intensive module helps participants understand how to enhance individual and collective creativity. Learn why many organisations view creativity as a crucial strategic capability. Discover techniques for fostering creativity to achieve higher levels of organisational innovation. Unlock your personal and organisational creative potential through interactive lectures, case study discussions and experiential exercises.</p>
+                        <h4>Participants will:</h4>
+                        <ul>
+                            <li>Understand future shifts in consumer behaviour, technology, and market engagement models</li>
+                            <li>Explore key forces shaping future markets and industries</li>
+                            <li>Learn a structured methodology to investigate future business operating contexts</li>
+                            <li>Develop new perspectives on business opportunities and leadership requirements</li>
+                            <li>Address strategic thinking and action for future growth</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3><strong>Execution excellence </strong></h3>
+
+                        <p>This module provides an in-depth understanding of how operational decisions are integral to organisational success. Operations encompass all activities performed to produce and deliver products or services. An operations strategy involves operational decisions for long-term competitive advantage, covering facilities, technology choices, and business partner relationships.</p>
+
+                        <h4>Participants will:</h4>
+                        <ul>
+                            <li>Explore how to structure operations to align with competitive strategies</li>
+                            <li>Consider which operational activities should remain in-house versus outsourced, and the long-term implications on competitive advantage</li>
+                            <li>Examine key operational decision categories like capacity, process choices, IT implementation, and network management</li>
+                            <li>Address current business environment trends</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3><strong>Creative thinking and the fine art of success</strong></h3>
+
+                        <p>This session helps participants understand how to enhance individual and collective creativity, exploring why organisations view creativity as a crucial strategic capability. It combines interactive lectures, case study discussions, and experiential exercises.</p>
+
+                        <h4>Participants will:</h4>
+                        <ul>
+                            <li>Learn techniques for fostering collective creativity</li>
+                            <li>Understand how to build a culture of creativity</li>
+                            <li>Explore the dynamics of collective creativity</li>
+                            <li>Examine the relationship between strategy and individual creativity</li>
+                            <li>Unleash personal and organisational creative potential</li>
+                        </ul>
+                    </div>
+
                 </div>
 
                 <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="1" onclick="toggleReadMore(this)">Read more</button>
@@ -1517,7 +1553,7 @@ $program_details = get_field("program_details");
                     <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
                                                     539
                                                 ); ?></figcaption>
-                    <button class="play-btn">
+                    <button name="play video button" aria-label="play video button" class="play-btn">
                         <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
                         </svg>
@@ -1540,7 +1576,7 @@ $program_details = get_field("program_details");
                     <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
                                                     540
                                                 ); ?></figcaption>
-                    <button class="play-btn">
+                    <button name="play video button" aria-label="play video button" class="play-btn">
                         <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
                         </svg>

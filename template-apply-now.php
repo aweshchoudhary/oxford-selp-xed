@@ -9,13 +9,16 @@ get_header(); ?>
                 Oxford Senior Executive Leadership Programme
             </h1>
             <p>
-                We are glad to see your interest in Oxford’s Senior Executive Leadership Programme.
-            </p>
-            <p>
-                We are looking for aspirants who desire to gain knowledge and expertise in leadership and are willing to contribute to the cohort and Oxford’s Business Alumni (OBA) Network.
-            </p>
-            <p>
-                Please provide your details. The Admissions Team will review your credentials and get back to you shortly.
+                Thank you for your interest in the Oxford Senior Executive Leadership Programme.
+                <br>
+                <br>
+                We seek aspirants who wish to gain leadership knowledge and expertise, and are willing to contribute to the cohort and Oxford Business Alumni Network.
+                <br>
+                <br>
+
+                Please provide your details below. The admissions team will review your credentials and contact you shortly.
+                <br>
+                <br>
             </p>
         </header>
         <div class="container mx-auto">

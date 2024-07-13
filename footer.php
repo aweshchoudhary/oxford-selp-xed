@@ -72,7 +72,7 @@
             </div>
             <div>
                 <h3 class="text-2xl mb-1 font-semibold">USA</h3>
-                <p>146 W 29th ST NEW YORK, <br>
+                <p>146 W 29th ST New York, <br>
                     NY 10001 </p>
             </div>
         </div>
@@ -86,7 +86,7 @@
                 <h3 class="text-2xl mb-1 font-semibold">Saudi Arabia</h3>
                 <p>Le Cygne Commercial Center 2,
                     6th Floor Al-Arz,
-                    Al-Olaya,Riyadh 12611 </p>
+                    Al-Olaya, Riyadh 12611 </p>
             </div>
         </div>
     </div>
