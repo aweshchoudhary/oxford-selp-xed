@@ -142,9 +142,9 @@ $program_details = get_field("program_details");
                             false,
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
-                        <figcaption><?php echo wp_get_attachment_caption(
-                                        470
-                                    ); ?></figcaption>
+                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                        470
+                                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Campus immersion
@@ -160,9 +160,9 @@ $program_details = get_field("program_details");
                             false,
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
-                        <figcaption><?php echo wp_get_attachment_caption(
-                                        471
-                                    ); ?></figcaption>
+                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                        471
+                                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Industry immersion <br>
@@ -176,9 +176,9 @@ $program_details = get_field("program_details");
                             false,
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
-                        <figcaption><?php echo wp_get_attachment_caption(
-                                        472
-                                    ); ?></figcaption>
+                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                        472
+                                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Oxford Business Alumni <br>
@@ -192,9 +192,9 @@ $program_details = get_field("program_details");
                             false,
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
-                        <figcaption><?php echo wp_get_attachment_caption(
-                                        473
-                                    ); ?></figcaption>
+                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                        473
+                                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Learn from Oxford faculty <br>
@@ -208,9 +208,9 @@ $program_details = get_field("program_details");
                             false,
                             ["loading" => "lazy", "class" => "image-contain"]
                         ); ?>
-                        <figcaption><?php echo wp_get_attachment_caption(
-                                        474
-                                    ); ?></figcaption>
+                        <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                        474
+                                                    ); ?></figcaption>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
                         Live online <br>
@@ -228,9 +228,9 @@ $program_details = get_field("program_details");
                                     "class" => "image-contain",
                                 ]
                             ); ?>
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            475
-                                        ); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                            475
+                                                        ); ?></figcaption>
                         </figure>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
@@ -250,9 +250,9 @@ $program_details = get_field("program_details");
                                     "class" => "image-contain",
                                 ]
                             ); ?>
-                            <figcaption><?php echo wp_get_attachment_caption(
-                                            476
-                                        ); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                            476
+                                                        ); ?></figcaption>
                         </figure>
                     </figure>
                     <p class="md:text-2xl mb-0 sm:text-xl text-lg font-semibold text-left">
@@ -331,17 +331,17 @@ $program_details = get_field("program_details");
                     Industry immersion in Dubai <!-- (06 Jan, 2024 - 10 Jan, 2024) -->
                 </h3>
                 <ul>
-                    <li>Creative thinking</li>
-                    <li>Systems thinking and managing complexity</li>
                     <li>Reimagining the future</li>
+                    <li>Execution excellence </li>
+                    <li>Creative thinking and the fine art of success</li>
                 </ul>
                 <div class="readmore-content mt-5" style="display: none;">
 
-                    <h3><strong>Creative thinking</strong></h3>
-                    <p>This intensive module helps participants understand how to enhance individual and collective creativity. Learn why many organisations view creativity as a crucial strategic capability. Discover techniques for fostering creativity to achieve higher levels of organisational innovation. Unlock your personal and organisational creative potential through interactive lectures, case study discussions and experiential exercises.</p>
-                    <h3><strong>Systems thinking and managing complexity</strong></h3>
-                    <p>This immersive module offers insights into brain learning processes, methods for accelerated learning, reasons behind poor judgement, and strategies for learning from successes and failures. Through real-life examples and interactive activities, participants will learn to make more deliberate and informed decisions, potentially doubling their learning capacity. The module also teaches how to systematically reflect on experiences and extract valuable lessons.</p>
                     <h3><strong>Reimagining the future</strong></h3>
+                    <p>This intensive module helps participants understand how to enhance individual and collective creativity. Learn why many organisations view creativity as a crucial strategic capability. Discover techniques for fostering creativity to achieve higher levels of organisational innovation. Unlock your personal and organisational creative potential through interactive lectures, case study discussions and experiential exercises.</p>
+                    <h3><strong>Execution excellence </strong></h3>
+                    <p>This immersive module offers insights into brain learning processes, methods for accelerated learning, reasons behind poor judgement, and strategies for learning from successes and failures. Through real-life examples and interactive activities, participants will learn to make more deliberate and informed decisions, potentially doubling their learning capacity. The module also teaches how to systematically reflect on experiences and extract valuable lessons.</p>
+                    <h3><strong>Creative thinking and the fine art of success</strong></h3>
                     <p>This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation. </p>
                 </div>
 
@@ -407,9 +407,9 @@ $program_details = get_field("program_details");
                 "loading" => "lazy",
                 "class" => "image-cover",
             ]); ?>
-            <figcaption><?php echo wp_get_attachment_caption(
-                            466
-                        ); ?></figcaption>
+            <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                            466
+                                        ); ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <div>
@@ -455,9 +455,9 @@ $program_details = get_field("program_details");
                 "loading" => "lazy",
                 "class" => "image-cover",
             ]); ?>
-            <figcaption><?php echo wp_get_attachment_caption(
-                            465
-                        ); ?></figcaption>
+            <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                            465
+                                        ); ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
             <p>
@@ -503,7 +503,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 477; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Phyllida Hancock</p>
                         <p class="mb-2 text-left">Teaches Inspirational leadership</p>
@@ -515,7 +515,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 478; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">David Trevaskis</p>
                         <p class="mb-2 text-left">Teaches Persuasion and influence</p>
@@ -527,7 +527,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 479; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Sue Dopson</p>
                         <p class="mb-2 text-left">Professor of Organisational Behaviour</p>
@@ -539,7 +539,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 480; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Rachel Botsman</p>
                         <p class="mb-2 text-left">Associate Fellow</p>
@@ -551,7 +551,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 481; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Peter Hanke</p>
                         <p class="mb-2 text-left">Associate Fellow</p>
@@ -563,7 +563,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 482; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Trudi Lang</p>
                         <p class="mb-2 text-left">Senior Fellow in Management Practice</p>
@@ -575,7 +575,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 483; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Ian Goldin</p>
                         <p class="mb-2 text-left">Professor of Globalisation and Development</p>
@@ -587,7 +587,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 484; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Joel Shapiro</p>
                         <p class="mb-2 text-left">Professor of Financial Economics</p>
@@ -599,7 +599,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 485; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Andrew Stephen</p>
                         <p class="mb-2 text-left">Professor of Marketing</p>
@@ -611,7 +611,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 486; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Steve New</p>
                         <p class="mb-2 text-left">Associate Professor in Operations Management</p>
@@ -623,7 +623,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 487; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Pinar Ozcan</p>
                         <p class="mb-2 text-left">Professor of Entrepreneurship and Innovation</p>
@@ -635,7 +635,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 488; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Nelisha Wickremasinghe</p>
                         <p class="mb-2 text-left">Leadership and change consultant</p>
@@ -647,7 +647,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 489; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Paul Fisher</p>
                         <p class="mb-2 text-left">Programme Director, Oxford Senior Executive Leadership Programme</p>
@@ -659,7 +659,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 490; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Michael Smets</p>
                         <p class="mb-2 text-left">Professor of Management</p>
@@ -695,7 +695,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 495; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Edward Rogers</p>
                         <p class="mb-2 text-left">Ex Chief Knowledge Officer at Nasa</p>
@@ -707,10 +707,10 @@ $program_details = get_field("program_details");
                             <?php $image_id = 491; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Jamie Anderson</p>
-                        <p class="mb-2 text-left">Professor of Creative Thinking and Fine Art of Success</p>
+                        <p class="mb-2 text-left">Professor of Reimagining the future and Fine Art of Success</p>
                     </div>
                 </div>
                 <div>
@@ -719,7 +719,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 492; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Anton Musgrave</p>
                         <p class="mb-2 text-left">Strategy, Innovation and Digital Transformation</p>
@@ -731,7 +731,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 493; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Olivier Tabatoni</p>
                         <p class="mb-2 text-left">Professor of Finance and Strategy</p>
@@ -743,7 +743,7 @@ $program_details = get_field("program_details");
                             <?php $image_id = 494; ?>
                             <img width="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[1] ?>" height="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[2] ?>" data-lazy="<?php echo wp_get_attachment_image_src($image_id, "medium", false)[0] ?>" srcset="<?php echo wp_get_attachment_image_srcset($image_id, "medium", false) ?>" decoding="async" sizes="<?php echo wp_get_attachment_image_sizes($image_id, "medium", false) ?>" alt="<?php echo wp_get_attachment_caption($image_id); ?>" class="image-cover group-hover:scale-105 transition">
 
-                            <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
+                            <figcaption class="sr-only"><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Mike Grandinetti</p>
                         <p class="mb-2 text-left">Professor of Innovation</p>
@@ -752,6 +752,28 @@ $program_details = get_field("program_details");
             </div>
         </div>
     </section>
+
+    <section class="md:py-10 p-5 md:px-44">
+        <hr class="border-primary md:mb-10 mb-5 border-2">
+        <div>
+            <h2 class="md:mb-10 mb-5 font-tnr">Certificate</h2>
+            <p>Upon successful completion of the programme, participants receive a verified certificate from Saïd Business School, University of Oxford at the graduation ceremony held on the Oxford campus.</p>
+
+            <figure class="border border-primary">
+                <?php echo wp_get_attachment_image(544, "large", false, [
+                    "loading" => "lazy",
+                    "class" => "image-contain",
+                ]); ?>
+                <figcaption class="sr-only"><?php echo wp_get_attachment_caption(544); ?></figcaption>
+            </figure>
+        </div>
+        <p class="mt-5">
+            Please note: The certificate image is for illustrative purposes only and may be subject to change at the discretion of Saïd Business School, University of Oxford.
+        </p>
+        <hr class="border-primary md:mt-10 mt-5 border-2">
+    </section>
+
+
     <!-- Modals For Each person -->
     <div>
         <dialog id="David_Trevaskis" class="modal">
@@ -761,9 +783,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    478
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    478
+                                                ); ?></figcaption>
                 </figure>
 
                 <div>
@@ -789,9 +811,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    477
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    477
+                                                ); ?></figcaption>
                 </figure>
 
                 <div>
@@ -817,9 +839,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    479
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    479
+                                                ); ?></figcaption>
                 </figure>
 
                 <div>
@@ -845,9 +867,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    480
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    480
+                                                ); ?></figcaption>
                 </figure>
 
                 <div>
@@ -873,9 +895,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    481
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    481
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -902,9 +924,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    482
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    482
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -931,9 +953,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    483
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    483
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -960,9 +982,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    484
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    484
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -990,9 +1012,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    485
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    485
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -1020,9 +1042,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    486
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    486
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>Steve New</h3>
@@ -1046,9 +1068,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    487
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    487
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>Pinar Ozcan</h3>
@@ -1071,9 +1093,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    488
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    488
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>Nelisha Wickremasinghe</h3>
@@ -1096,9 +1118,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    489
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    489
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>Paul Fisher</h3>
@@ -1121,9 +1143,9 @@ $program_details = get_field("program_details");
                         false,
                         array("loading" => "lazy", "class" => "image-cover")
                     ); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    490
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    490
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>Michael Smets</h3>
@@ -1147,16 +1169,16 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    491
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    491
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
                         Jamie Anderson
                     </h3>
                     <h4 class="mb-4">
-                        Professor of Creative Thinking and Fine Art of Success
+                        Professor of Reimagining the future and Fine Art of Success
                     </h4>
                     <p>
 
@@ -1176,9 +1198,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    492
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    492
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -1203,9 +1225,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    493
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    493
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -1230,9 +1252,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    494
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    494
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -1257,9 +1279,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-cover",
                     )); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    495
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    495
+                                                ); ?></figcaption>
                 </figure>
                 <div>
                     <h3>
@@ -1279,6 +1301,7 @@ $program_details = get_field("program_details");
         </dialog>
     </div>
     <!-- Close Modals For Each person -->
+
 
     <!-- start slick slider -->
 
@@ -1391,9 +1414,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-contain",
                     ]); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    456
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    456
+                                                ); ?></figcaption>
                 </figure>
                 <h4 class="my-3 text-center">Average work experience: 22 years</h4>
             </div>
@@ -1462,9 +1485,9 @@ $program_details = get_field("program_details");
                 "loading" => "lazy",
                 "class" => "image-cover",
             ]); ?>
-            <figcaption><?php echo wp_get_attachment_caption(
-                            458
-                        ); ?></figcaption>
+            <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                            458
+                                        ); ?></figcaption>
         </figure>
         <hr class="border-primary md:mt-10 mt-5" />
     </section>
@@ -1489,9 +1512,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-video",
                     ]); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    539
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    539
+                                                ); ?></figcaption>
                     <button class="play-btn">
                         <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
@@ -1512,9 +1535,9 @@ $program_details = get_field("program_details");
                         "loading" => "lazy",
                         "class" => "image-video",
                     ]); ?>
-                    <figcaption><?php echo wp_get_attachment_caption(
-                                    540
-                                ); ?></figcaption>
+                    <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                                    540
+                                                ); ?></figcaption>
                     <button class="play-btn">
                         <svg class="group-hover:opacity-0 ml-1 transition absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-width="1" d="m3 22l18-10L3 2z" />
@@ -1546,9 +1569,9 @@ $program_details = get_field("program_details");
                 "loading" => "lazy",
                 "class" => "image-cover",
             ]); ?>
-            <figcaption><?php echo wp_get_attachment_caption(
-                            462
-                        ); ?></figcaption>
+            <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                            462
+                                        ); ?></figcaption>
         </figure>
     </section>
     <section>
@@ -1615,9 +1638,9 @@ $program_details = get_field("program_details");
                 "loading" => "lazy",
                 "class" => "image-cover",
             ]); ?>
-            <figcaption><?php echo wp_get_attachment_caption(
-                            460
-                        ); ?></figcaption>
+            <figcaption class="sr-only"><?php echo wp_get_attachment_caption(
+                                            460
+                                        ); ?></figcaption>
         </figure>
     </section>
     <section class="md:px-44 md:py-10 p-5">
