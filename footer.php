@@ -50,44 +50,6 @@
                 oxford.selp@xedinstitute.org
             </li>
         </ul>
-
-        <!-- <ul class="list-none flex items-center gap-5 text-3xl mt-5">
-            <li>
-                <a class="text-white hover:text-white/80" href="https://www.facebook.com/profile.php?id=100076583324100" target="__blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="text-3xl" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="text-white hover:text-white/80" href="https://www.linkedin.com/company/cornell-university-chro-leadership-program/" target="__blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="text-3xl" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="text-white hover:text-white/80" href="https://twitter.com/Xed_Learning" target="__blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="text-3xl" viewBox="0 0 512 512">
-                        <path fill="currentColor" d="M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="text-white hover:text-white/80" href="https://www.youtube.com/channel/UCH3oYlKeCYcPXEVvnr4tyxw" target="__blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="text-3xl" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="text-white hover:text-white/80" href="https://www.instagram.com/cornell_chro.leadership/" target="__blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="text-3xl" viewBox="0 0 1024 1024">
-                        <path fill="currentColor" d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1S717.1 625.5 717.1 512S625.5 306.9 512 306.9m0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7S645.3 438.6 645.3 512S585.4 645.3 512 645.3m213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9s47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165m-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8c-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840s-183.3 4.7-235.9-16.1c-18.2-7.3-31.8-16.1-45.8-30.2c-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512s-4.7-183.3 16.1-235.9c7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2c14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512s4.7 183.2-16.2 235.8" />
-                    </svg>
-                </a>
-            </li>
-        </ul> -->
     </div>
     <div class="md:basis-1/4 basis-full flex-1 gap-5">
         <div class="flex items-start md:gap-5 gap-3 md:mt-10 mt-5">

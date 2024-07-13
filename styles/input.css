@@ -166,17 +166,17 @@
 
 /* Button Sytles */
 .cbtn-primary {
-  @apply block w-fit text-center hover:text-white/90 hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white capitalize;
+  @apply block w-fit text-center hover:text-white/90 hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white ;
 }
 
 .wpforms-submit,
 .wpforms-page-button,
 .wpforms-page-next {
-  @apply block w-fit text-center hover:text-white/90 rounded-none font-normal hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white capitalize mt-5 !important;
+  @apply block w-fit text-center hover:text-white/90 rounded-none font-normal hover:bg-primary/95 px-6 py-3 border border-primary bg-primary text-white  mt-5 !important;
 }
 
 .cbtn-outline {
-  @apply block w-fit text-center px-6 py-3 border border-primary hover:bg-primary hover:text-white transition capitalize;
+  @apply block w-fit text-center px-6 py-3 border border-primary hover:bg-primary hover:text-white transition ;
 }
 
 .slick-btn {
@@ -210,7 +210,7 @@
 }
 
 .main-form .wpforms-required-label {
-  @apply text-red-500 capitalize !important;
+  @apply text-red-500  !important;
 }
 
 .main-form .wpforms-head-container {

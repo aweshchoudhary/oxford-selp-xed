@@ -8,8 +8,8 @@ get_header(); ?>
             <h1 class="text-center md:mb-10 mb-5">
                 Oxford Senior Executive Leadership Programme
             </h1>
-            <p>We are glad to see your interest in Cornell’s CHRO Leadership Program <br>
-                Please provide your details and get access to the program brochure.</p>
+            <p> We are glad to see your interest in Oxford’s Senior Executive Leadership Programme.<br>
+                Please provide your details and get access to the programme brochure.</p>
         </header>
         <div class="container mx-auto">
             <?php echo do_shortcode('[wpforms id="269" title="false"]'); ?>

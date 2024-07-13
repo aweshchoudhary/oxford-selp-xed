@@ -27,7 +27,7 @@ $program_details = get_field("program_details");
             <div class="md:flex-row flex-col flex items-center gap-3 justify-center md:mb-10 mb-5">
                 <a aria-label="goto apply now page" href="<?php echo $hero_sec["apply_now"]["url"]; ?>" class="cbtn-primary"><?php echo $hero_sec["apply_now"]["title"]; ?></a>
                 <a aria-label="goto eligibility page" href="<?php echo $hero_sec["review_my_application"]["url"]; ?>" class="cbtn-outline"><?php echo $hero_sec["review_my_application"]["title"]; ?></a>
-                <button name="open download brochure form" aria-label="open download brochure form" onclick="download_brochure.showModal();" class="cbtn-outline">Download Brochure</button>
+                <button name="open download brochure form" aria-label="open download brochure form" onclick="download_brochure.showModal();" class="cbtn-outline">Download brochure</button>
             </div>
             <hr class="border-primary border" />
             <div>
@@ -42,7 +42,7 @@ $program_details = get_field("program_details");
     </section>
     <dialog id="download_brochure" class="modal">
         <div class="modal-box rounded md:p-10 p-5 md:max-w-[60%]">
-            <h2>Get Your Brochure</h2>
+            <h2>Get your brochure</h2>
             <?php echo do_shortcode('[wpforms id="512"]'); ?>
         </div>
         <form method="dialog" class="modal-backdrop">
@@ -315,7 +315,7 @@ $program_details = get_field("program_details");
                     <p>Participants will investigate similarities and connections between music performance and leadership innovation. The session will focus on transforming knowledge and experience from the performing arts into core leadership principles that can be understood and applied across any industry.</p>
                 </div>
 
-                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="0" onclick="toggleReadMore(this)">Read More</button>
+                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="0" onclick="toggleReadMore(this)">Read more</button>
             </div>
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>
@@ -336,7 +336,7 @@ $program_details = get_field("program_details");
                     <p>This workshop provides an in-depth exploration of disruption, innovation and their impact on business. Delve into digital transformation, emerging technologies, industry disruption, and various innovation methodologies. Examine real-world case studies for deeper insights into the current state of innovation and disruption. Explore best practices in innovation, human-centric design, lean methodologies and a multi-horizon portfolio approach to innovation. </p>
                 </div>
 
-                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="1" onclick="toggleReadMore(this)">Read More</button>
+                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="1" onclick="toggleReadMore(this)">Read more</button>
             </div>
             <div class="readmore-section md:mb-10 mb-5">
                 <h3>Live online modules</h3>
@@ -382,7 +382,7 @@ $program_details = get_field("program_details");
                     <p>Learn how collaborative strategies and social capital are essential for successful leadership. Discover how to foster teamwork, communication and trust within organisations, leading to improved problem-solving, decision-making and productivity. Learn to build a collaborative culture and social capital to enhance organisational reputation, access new opportunities and valuable resources.</p>
                 </div>
 
-                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="2" onclick="toggleReadMore(this)">Read More</button>
+                <button name="show more details" aria-label="show more details" class="cbtn-outline mt-5" data-target="2" onclick="toggleReadMore(this)">Read more</button>
             </div>
             <hr class="border-primary" />
         </div>
@@ -1181,7 +1181,7 @@ $program_details = get_field("program_details");
                         Strategy, Innovation and Digital Transformation
                     </h4>
                     <p>
-                        Anton Musgrave lectures regularly for London Business School, Duke CE, IMD and among others. He is passionate about teaching business strategy, innovation and the future. He shares an insightful understanding of the drivers of long-term business success, shifting business models, and what it takes to stay ahead of the market.
+                        Anton Musgrave lectures regularly for London Business School, Duke CE, and IMD among others. He is passionate about teaching business strategy, innovation and the future. He shares an insightful understanding of the drivers of long-term business success, shifting business models, and what it takes to stay ahead of the market.
                     </p>
                 </div>
             </div>
@@ -1375,10 +1375,10 @@ $program_details = get_field("program_details");
 
 
     <section class="md:px-44 md:py-10 p-5">
-        <h2 class="font-tnr text-center md:mb-10 mb-5">Cohorts statistics</h2>
+        <h2 class="font-tnr text-center md:mb-10 mb-5">Cohort statistics</h2>
         <div class="flex md:flex-row flex-col justify-between md:gap-10 gap-5">
             <div class="basis-[40%]">
-                <h3 class="mb-3 text-center">Work Experience</h3>
+                <h3 class="mb-3 text-center">Work experience</h3>
                 <figure>
                     <?php echo wp_get_attachment_image(456, "large", false, [
                         "loading" => "lazy",
@@ -1388,7 +1388,7 @@ $program_details = get_field("program_details");
                                     456
                                 ); ?></figcaption>
                 </figure>
-                <h4 class="my-3 text-center">Average Work Experience: 22 years</h4>
+                <h4 class="my-3 text-center">Average work experience: 22 years</h4>
             </div>
             <div>
                 <h3 class="mb-3">Designation</h3>
@@ -1488,7 +1488,7 @@ $program_details = get_field("program_details");
                 </figure>
             </div>
             <h3 class="my-10">
-                Hear from Professor Paul Fisher, Programme Director
+                Hear from Paul Fisher, Programme Director
             </h3>
             <div class="bg-gray-200 rounded-none">
                 <figure class="cursor-pointer" onclick="lazyLoadVideo('nAdBOEw6Kbc', this)">
@@ -1553,7 +1553,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Application submission</h4>
                     <p class="text-left mb-0">
-                        Answer the questions and submit your CV/upload or LinkedIn Profile</p>
+                        Answer the questions and submit your CV/upload or LinkedIn profile</p>
                 </div>
                 <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
                     <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
@@ -1561,7 +1561,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Application review</h4>
                     <p class="text-left mb-0">
-                        Admission Committee will verify your application and evaluate it for eligibility and fit to programme</p>
+                        Admission committee will verify your application and evaluate it for eligibility and fit to programme</p>
                 </div>
                 <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
                     <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">
@@ -1583,7 +1583,7 @@ $program_details = get_field("program_details");
             <p>
                 We do not discriminate against any person based on race, colour, sex or sexual orientation, gender identity, religion, age, national or ethnic origin, political beliefs, veteran status, or disability in admission to, access to, treatment in, or employment in this programme.
             </p>
-            <a aria-label="goto apply now page" href="/apply-now" class="cbtn-outline">Apply Now</a>
+            <a aria-label="goto apply now page" href="/apply-now" class="cbtn-outline">Apply now</a>
         </div>
         <figure class="w-full md:h-[400px] h-[250px] object-cover">
             <?php echo wp_get_attachment_image(460, "large", false, [
@@ -1603,7 +1603,7 @@ $program_details = get_field("program_details");
             <p>
                 Taking this programme with colleagues can enhance communication and accelerate impact within your organisation. It also fosters meaningful discussions among participants.
             </p>
-            <a aria-label="goto get in touch" href="/get-in-touch" class="cbtn-outline">Get In Touch</a>
+            <a aria-label="goto get in touch" href="/get-in-touch" class="cbtn-outline">Get in touch</a>
         </div>
         <div>
             <h2 class="font-tnr md:mb-8 mb-5">
@@ -1612,7 +1612,7 @@ $program_details = get_field("program_details");
             <p>
                 Recommend suitable candidates who you believe will benefit from Oxford's Senior Executive Leadership Programme. You will earn USD 750 if they enrol. Additionally, they will receive a USD 750 waiver on the programme fee.
             </p>
-            <a aria-label="goto refer and earn page" href="https://referrals.xedinstitute.org/hgKaSP/join" class="cbtn-outline">Refer and Earn</a>
+            <a aria-label="goto refer and earn page" href="https://referrals.xedinstitute.org/hgKaSP/join" class="cbtn-outline">Refer and earn</a>
         </div>
     </section>
 </article>
