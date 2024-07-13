@@ -642,8 +642,7 @@ $program_details = get_field("program_details");
                             <figcaption><?php echo wp_get_attachment_caption($image_id); ?></figcaption>
                         </figure>
                         <p class="md:text-xl text-lg font-semibold mt-3 mb-0">Paul Fisher</p>
-                        <p class="mb-2 text-left">Program Director, Oxford Senior Executive Leadership Programme
-                            Associate fellow, Saïd Business School, University of Oxford</p>
+                        <p class="mb-2 text-left">Programme Director, Oxford Senior Executive Leadership Programme</p>
                     </div>
                 </div>
                 <div>
@@ -1047,7 +1046,7 @@ $program_details = get_field("program_details");
                     <h3>Pinar Ozcan</h3>
                     <h4 class="mb-4">Professor of Entrepreneurship and Innovation</h4>
                     <p>
-                        Pinar Ozcan is Professor of Entrepreneurship and Innovation. She also serves as the Director of the Oxford Future of Finance and Technology (Fintech) Initiative. Pinar specialises in entrepreneurship and strategy in technology markets. Her current research includes the open banking project, where she examines the industry disruption in banking through regulation and entry of fintechs, and the development of the sharing economy. Pinar completed her PhD at the Oxford Senior Executive Leadership Programme Technology Ventures Program (STVP) at the Oxford Senior Executive Leadership Programme University Management Science and Engineering Department and also holds a Master of Science and dual Bachelor’s degrees from Oxford Senior Executive Leadership Programme.
+                        Pinar Ozcan is Professor of Entrepreneurship and Innovation. She also serves as the Director of the Oxford Future of Finance and Technology (Fintech) Initiative. Pinar specialises in entrepreneurship and strategy in technology markets. Her current research includes the open banking project, where she examines the industry disruption in banking through regulation and entry of fintechs, and the development of the sharing economy. Pinar completed her PhD at the Oxford Senior Executive Leadership Programme Technology Ventures Programme (STVP) at the Oxford Senior Executive Leadership Programme University Management Science and Engineering Department and also holds a Master of Science and dual Bachelor’s degrees from Oxford Senior Executive Leadership Programme.
                     </p>
                 </div>
             </div>
@@ -1095,7 +1094,7 @@ $program_details = get_field("program_details");
                 </figure>
                 <div>
                     <h3>Paul Fisher</h3>
-                    <h4 class="mb-4">Programme Director</h4>
+                    <h4 class="mb-4">Programme Director, Oxford Senior Executive Leadership Programme</h4>
                     <p>
                         Paul Fisher is Programme Director of the Oxford Programme on Negotiation (OPN) which he has helped to design and develop since its inception in 2004. Paul also teaches on OPN and other programmes with topics including preparation in negotiations, decision-making, persuasion, stakeholder management, managing emotions, multi-party & multi-issue negotiations and virtual negotiations. Paul has co-written a number of negotiation simulations, including one on the building of a football stadium and the other designed specifically for virtual negotiations. Paul has over 20 years’ experience in the field of communications, education and capacity building, helping private and public sector organisations to achieve their full potential.
                     </p>
