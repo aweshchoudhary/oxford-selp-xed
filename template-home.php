@@ -460,22 +460,21 @@ $program_details = get_field("program_details");
                         ); ?></figcaption>
         </figure>
         <div class="md:px-44 md:py-10 p-5 space-y-5">
-            <p class="mb-5">
-                Upon completing the programme, you become eligible for lifelong membership in the Oxford Business Alumni Network, the official global business alumni network of the Saïd Business School, University of Oxford.
+            <p>
+                Upon completing the programme, you become eligible for lifelong membership in the Oxford Business Alumni network, the official global business alumni network of Saïd Business School, University of Oxford.
                 <br><br>
 
-                With over 24,000 members in more than 150 countries worldwide, this network represents a truly world-class international business community.
+                With over 24,000 members in more than 150 countries and 20 chapters worldwide, this network represents a truly world-class international business community.
             </p>
-            <h3>Membership benefits include:</h3>
+            <h3>Your alumni benefits include:</h3>
             <ul>
-                <li>Lifelong Oxford business alumni email address</li>
-                <li>Joining your regional chapter and connecting with the ambassador in your city</li>
-                <li>Access to the LinkedIn group and online community for networking</li>
-                <li>Invitations to academic, networking and social events in Oxford and your home country</li>
-                <li>Subscription to the monthly electronic newsletter</li>
-                <li>Access to the network website, news, resources and university research</li>
+                <li>A lifelong Oxford business alumni email address</li>
+                <li>Membership of global Oxford business alumni chapters and online regional groups</li>
+                <li>Exclusive online and in-person invitations to events globally and in Oxford</li>
+                <li>Access to our LinkedIn group to connect with alumni online and open direct communication</li>
+                <li>Alumni rates for further study at the school</li>
+                <li>News and updates from the school and opportunities to blog or share your news</li>
             </ul>
-
         </div>
     </section>
     <section class="md:py-10 py-5 md:pb-0 pb-0">
@@ -757,7 +756,7 @@ $program_details = get_field("program_details");
     <div>
         <dialog id="David_Trevaskis" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(478, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -785,7 +784,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Phyllida_Hancock" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(477, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -813,7 +812,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Sue_Dopson" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(479, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -841,7 +840,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Rachel_Botsman" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(480, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -869,7 +868,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Peter_Hanke" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(481, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -896,7 +895,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Trudi_Lang" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         482,
                         "medium",
@@ -925,7 +924,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Ian_Goldin" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         483,
                         "medium",
@@ -954,7 +953,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Joel_Shapiro" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         484,
                         "medium",
@@ -984,7 +983,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Andrew_Stephen" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         485,
                         "medium",
@@ -1014,7 +1013,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Steve_New" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         486,
                         "medium",
@@ -1040,7 +1039,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Pinar_Ozcan" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         487,
                         "medium",
@@ -1065,7 +1064,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Nelisha_Wickremasinghe" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         488,
                         "medium",
@@ -1090,7 +1089,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Paul_Fisher" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         489,
                         "medium",
@@ -1115,7 +1114,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Michael_Smets" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(
                         490,
                         "medium",
@@ -1143,7 +1142,7 @@ $program_details = get_field("program_details");
 
         <dialog id="Jamie_Anderson" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(491, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -1172,7 +1171,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Anton_Musgrave" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(492, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -1199,7 +1198,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Olivier_Tabatoni" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(493, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -1226,7 +1225,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Mike_Grandinetti" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(494, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -1253,7 +1252,7 @@ $program_details = get_field("program_details");
         </dialog>
         <dialog id="Edward_Rogers" class="modal">
             <div class="modal-box flex gap-10 md:flex-row flex-col rounded md:p-10 p-5 md:max-w-[60%]">
-                <figure class="shrink-0 w-1/3 h-full aspect-square">
+                <figure class="shrink-0 md:w-1/3 w-full h-full aspect-square">
                     <?php echo wp_get_attachment_image(495, "medium", false, array(
                         "loading" => "lazy",
                         "class" => "image-cover",
@@ -1587,7 +1586,7 @@ $program_details = get_field("program_details");
                     </div>
                     <h4>Application review</h4>
                     <p class="text-left mb-0">
-                        Admission committee will verify your application and evaluate it for eligibility and fit to programme</p>
+                        Admission Committee will verify your application and evaluate it for eligibility and fit to programme</p>
                 </div>
                 <div class="md:basis-1/5 sm:basis-1/3 basis-full flex-1">
                     <div class="flex items-center justify-center rounded-full bg-primary text-white size-12 text-3xl font-bold mb-8">

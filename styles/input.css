@@ -135,7 +135,7 @@
 
 /* Button Sytles */
 .play-btn {
-  @apply rounded-full size-[90px] bg-[#d73232] text-white flex items-center justify-center absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl transition;
+  @apply rounded-full md:size-[90px] size-[50px] bg-[#d73232] text-white flex items-center justify-center absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 md:text-5xl text-3xl transition;
 }
 
 /* Button Sytles */
@@ -234,9 +234,8 @@
   @apply space-y-5 my-5 !important;
 }
 
-.emi-form-india-message .mesg-list,
-.emi-form-india-message ul {
-  @apply list-inside ml-5 my-0 list-disc block !important;
+.mesg-list, div.wpforms-container-full .wpforms-form .wpforms-field-html ul {
+  @apply ml-5 my-0 list-disc !important;
 }
 
 .eligibility-terms-msg {
